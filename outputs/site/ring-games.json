@@ -1,0 +1,668 @@
+{
+  "source": "Google Sheets",
+  "sheetId": "1e1WeSgafxL98fiBQgBm1_z1Wk96kuF9To5pdTlk_eKI",
+  "gid": "1353500578",
+  "sheetName": "6/22",
+  "dateLabel": "6/22",
+  "asOf": "23:00",
+  "targetBlinds": [
+    "1-3",
+    "2-5",
+    "5-10",
+    "10-20"
+  ],
+  "current": {
+    "time": "23:00",
+    "games": [
+      {
+        "blind": "1-3",
+        "tableCount": 0
+      },
+      {
+        "blind": "2-5",
+        "tableCount": 0
+      },
+      {
+        "blind": "5-10",
+        "tableCount": 0
+      },
+      {
+        "blind": "10-20",
+        "tableCount": 0
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "time": "10:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "10:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "11:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "11:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "12:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "12:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "13:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "13:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "14:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "14:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "15:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "15:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "16:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "16:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "17:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "17:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "18:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "18:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "19:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "19:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "20:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 1
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 1
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "20:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 1
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "21:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 1
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "21:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 1
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "22:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 2
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "22:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 2
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "23:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "23:30",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "24:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    },
+    {
+      "time": "29:00",
+      "games": [
+        {
+          "blind": "1-3",
+          "tableCount": 0
+        },
+        {
+          "blind": "2-5",
+          "tableCount": 0
+        },
+        {
+          "blind": "5-10",
+          "tableCount": 0
+        },
+        {
+          "blind": "10-20",
+          "tableCount": 0
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-06-22T23:13:09+09:00"
+}

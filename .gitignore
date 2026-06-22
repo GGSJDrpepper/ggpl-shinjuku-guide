@@ -1,0 +1,15 @@
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+node_modules/
+work/
+outputs/upscaled/
+outputs/site/assets/hero-poker-room.png
+outputs/site/assets/store-wide-hero.jpeg
+outputs/site/assets/marquee-photo-*.jpg
+outputs/site/assets/gameid/*.jpg
+docs/assets/hero-poker-room.png
+docs/assets/store-wide-hero.jpeg
+docs/assets/marquee-photo-*.jpg
+docs/assets/gameid/*.jpg

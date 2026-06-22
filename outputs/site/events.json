@@ -1,0 +1,792 @@
+[
+  {
+    "id": "daily-ring-game",
+    "category": "ring",
+    "date": "2026-06-18",
+    "start": "13:00",
+    "late": "",
+    "title": {
+      "en": "Ring Game Tables",
+      "ja": "リングゲーム",
+      "zh": "现金桌风格娱乐局",
+      "zhTW": "娛樂桌局",
+      "zhHK": "娛樂桌局",
+      "ko": "링 게임"
+    },
+    "description": {
+      "en": "Our ring game is certified by Global Point LLC.\nPlease ask staff how held chips are evaluated for Web Coin.",
+      "ja": "当店は、合同グローバルポイント社の認定リングゲームとなっております。\n預かりチップのウェブコインへの評価基準はスタッフにお尋ねください",
+      "zh": "本店的桌局为 Global Point LLC 认证的环桌游戏。\n关于寄存筹码如何评估为 Web Coin，请向工作人员咨询。",
+      "zhTW": "本店的桌局為 Global Point LLC 認證的環桌遊戲。\n關於寄存籌碼如何評估為 Web Coin，請向工作人員洽詢。",
+      "zhHK": "本店的桌局為 Global Point LLC 認證的環桌遊戲。\n關於寄存籌碼如何評估為 Web Coin，請向職員查詢。",
+      "ko": "본 매장의 링 게임은 Global Point LLC 인증 링 게임입니다.\n보관 칩이 Web Coin으로 평가되는 기준은 직원에게 문의해 주세요."
+    },
+    "rates": [
+      {
+        "game": "NLH",
+        "blind": "1-3",
+        "ante": "3",
+        "maximum": "600 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "2-5",
+        "ante": "5",
+        "maximum": "1,000 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "5-10",
+        "ante": "10",
+        "maximum": "2,000 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "5-10-20",
+        "ante": "",
+        "maximum": "4,000 chips"
+      }
+    ],
+    "chipPurchase": [
+      {
+        "chips": "250",
+        "price": "3,000"
+      },
+      {
+        "chips": "600",
+        "price": "5,000"
+      },
+      {
+        "chips": "1,300",
+        "price": "10,000"
+      }
+    ],
+    "chipWithdrawal": [
+      {
+        "chips": "600",
+        "price": "2,000",
+        "upTo": true
+      },
+      {
+        "chips": "1,000",
+        "price": "3,000",
+        "upTo": true
+      },
+      {
+        "chips": "2,000",
+        "price": "4,000",
+        "upTo": true
+      },
+      {
+        "chips": "unlimited",
+        "price": "5,000"
+      },
+      {
+        "chips": "300",
+        "price": "1,000",
+        "upTo": true,
+        "note": "rebuyOnly"
+      }
+    ],
+    "nightRates": [
+      {
+        "game": "NLH",
+        "blind": "2-5",
+        "ante": "5",
+        "maximum": "1,000 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "5-10",
+        "ante": "10",
+        "maximum": "2,000 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "5-10-20",
+        "ante": "",
+        "maximum": "4,000 chips"
+      }
+    ],
+    "nightChipPurchase": [
+      {
+        "chips": "600",
+        "price": "5,000"
+      },
+      {
+        "chips": "1,000",
+        "price": "8,000"
+      },
+      {
+        "chips": "1,300",
+        "price": "10,000"
+      }
+    ],
+    "nightChipWithdrawal": [
+      {
+        "chips": "1,000",
+        "price": "3,000",
+        "upTo": true
+      },
+      {
+        "chips": "2,000",
+        "price": "4,000",
+        "upTo": true
+      }
+    ],
+    "nightNotice": {
+      "en": "Late-night rates and chip prices will be shown here once confirmed.",
+      "ja": "深夜営業のレート・料金は確認後に掲載します。",
+      "zh": "深夜营业的级别和筹码价格确认后将在此显示。",
+      "zhTW": "深夜營業的級別和籌碼價格確認後將在此顯示。",
+      "zhHK": "深夜營業的級別和籌碼價格確認後將在此顯示。",
+      "ko": "심야 영업의 레이트와 칩 가격은 확인 후 여기에 표시됩니다."
+    },
+    "entry": "Ask staff",
+    "reEntry": "",
+    "addon": "",
+    "game": "No Limit Texas Hold'em",
+    "stack": "",
+    "link": "https://liff.line.me/1645278921-kWRPP32q/?accountId=805vfpmc"
+  },
+  {
+    "id": "pokerguild-18278",
+    "source": "PokerGuild",
+    "sourceId": "18278",
+    "category": "tournament",
+    "date": "2026-06-18",
+    "start": "13:45",
+    "late": "16:45",
+    "title": {
+      "en": "Daily Deep Stack 3K [500 JPY off if seated by the end of Lv.3]",
+      "ja": "Daily Deep Stack 3K【Lv.3終了時までのご着席で500円引き】",
+      "zh": "Daily Deep Stack 3K【在Lv.3结束前入座可优惠500日元】",
+      "zhTW": "Daily Deep Stack 3K【在Lv.3結束前入座可享500日圓優惠】",
+      "zhHK": "Daily Deep Stack 3K【於Lv.3結束前入座可享500日圓優惠】",
+      "ko": "Daily Deep Stack 3K [Lv.3 종료 전 착석 시 500엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 19:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 19:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 19:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 19:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,000 JPY",
+    "reEntry": "3,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "end": "19:00",
+    "link": "https://pokerguild.jp/tournament?ik=18278"
+  },
+  {
+    "id": "pokerguild-18325",
+    "source": "PokerGuild",
+    "sourceId": "18325",
+    "category": "tournament",
+    "date": "2026-06-18",
+    "start": "17:45",
+    "late": "20:55",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Thursday Double Stack 3K [1,000 JPY off if seated by the end of Lv.2]",
+      "ja": "【上位2名SPADIE2枚】Thursday Double Stack 3K【Lv.2終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Thursday Double Stack 3K【在Lv.2结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Thursday Double Stack 3K【在Lv.2結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Thursday Double Stack 3K【於Lv.2結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Thursday Double Stack 3K [Lv.2 종료 전 착석 시 1,000엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:15. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:15。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:15。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:15。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:15。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:15. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,000 JPY",
+    "reEntry": "3,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "20,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "end": "23:15",
+    "link": "https://pokerguild.jp/tournament?ik=18325"
+  },
+  {
+    "id": "pokerguild-18270",
+    "source": "PokerGuild",
+    "sourceId": "18270",
+    "category": "tournament",
+    "date": "2026-06-19",
+    "start": "13:45",
+    "late": "16:45",
+    "title": {
+      "en": "Daily Deep Stack 3K [500 JPY off if seated by the end of Lv.3]",
+      "ja": "Daily Deep Stack 3K【Lv.3終了時までのご着席で500円引き】",
+      "zh": "Daily Deep Stack 3K【在Lv.3结束前入座可优惠500日元】",
+      "zhTW": "Daily Deep Stack 3K【在Lv.3結束前入座可享500日圓優惠】",
+      "zhHK": "Daily Deep Stack 3K【於Lv.3結束前入座可享500日圓優惠】",
+      "ko": "Daily Deep Stack 3K [Lv.3 종료 전 착석 시 500엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 19:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 19:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 19:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 19:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,000 JPY",
+    "reEntry": "3,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "end": "19:00",
+    "link": "https://pokerguild.jp/tournament?ik=18270"
+  },
+  {
+    "id": "pokerguild-18329",
+    "source": "PokerGuild",
+    "sourceId": "18329",
+    "category": "tournament",
+    "date": "2026-06-19",
+    "start": "17:45",
+    "late": "20:55",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Friday Classic 4K [1,000 JPY off if seated by the end of Lv.2]",
+      "ja": "【上位2名SPADIE2枚】Friday Classic 4K 【Lv.2終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Friday Classic 4K 【在Lv.2结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Friday Classic 4K 【在Lv.2結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Friday Classic 4K 【於Lv.2結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Friday Classic 4K [Lv.2 종료 전 착석 시 1,000엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "4,000 JPY",
+    "reEntry": "4,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "end": "23:00",
+    "link": "https://pokerguild.jp/tournament?ik=18329"
+  },
+  {
+    "id": "pokerguild-17968",
+    "source": "PokerGuild",
+    "sourceId": "17968",
+    "category": "tournament",
+    "date": "2026-06-19",
+    "start": "21:15",
+    "late": "22:30",
+    "title": {
+      "en": "GG Turbo 2K",
+      "ja": "GG Turbo 2K",
+      "zh": "GG Turbo 2K",
+      "zhTW": "GG Turbo 2K",
+      "zhHK": "GG Turbo 2K",
+      "ko": "GG Turbo 2K"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 23:15. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 23:15。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 23:15。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 23:15。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 23:15。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 23:15. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "2,000 JPY",
+    "reEntry": "2,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "15,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "end": "23:15",
+    "link": "https://pokerguild.jp/tournament?ik=17968"
+  },
+  {
+    "id": "pokerguild-18259",
+    "source": "PokerGuild",
+    "sourceId": "18259",
+    "category": "tournament",
+    "date": "2026-06-20",
+    "start": "12:00",
+    "late": "16:30",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Holiday Big 5K [1,000 JPY off if seated by the end of Lv.3]",
+      "ja": "【上位2名SPADIE2枚】Holiday Big 5K【Lv.3終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Holiday Big 5K【在Lv.3结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Holiday Big 5K【在Lv.3結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Holiday Big 5K【於Lv.3結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Holiday Big 5K [Lv.3 종료 전 착석 시 1,000엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 19:30. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 19:30。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 19:30。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 19:30。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 19:30。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 19:30. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "50,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "end": "19:30",
+    "link": "https://pokerguild.jp/tournament?ik=18259"
+  },
+  {
+    "id": "pokerguild-18265",
+    "source": "PokerGuild",
+    "sourceId": "18265",
+    "category": "tournament",
+    "date": "2026-06-20",
+    "start": "17:00",
+    "late": "20:20",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Holiday Monster Stack 5K [1,000 JPY off if seated by the end of Lv.2]",
+      "ja": "【上位2名SPADIE2枚】Holiday Monster Stack 5K【Lv.2終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Holiday Monster Stack 5K【在Lv.2结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Holiday Monster Stack 5K【在Lv.2結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Holiday Monster Stack 5K【於Lv.2結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Holiday Monster Stack 5K [Lv.2 종료 전 착석 시 1,000엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "50,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "end": "23:00",
+    "link": "https://pokerguild.jp/tournament?ik=18265"
+  },
+  {
+    "id": "pokerguild-17969",
+    "source": "PokerGuild",
+    "sourceId": "17969",
+    "category": "tournament",
+    "date": "2026-06-20",
+    "start": "21:15",
+    "late": "22:30",
+    "title": {
+      "en": "GG Turbo 2K",
+      "ja": "GG Turbo 2K",
+      "zh": "GG Turbo 2K",
+      "zhTW": "GG Turbo 2K",
+      "zhHK": "GG Turbo 2K",
+      "ko": "GG Turbo 2K"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 23:15. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 23:15。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 23:15。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 23:15。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 23:15。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 23:15. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "2,000 JPY",
+    "reEntry": "2,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "15,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "end": "23:15",
+    "link": "https://pokerguild.jp/tournament?ik=17969"
+  },
+  {
+    "id": "pokerguild-18260",
+    "source": "PokerGuild",
+    "sourceId": "18260",
+    "category": "tournament",
+    "date": "2026-06-21",
+    "start": "12:00",
+    "late": "16:30",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Holiday Big 5K [1,000 JPY off if seated by the end of Lv.3]",
+      "ja": "【上位2名SPADIE2枚】Holiday Big 5K【Lv.3終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Holiday Big 5K【在Lv.3结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Holiday Big 5K【在Lv.3結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Holiday Big 5K【於Lv.3結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Holiday Big 5K [Lv.3 종료 전 착석 시 1,000엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 19:30. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 19:30。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 19:30。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 19:30。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 19:30。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 19:30. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "50,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "end": "19:30",
+    "link": "https://pokerguild.jp/tournament?ik=18260"
+  },
+  {
+    "id": "pokerguild-18268",
+    "source": "PokerGuild",
+    "sourceId": "18268",
+    "category": "tournament",
+    "date": "2026-06-21",
+    "start": "17:00",
+    "late": "20:20",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Holiday NLH 3.5K [1,000 JPY off if seated by the end of Lv.2]",
+      "ja": "【上位2名SPADIE2枚】Holiday NLH 3.5K【Lv.2終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Holiday NLH 3.5K【在Lv.2结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Holiday NLH 3.5K【在Lv.2結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Holiday NLH 3.5K【於Lv.2結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Holiday NLH 3.5K [Lv.2 종료 전 착석 시 1,000엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,500 JPY",
+    "reEntry": "3,500 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "end": "23:00",
+    "link": "https://pokerguild.jp/tournament?ik=18268"
+  },
+  {
+    "id": "pokerguild-18314",
+    "source": "PokerGuild",
+    "sourceId": "18314",
+    "category": "tournament",
+    "date": "2026-06-22",
+    "start": "13:45",
+    "late": "16:45",
+    "title": {
+      "en": "Daily Deep Stack 3K [500 JPY off if seated by the end of Lv.3]",
+      "ja": "Daily Deep Stack 3K【Lv.3終了時までのご着席で500円引き】",
+      "zh": "Daily Deep Stack 3K【在Lv.3结束前入座可优惠500日元】",
+      "zhTW": "Daily Deep Stack 3K【在Lv.3結束前入座可享500日圓優惠】",
+      "zhHK": "Daily Deep Stack 3K【於Lv.3結束前入座可享500日圓優惠】",
+      "ko": "Daily Deep Stack 3K [Lv.3 종료 전 착석 시 500엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 19:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 19:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 19:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 19:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,000 JPY",
+    "reEntry": "3,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "end": "19:00",
+    "link": "https://pokerguild.jp/tournament?ik=18314"
+  },
+  {
+    "id": "pokerguild-18284",
+    "source": "PokerGuild",
+    "sourceId": "18284",
+    "category": "tournament",
+    "date": "2026-06-22",
+    "start": "17:45",
+    "late": "20:55",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Monday Extreme Stack 4.5K",
+      "ja": "【上位2名SPADIE2枚】Monday Extreme Stack 4.5K",
+      "zh": "【前2名：2张SPADIE门票】Monday Extreme Stack 4.5K",
+      "zhTW": "【前2名：2張SPADIE門票】Monday Extreme Stack 4.5K",
+      "zhHK": "【前2名：2張SPADIE門票】Monday Extreme Stack 4.5K",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Monday Extreme Stack 4.5K"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "4,500 JPY",
+    "reEntry": "4,500 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "300,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "end": "23:00",
+    "link": "https://pokerguild.jp/tournament?ik=18284"
+  },
+  {
+    "id": "pokerguild-18315",
+    "source": "PokerGuild",
+    "sourceId": "18315",
+    "category": "tournament",
+    "date": "2026-06-23",
+    "start": "13:45",
+    "late": "16:45",
+    "title": {
+      "en": "Daily Deep Stack 3K [500 JPY off if seated by the end of Lv.3]",
+      "ja": "Daily Deep Stack 3K【Lv.3終了時までのご着席で500円引き】",
+      "zh": "Daily Deep Stack 3K【在Lv.3结束前入座可优惠500日元】",
+      "zhTW": "Daily Deep Stack 3K【在Lv.3結束前入座可享500日圓優惠】",
+      "zhHK": "Daily Deep Stack 3K【於Lv.3結束前入座可享500日圓優惠】",
+      "ko": "Daily Deep Stack 3K [Lv.3 종료 전 착석 시 500엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 19:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 19:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 19:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 19:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,000 JPY",
+    "reEntry": "3,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "end": "19:00",
+    "link": "https://pokerguild.jp/tournament?ik=18315"
+  },
+  {
+    "id": "pokerguild-17554",
+    "source": "PokerGuild",
+    "sourceId": "17554",
+    "category": "tournament",
+    "date": "2026-06-23",
+    "start": "17:45",
+    "late": "20:55",
+    "title": {
+      "en": "[Top 5: 15 tickets total] JOPT Mega Satellite",
+      "ja": "【上位5名合計15チケット】JOPTメガサテライト",
+      "zh": "【前5名合计15张门票】JOPT大型卫星赛",
+      "zhTW": "【前5名合計15張門票】JOPT大型衛星賽",
+      "zhHK": "【前5名合共15張門票】JOPT大型衛星賽",
+      "ko": "[상위 5명: 총 15장 티켓] JOPT 메가 새틀라이트"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: JOPT ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: JOPT権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: JOPT参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: JOPT參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: JOPT參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: JOPT 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "15,000",
+    "prize": {
+      "en": "JOPT ticket",
+      "ja": "JOPT権利",
+      "zh": "JOPT参赛资格",
+      "zhTW": "JOPT參賽資格",
+      "zhHK": "JOPT參賽資格",
+      "ko": "JOPT 참가권"
+    },
+    "end": "23:00",
+    "link": "https://pokerguild.jp/tournament?ik=17554"
+  },
+  {
+    "id": "pokerguild-18316",
+    "source": "PokerGuild",
+    "sourceId": "18316",
+    "category": "tournament",
+    "date": "2026-06-24",
+    "start": "13:45",
+    "late": "16:45",
+    "title": {
+      "en": "Daily Deep Stack 3K [500 JPY off if seated by the end of Lv.3]",
+      "ja": "Daily Deep Stack 3K【Lv.3終了時までのご着席で500円引き】",
+      "zh": "Daily Deep Stack 3K【在Lv.3结束前入座可优惠500日元】",
+      "zhTW": "Daily Deep Stack 3K【在Lv.3結束前入座可享500日圓優惠】",
+      "zhHK": "Daily Deep Stack 3K【於Lv.3結束前入座可享500日圓優惠】",
+      "ko": "Daily Deep Stack 3K [Lv.3 종료 전 착석 시 500엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 19:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 19:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 19:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 19:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,000 JPY",
+    "reEntry": "3,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "end": "19:00",
+    "link": "https://pokerguild.jp/tournament?ik=18316"
+  },
+  {
+    "id": "pokerguild-18322",
+    "source": "PokerGuild",
+    "sourceId": "18322",
+    "category": "tournament",
+    "date": "2026-06-24",
+    "start": "17:45",
+    "late": "20:55",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Wednesday Super Stack 4.5K [1,000 JPY off if seated by the end of Lv.2]",
+      "ja": "【上位2名SPADIE2枚】Wednesday Super Stack 4.5K【Lv.2終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Wednesday Super Stack 4.5K【在Lv.2结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Wednesday Super Stack 4.5K【在Lv.2結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Wednesday Super Stack 4.5K【於Lv.2結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Wednesday Super Stack 4.5K [Lv.2 종료 전 착석 시 1,000엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:15. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:15。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:15。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:15。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:15。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:15. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "4,500 JPY",
+    "reEntry": "4,500 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "40,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "end": "23:15",
+    "link": "https://pokerguild.jp/tournament?ik=18322"
+  }
+]
