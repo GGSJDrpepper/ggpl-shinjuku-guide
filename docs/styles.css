@@ -1217,6 +1217,66 @@ a {
   overflow-wrap: anywhere;
 }
 
+.prize-breakdown {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.prize-breakdown h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 950;
+  line-height: 1.25;
+}
+
+.prize-rank-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.prize-rank-card {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--control-soft);
+}
+
+.prize-rank-card strong {
+  display: inline-grid;
+  place-items: center;
+  justify-self: start;
+  min-width: 58px;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.prize-rank-card ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.prize-rank-card li {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 850;
+  line-height: 1.45;
+}
+
 .prize-dialog-note {
   margin: 0;
   color: var(--muted);
@@ -1437,6 +1497,10 @@ a {
   }
 
   .prize-dialog-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .prize-rank-grid {
     grid-template-columns: 1fr;
   }
 

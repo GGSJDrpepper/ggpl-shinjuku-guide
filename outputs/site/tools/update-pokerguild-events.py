@@ -14,6 +14,7 @@ import json
 import re
 import sys
 import urllib.request
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
 
@@ -44,6 +45,53 @@ def clean_text(value: str) -> str:
     value = html.unescape(value)
     lines = [" ".join(line.split()) for line in value.replace("\xa0", " ").splitlines()]
     return "\n".join(line for line in lines if line).strip()
+
+
+class ClassTextCollector(HTMLParser):
+    """Collect visible text from elements with selected CSS classes."""
+
+    def __init__(self, target_classes: set[str]):
+        super().__init__(convert_charrefs=True)
+        self.target_classes = target_classes
+        self.results: list[tuple[str, str]] = []
+        self._capture_class = ""
+        self._capture_depth = 0
+        self._buffer: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if self._capture_class:
+            self._capture_depth += 1
+            if tag.lower() == "br":
+                self._buffer.append("\n")
+            return
+
+        classes = set()
+        for key, value in attrs:
+            if key == "class" and value:
+                classes.update(value.split())
+
+        matched = classes & self.target_classes
+        if matched:
+            self._capture_class = sorted(matched)[0]
+            self._capture_depth = 1
+            self._buffer = []
+
+    def handle_endtag(self, tag: str) -> None:
+        if not self._capture_class:
+            return
+
+        self._capture_depth -= 1
+        if self._capture_depth <= 0:
+            text = clean_text("".join(self._buffer))
+            if text:
+                self.results.append((self._capture_class, text))
+            self._capture_class = ""
+            self._capture_depth = 0
+            self._buffer = []
+
+    def handle_data(self, data: str) -> None:
+        if self._capture_class:
+            self._buffer.append(data)
 
 
 def yen_to_jpy(value: str) -> str:
@@ -186,6 +234,113 @@ PRIZE_TRANSLATIONS = [
     ),
 ]
 
+DETAIL_LANGS = (
+    "en",
+    "ja",
+    "zh",
+    "zhTW",
+    "zhHK",
+    "ko",
+    "th",
+    "vi",
+    "id",
+    "tl",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ptBR",
+)
+
+PRIZE_DETAIL_REPLACEMENTS = {
+    "en": {
+        "活動支援": "Web Coin support",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "zh": {
+        "活動支援": "Web Coin 支持",
+        "戦国ポーカー": "战国扑克",
+        "秋の陣": "秋之阵",
+    },
+    "zhTW": {
+        "活動支援": "Web Coin 支援",
+        "戦国ポーカー": "戰國撲克",
+        "秋の陣": "秋之陣",
+    },
+    "zhHK": {
+        "活動支援": "Web Coin 支援",
+        "戦国ポーカー": "戰國撲克",
+        "秋の陣": "秋之陣",
+    },
+    "ko": {
+        "活動支援": "Web Coin 지원",
+        "戦国ポーカー": "센고쿠 포커",
+        "秋の陣": "가을의 진",
+    },
+    "th": {
+        "活動支援": "การสนับสนุน Web Coin",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "vi": {
+        "活動支援": "hỗ trợ Web Coin",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "id": {
+        "活動支援": "dukungan Web Coin",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "tl": {
+        "活動支援": "Web Coin support",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "es": {
+        "活動支援": "apoyo Web Coin",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "fr": {
+        "活動支援": "soutien Web Coin",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "de": {
+        "活動支援": "Web-Coin-Unterstützung",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "it": {
+        "活動支援": "supporto Web Coin",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+    "ptBR": {
+        "活動支援": "apoio em Web Coin",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+    },
+}
+
+TICKET_COUNTERS = {
+    "zh": "张",
+    "zhTW": "張",
+    "zhHK": "張",
+    "ko": "장",
+    "th": " ใบ",
+    "vi": " vé",
+    "id": " tiket",
+    "tl": " tickets",
+    "es": " entradas",
+    "fr": " tickets",
+    "de": " Tickets",
+    "it": " ticket",
+    "ptBR": " tickets",
+}
+
 
 def translate_title(title: str, lang: str) -> str:
     translated = title
@@ -228,6 +383,66 @@ def localized_prize(prize: str) -> dict[str, str]:
         "zhHK": translate_prize(prize, "zhHK"),
         "ko": translate_prize(prize, "ko"),
     }
+
+
+def translate_prize_detail_line(line: str, lang: str) -> str:
+    value = " ".join(line.split())
+    if lang == "ja":
+        return value
+
+    for source, replacement in PRIZE_DETAIL_REPLACEMENTS.get(lang, {}).items():
+        value = value.replace(source, replacement)
+
+    if lang == "en":
+        value = re.sub(
+            r"(.+?Ticket)\s*(\d+)枚",
+            lambda match: f"{match.group(2)} {match.group(1)}s",
+            value,
+        )
+        value = re.sub(
+            r"(.+?ticket)\s*(\d+)枚",
+            lambda match: f"{match.group(2)} {match.group(1)}s",
+            value,
+        )
+        value = re.sub(r"(\d+)枚", r"\1 tickets", value)
+        return value
+
+    counter = TICKET_COUNTERS.get(lang, " tickets")
+    return re.sub(r"(\d+)枚", rf"\1{counter}", value)
+
+
+def localized_prize_detail_lines(lines: list[str]) -> dict[str, list[str]]:
+    return {
+        lang: [translate_prize_detail_line(line, lang) for line in lines if line.strip()]
+        for lang in DETAIL_LANGS
+    }
+
+
+def parse_prize_details(detail_html: str) -> list[dict[str, Any]]:
+    collector = ClassTextCollector({"ggsj-contract-rank", "ggsj-contract-content"})
+    collector.feed(detail_html)
+
+    details: list[dict[str, Any]] = []
+    pending_rank = ""
+    for class_name, text in collector.results:
+        if class_name == "ggsj-contract-rank":
+            pending_rank = text
+            continue
+
+        if class_name != "ggsj-contract-content" or not pending_rank:
+            continue
+
+        lines = [line for line in text.splitlines() if line.strip()]
+        if lines:
+            details.append(
+                {
+                    "rank": pending_rank,
+                    "items": localized_prize_detail_lines(lines),
+                }
+            )
+        pending_rank = ""
+
+    return details
 
 
 def localized_description(prize: dict[str, str], end_time: str = "") -> dict[str, str]:
@@ -384,6 +599,7 @@ def enrich_with_details(
         prize = detail.get("prize") or event.get("prize", "")
         prize_by_lang = localized_prize(prize)
         end_time = detail.get("end", "")
+        prize_details = parse_prize_details(detail_html) if detail_html else []
 
         enriched.append(
             {
@@ -402,6 +618,7 @@ def enrich_with_details(
                 "game": detail.get("game") or event["game"],
                 "stack": detail.get("stack") or event["stack"],
                 "prize": prize_by_lang,
+                "prizeDetails": prize_details,
                 "end": end_time,
                 "link": event["link"],
             }

@@ -1448,6 +1448,73 @@ Object.entries(navLabelOverrides).forEach(([lang, values]) => {
   translations[lang] = { ...translations[lang], ...values };
 });
 
+const prizeDialogTranslations = {
+  en: {
+    prizeBreakdownTitle: "Ranked prize details",
+    prizeOfficialLink: "Open official PokerGuild page"
+  },
+  ja: {
+    prizeBreakdownTitle: "順位別プライズ詳細",
+    prizeOfficialLink: "PokerGuild公式ページを開く"
+  },
+  zh: {
+    prizeBreakdownTitle: "名次奖励详情",
+    prizeOfficialLink: "打开 PokerGuild 官方页面"
+  },
+  zhTW: {
+    prizeBreakdownTitle: "名次獎勵詳情",
+    prizeOfficialLink: "開啟 PokerGuild 官方頁面"
+  },
+  zhHK: {
+    prizeBreakdownTitle: "名次獎賞詳情",
+    prizeOfficialLink: "開啟 PokerGuild 官方頁面"
+  },
+  ko: {
+    prizeBreakdownTitle: "순위별 프라이즈 상세",
+    prizeOfficialLink: "PokerGuild 공식 페이지 열기"
+  },
+  th: {
+    prizeBreakdownTitle: "รายละเอียดรางวัลตามอันดับ",
+    prizeOfficialLink: "เปิดหน้า PokerGuild อย่างเป็นทางการ"
+  },
+  vi: {
+    prizeBreakdownTitle: "Chi tiết giải thưởng theo thứ hạng",
+    prizeOfficialLink: "Mở trang PokerGuild chính thức"
+  },
+  id: {
+    prizeBreakdownTitle: "Detail hadiah berdasarkan peringkat",
+    prizeOfficialLink: "Buka halaman resmi PokerGuild"
+  },
+  tl: {
+    prizeBreakdownTitle: "Prize details ayon sa rank",
+    prizeOfficialLink: "Buksan ang official PokerGuild page"
+  },
+  es: {
+    prizeBreakdownTitle: "Detalles del premio por puesto",
+    prizeOfficialLink: "Abrir la página oficial de PokerGuild"
+  },
+  fr: {
+    prizeBreakdownTitle: "Détails du prix par rang",
+    prizeOfficialLink: "Ouvrir la page officielle PokerGuild"
+  },
+  de: {
+    prizeBreakdownTitle: "Preisdetails nach Platzierung",
+    prizeOfficialLink: "Offizielle PokerGuild-Seite öffnen"
+  },
+  it: {
+    prizeBreakdownTitle: "Dettagli premio per posizione",
+    prizeOfficialLink: "Apri la pagina ufficiale PokerGuild"
+  },
+  ptBR: {
+    prizeBreakdownTitle: "Detalhes do prêmio por colocação",
+    prizeOfficialLink: "Abrir a página oficial do PokerGuild"
+  }
+};
+
+Object.entries(prizeDialogTranslations).forEach(([lang, values]) => {
+  translations[lang] = { ...translations[lang], ...values };
+});
+
 const simplifiedToTraditionalPairs = [
   ["现金", "現金"],
   ["风格", "風格"],
@@ -1687,6 +1754,39 @@ function textFor(value) {
     return value[currentLang] || toTraditionalChinese(value.zh);
   }
   return value[currentLang] || value.en || Object.values(value)[0] || "";
+}
+
+function linesFor(value) {
+  if (!value) return [];
+  if (Array.isArray(value)) return value.filter(Boolean);
+  if (typeof value === "string") return value.split("\n").filter(Boolean);
+  return linesFor(value[currentLang] || value.en || value.ja || Object.values(value)[0]);
+}
+
+function formatPrizeRank(rank) {
+  const rankText = String(rank || "");
+  const match = rankText.match(/^(\d+)(?:st|nd|rd|th)?$/i);
+  if (!match) return rankText;
+
+  const place = match[1];
+  const labels = {
+    en: rankText,
+    ja: `${place}位`,
+    zh: `第${place}名`,
+    zhTW: `第${place}名`,
+    zhHK: `第${place}名`,
+    ko: `${place}위`,
+    th: `อันดับ ${place}`,
+    vi: `Hạng ${place}`,
+    id: `Peringkat ${place}`,
+    tl: `Rank ${place}`,
+    es: `${place}.º`,
+    fr: place === "1" ? "1er" : `${place}e`,
+    de: `${place}. Platz`,
+    it: `${place}º`,
+    ptBR: `${place}º lugar`
+  };
+  return labels[currentLang] || rankText;
 }
 
 function t(key) {
@@ -1991,6 +2091,32 @@ function prizeDetailRow(label, value) {
   `;
 }
 
+function renderPrizeBreakdown(details) {
+  if (!Array.isArray(details) || !details.length) return "";
+
+  const rows = details.map((detail) => {
+    const items = linesFor(detail.items);
+    if (!detail.rank || !items.length) return "";
+    return `
+      <article class="prize-rank-card">
+        <strong>${escapeHtml(formatPrizeRank(detail.rank))}</strong>
+        <ul>
+          ${items.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+        </ul>
+      </article>
+    `;
+  }).filter(Boolean).join("");
+
+  if (!rows) return "";
+
+  return `
+    <section class="prize-breakdown" aria-label="${t("prizeBreakdownTitle")}">
+      <h3>${t("prizeBreakdownTitle")}</h3>
+      <div class="prize-rank-grid">${rows}</div>
+    </section>
+  `;
+}
+
 function findEventById(eventId) {
   return events.find((event) => event.id === eventId);
 }
@@ -2011,10 +2137,11 @@ function renderPrizeDialogContent(event) {
     <p class="section-kicker">${t("eventApply")}</p>
     <h2 id="prize-dialog-title">${escapeHtml(title)}</h2>
     ${metaItems ? `<dl class="prize-dialog-meta">${metaItems}</dl>` : ""}
+    ${renderPrizeBreakdown(event.prizeDetails)}
     ${description ? `<p class="prize-dialog-note">${escapeHtml(description)}</p>` : ""}
     ${event.link ? `
       <a class="prize-dialog-link" href="${escapeHtml(event.link)}" target="_blank" rel="noopener">
-        PokerGuild
+        ${t("prizeOfficialLink")}
       </a>
     ` : ""}
   `;
