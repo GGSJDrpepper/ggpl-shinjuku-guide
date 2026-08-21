@@ -17,6 +17,17 @@ The site includes `noindex,nofollow` and `robots.txt` so search engines are aske
 - `outputs/site/app.js`: language switching, tournament display, amusement cash game price/rate display, Game ID guide
 - `outputs/site/events.json`: tournament fallback data
 - `outputs/site/tools/`: scripts for updating imported data
+- `.github/workflows/update-pokerguild-events.yml`: scheduled PokerGuild tournament update
 - `docs/`: GitHub Pages publish copy
 
 When updating the site, copy `outputs/site` into `docs` before pushing to GitHub.
+
+## Tournament Updates
+
+GitHub Actions updates tournament data automatically every 30 minutes by running `outputs/site/tools/update-pokerguild-events.py`.
+
+The workflow imports upcoming tournaments from PokerGuild, writes `outputs/site/events.json`, copies it to `docs/events.json`, and commits only when the data changed. GitHub Pages then republishes the site from `docs`.
+
+You can also run it manually from GitHub: `Actions` → `Update PokerGuild events` → `Run workflow`.
+
+If the automatic commit fails, check `Settings` → `Actions` → `General` → `Workflow permissions` and set it to `Read and write permissions`.

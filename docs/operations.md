@@ -48,6 +48,12 @@ python3 outputs/site/tools/update-pokerguild-events.py
 
 標準では今日から14日先までの掲載分を取り込みます。期間を変える場合は `--days 7` のように指定します。
 
+現在はGitHub Actionsでも自動更新します。`.github/workflows/update-pokerguild-events.yml` が30分ごとにスクリプトを実行し、`outputs/site/events.json` と `docs/events.json` を更新します。変更がある場合だけ自動コミットされ、GitHub Pagesが再公開します。
+
+急ぎで更新したい場合は、GitHubの `Actions` → `Update PokerGuild events` → `Run workflow` から手動実行できます。
+
+自動コミットに失敗する場合は、GitHubの `Settings` → `Actions` → `General` → `Workflow permissions` を `Read and write permissions` に変更してください。
+
 ## 3. 次の制作ステップ
 
 1. 実リンクを確定する  
