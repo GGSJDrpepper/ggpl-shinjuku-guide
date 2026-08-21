@@ -2081,16 +2081,6 @@ function renderCashGameRates(rates) {
   `;
 }
 
-function prizeDetailRow(label, value) {
-  if (!value || value === "—" || value === "— / —") return "";
-  return `
-    <div class="prize-dialog-meta-item">
-      <dt>${escapeHtml(label)}</dt>
-      <dd>${escapeHtml(value)}</dd>
-    </div>
-  `;
-}
-
 function renderPrizeBreakdown(details) {
   if (!Array.isArray(details) || !details.length) return "";
 
@@ -2123,22 +2113,11 @@ function findEventById(eventId) {
 
 function renderPrizeDialogContent(event) {
   const title = textFor(event.title);
-  const description = textFor(event.description);
-  const metaItems = [
-    prizeDetailRow(t("eventGame"), event.game),
-    prizeDetailRow(t("eventPrize"), textFor(event.prize)),
-    prizeDetailRow(t("eventStartLate"), pairedValue(event.start, event.late)),
-    prizeDetailRow(t("eventEntryReEntry"), pairedValue(event.entry, event.reEntry)),
-    prizeDetailRow(t("eventStack"), event.stack),
-    prizeDetailRow(t("eventEnd"), event.end)
-  ].join("");
 
   return `
     <p class="section-kicker">${t("eventApply")}</p>
     <h2 id="prize-dialog-title">${escapeHtml(title)}</h2>
-    ${metaItems ? `<dl class="prize-dialog-meta">${metaItems}</dl>` : ""}
     ${renderPrizeBreakdown(event.prizeDetails)}
-    ${description ? `<p class="prize-dialog-note">${escapeHtml(description)}</p>` : ""}
     ${event.link ? `
       <a class="prize-dialog-link" href="${escapeHtml(event.link)}" target="_blank" rel="noopener">
         ${t("prizeOfficialLink")}
