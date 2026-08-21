@@ -1677,6 +1677,8 @@ let currentFilter = "tournament";
 let currentCashGamePeriod = "day";
 let selectedEventDate = "";
 let events = fallbackEvents;
+let openPrizeEventId = "";
+let lastPrizeTrigger = null;
 
 function textFor(value) {
   if (!value) return "";
@@ -1745,6 +1747,13 @@ function applyLanguage(lang) {
 
   renderGameIdGuide();
   renderEvents();
+  if (openPrizeEventId) {
+    const event = findEventById(openPrizeEventId);
+    const body = document.querySelector("#prize-dialog-body");
+    if (event && body) {
+      body.innerHTML = renderPrizeDialogContent(event);
+    }
+  }
 }
 
 function formatDate(dateValue) {
@@ -1972,6 +1981,73 @@ function renderCashGameRates(rates) {
   `;
 }
 
+function prizeDetailRow(label, value) {
+  if (!value || value === "—" || value === "— / —") return "";
+  return `
+    <div class="prize-dialog-meta-item">
+      <dt>${escapeHtml(label)}</dt>
+      <dd>${escapeHtml(value)}</dd>
+    </div>
+  `;
+}
+
+function findEventById(eventId) {
+  return events.find((event) => event.id === eventId);
+}
+
+function renderPrizeDialogContent(event) {
+  const title = textFor(event.title);
+  const description = textFor(event.description);
+  const metaItems = [
+    prizeDetailRow(t("eventGame"), event.game),
+    prizeDetailRow(t("eventPrize"), textFor(event.prize)),
+    prizeDetailRow(t("eventStartLate"), pairedValue(event.start, event.late)),
+    prizeDetailRow(t("eventEntryReEntry"), pairedValue(event.entry, event.reEntry)),
+    prizeDetailRow(t("eventStack"), event.stack),
+    prizeDetailRow(t("eventEnd"), event.end)
+  ].join("");
+
+  return `
+    <p class="section-kicker">${t("eventApply")}</p>
+    <h2 id="prize-dialog-title">${escapeHtml(title)}</h2>
+    ${metaItems ? `<dl class="prize-dialog-meta">${metaItems}</dl>` : ""}
+    ${description ? `<p class="prize-dialog-note">${escapeHtml(description)}</p>` : ""}
+    ${event.link ? `
+      <a class="prize-dialog-link" href="${escapeHtml(event.link)}" target="_blank" rel="noopener">
+        PokerGuild
+      </a>
+    ` : ""}
+  `;
+}
+
+function openPrizeDialog(eventId, trigger = null) {
+  const event = findEventById(eventId);
+  const dialog = document.querySelector("#prize-dialog");
+  const body = document.querySelector("#prize-dialog-body");
+  const panel = document.querySelector(".prize-dialog-panel");
+  if (!event || !dialog || !body || !panel) return;
+
+  openPrizeEventId = eventId;
+  lastPrizeTrigger = trigger || document.activeElement;
+  body.innerHTML = renderPrizeDialogContent(event);
+  dialog.hidden = false;
+  document.body.classList.add("is-dialog-open");
+  panel.focus();
+}
+
+function closePrizeDialog() {
+  const dialog = document.querySelector("#prize-dialog");
+  if (!dialog || dialog.hidden) return;
+
+  dialog.hidden = true;
+  document.body.classList.remove("is-dialog-open");
+  openPrizeEventId = "";
+  if (lastPrizeTrigger && typeof lastPrizeTrigger.focus === "function") {
+    lastPrizeTrigger.focus();
+  }
+  lastPrizeTrigger = null;
+}
+
 function renderEvents() {
   const list = document.querySelector("#event-list");
   const filteredByCategory = events.filter((event) => currentFilter === "all" || event.category === currentFilter);
@@ -2013,12 +2089,13 @@ function renderEvents() {
   `;
 
   const cards = currentDateEvents
-    .map((event) => {
+    .map((event, index) => {
       const isTournament = event.category === "tournament";
       const isCashGame = event.category === "ring";
       const label = isTournament ? event.game || "Tournament" : "";
       const description = textFor(event.description);
       const cashGameData = isCashGame ? cashGamePeriodData(event) : null;
+      const eventActionId = event.id || `${event.category}-${event.date}-${event.start}-${index}`;
       const metaItems = isTournament
         ? `
           ${requiredEventMeta(t("eventStartLate"), pairedValue(event.start, event.late))}
@@ -2053,7 +2130,7 @@ function renderEvents() {
             ${isCashGame && currentCashGamePeriod === "night" ? renderLateNightAvailability() : ""}
             ${metaItems ? `<dl class="event-meta">${metaItems}</dl>` : ""}
           </div>
-          ${isCashGame ? "" : `<a class="event-action" href="${event.link}" target="_blank" rel="noopener">${t("eventApply")}</a>`}
+          ${isCashGame ? "" : `<button class="event-action" type="button" data-prize-event-id="${escapeHtml(eventActionId)}">${t("eventApply")}</button>`}
         </article>
       `;
     })
@@ -2092,6 +2169,18 @@ document.querySelectorAll("[data-filter]").forEach((button) => {
 });
 
 document.addEventListener("click", (event) => {
+  const prizeDialogClose = event.target.closest("[data-prize-dialog-close]");
+  if (prizeDialogClose) {
+    closePrizeDialog();
+    return;
+  }
+
+  const prizeButton = event.target.closest("[data-prize-event-id]");
+  if (prizeButton) {
+    openPrizeDialog(prizeButton.dataset.prizeEventId, prizeButton);
+    return;
+  }
+
   const gameIdMoreButton = event.target.closest("[data-gameid-more]");
   if (gameIdMoreButton) {
     document.querySelector("#gameid")?.classList.add("is-expanded");
@@ -2116,6 +2205,12 @@ document.addEventListener("click", (event) => {
   if (nextDateIndex >= 0 && nextDateIndex < dates.length) {
     selectedEventDate = dates[nextDateIndex];
     renderEvents();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closePrizeDialog();
   }
 });
 

@@ -1104,8 +1104,139 @@ a {
   background: var(--white);
   color: var(--ink);
   border: 1px solid var(--ink);
+  cursor: pointer;
+  font: inherit;
   font-weight: 900;
   text-align: center;
+  text-decoration: none;
+}
+
+.event-action:hover,
+.event-action:focus-visible {
+  background: var(--control-soft);
+}
+
+.is-dialog-open {
+  overflow: hidden;
+}
+
+.prize-dialog[hidden] {
+  display: none;
+}
+
+.prize-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.prize-dialog-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(21, 19, 15, 0.38);
+}
+
+.prize-dialog-panel {
+  position: relative;
+  z-index: 1;
+  width: min(760px, 100%);
+  max-height: min(820px, calc(100vh - 48px));
+  overflow: auto;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  outline: none;
+}
+
+.prize-dialog-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.prize-dialog-body {
+  display: grid;
+  gap: 18px;
+}
+
+.prize-dialog-body .section-kicker {
+  margin: 0;
+}
+
+.prize-dialog-body h2 {
+  max-width: 92%;
+  margin: 0;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.08;
+}
+
+.prize-dialog-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+.prize-dialog-meta-item {
+  min-height: 76px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--control-soft);
+}
+
+.prize-dialog-meta-item dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.prize-dialog-meta-item dd {
+  margin: 6px 0 0;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.prize-dialog-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.6;
+}
+
+.prize-dialog-link {
+  justify-self: start;
+  display: inline-grid;
+  place-items: center;
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 900;
   text-decoration: none;
 }
 
@@ -1303,6 +1434,10 @@ a {
 
   .event-meta {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+
+  .prize-dialog-meta {
+    grid-template-columns: 1fr;
   }
 
   .cash-game-rate-grid {
@@ -1506,6 +1641,24 @@ a {
 
   .event-meta {
     grid-template-columns: 1fr;
+  }
+
+  .prize-dialog {
+    padding: 14px;
+  }
+
+  .prize-dialog-panel {
+    max-height: calc(100vh - 28px);
+    padding: 22px;
+  }
+
+  .prize-dialog-body h2 {
+    max-width: 86%;
+    font-size: 26px;
+  }
+
+  .prize-dialog-meta-item dd {
+    font-size: 16px;
   }
 
   .cash-game-rate-grid {

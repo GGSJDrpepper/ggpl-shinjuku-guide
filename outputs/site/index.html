@@ -10,7 +10,7 @@
       content="International visitor guide for GoodGame Poker Live Shinjuku, an amusement poker room in Shinjuku, Tokyo."
     >
     <link rel="icon" href="assets/logo-shinjuku.png">
-    <link rel="stylesheet" href="styles.css?v=20260822-ring-status">
+    <link rel="stylesheet" href="styles.css?v=20260822-prize-dialog">
   </head>
   <body>
     <header class="site-header" aria-label="Primary">
@@ -220,6 +220,14 @@
       </p>
     </footer>
 
-    <script src="app.js?v=20260822-ring-status"></script>
+    <div id="prize-dialog" class="prize-dialog" role="dialog" aria-modal="true" aria-labelledby="prize-dialog-title" hidden>
+      <div class="prize-dialog-backdrop" data-prize-dialog-close></div>
+      <section class="prize-dialog-panel" tabindex="-1">
+        <button class="prize-dialog-close" type="button" aria-label="Close" data-prize-dialog-close>×</button>
+        <div id="prize-dialog-body" class="prize-dialog-body"></div>
+      </section>
+    </div>
+
+    <script src="app.js?v=20260822-prize-dialog"></script>
   </body>
 </html>
