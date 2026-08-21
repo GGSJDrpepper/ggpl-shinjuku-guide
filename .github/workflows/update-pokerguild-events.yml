@@ -1,0 +1,54 @@
+name: Update PokerGuild events
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-pokerguild-events.yml"
+      - "outputs/site/tools/update-pokerguild-events.py"
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-pokerguild-events
+  cancel-in-progress: false
+
+jobs:
+  update-events:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Import PokerGuild tournaments
+        run: |
+          python outputs/site/tools/update-pokerguild-events.py \
+            --out outputs/site/events.json \
+            --days 14
+          cp outputs/site/events.json docs/events.json
+
+      - name: Commit updated tournament data
+        run: |
+          if git diff --quiet -- outputs/site/events.json docs/events.json; then
+            echo "No tournament updates to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outputs/site/events.json docs/events.json
+          git commit -m "Update PokerGuild tournament data"
+          git push origin HEAD:main
