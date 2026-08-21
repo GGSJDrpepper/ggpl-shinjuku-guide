@@ -129,6 +129,16 @@ TITLE_TRANSLATIONS = [
         },
     ),
     (
+        "【上位3名戦国2枚】",
+        {
+            "en": "[Top 3: 2 SENGOKU tickets] ",
+            "zh": "【前3名：2张SENGOKU门票】",
+            "zhTW": "【前3名：2張SENGOKU門票】",
+            "zhHK": "【前3名：2張SENGOKU門票】",
+            "ko": "[상위 3명: SENGOKU 티켓 2장] ",
+        },
+    ),
+    (
         "JOPTメガサテライト",
         {
             "en": "JOPT Mega Satellite",
@@ -161,6 +171,17 @@ PRIZE_TRANSLATIONS = [
             "zhTW": "JOPT參賽資格",
             "zhHK": "JOPT參賽資格",
             "ko": "JOPT 참가권",
+        },
+    ),
+    (
+        "戦国権利",
+        {
+            "en": "SENGOKU ticket",
+            "ja": "戦国権利",
+            "zh": "SENGOKU参赛资格",
+            "zhTW": "SENGOKU參賽資格",
+            "zhHK": "SENGOKU參賽資格",
+            "ko": "SENGOKU 참가권",
         },
     ),
 ]
