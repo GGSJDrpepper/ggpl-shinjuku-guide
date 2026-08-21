@@ -1672,26 +1672,11 @@ const locales = {
   ptBR: "pt-BR"
 };
 
-const ringSheetBaseUrl = "https://docs.google.com/spreadsheets/d/1e1WeSgafxL98fiBQgBm1_z1Wk96kuF9To5pdTlk_eKI/gviz/tq?tqx=out:json";
-const cashGameBlinds = ["1-3", "2-5", "5-10", "10-20"];
-const cashGameTableGroups = {
-  A: [5, 8],
-  B: [9, 12],
-  C: [13, 16],
-  D: [17, 20],
-  E: [21, 24],
-  F: [25, 28],
-  G: [29, 32],
-  H: [33, 36]
-};
-
 let currentLang = "en";
 let currentFilter = "tournament";
 let currentCashGamePeriod = "day";
 let selectedEventDate = "";
 let events = fallbackEvents;
-let ringGames = null;
-let ringGameRefreshTimer = null;
 
 function textFor(value) {
   if (!value) return "";
@@ -1783,15 +1768,6 @@ function todayInJst() {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
-function todaySheetNameInJst() {
-  const [, month, day] = todayInJst().split("-").map(Number);
-  return `${month}/${day}`;
-}
-
-function currentRingSheetUrl() {
-  return `${ringSheetBaseUrl}&sheet=${encodeURIComponent(todaySheetNameInJst())}`;
-}
-
 function sortedEvents(eventList) {
   return eventList
     .slice()
@@ -1822,211 +1798,6 @@ function combinedValue(...values) {
 
 function pairedValue(primary, secondary) {
   return `${primary || "—"} / ${secondary || "—"}`;
-}
-
-function cellValue(cells, index) {
-  if (!cells?.[index]) return "";
-  const value = cells[index].f ?? cells[index].v ?? "";
-  return String(value).trim();
-}
-
-function formatMinutesAsTime(minutes) {
-  const rounded = Math.max(0, Math.round(minutes));
-  const hour = Math.floor(rounded / 60);
-  const minute = rounded % 60;
-  return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
-}
-
-function formatSheetTime(raw) {
-  const numeric = Number(raw);
-  if (Number.isFinite(numeric)) return formatMinutesAsTime(numeric * 60);
-  return String(raw || "");
-}
-
-function timeToMinutes(value) {
-  const [hour, minute = "0"] = String(value).split(":");
-  const parsedHour = Number(hour);
-  const parsedMinute = Number(minute);
-  if (!Number.isFinite(parsedHour) || !Number.isFinite(parsedMinute)) return 0;
-  return parsedHour * 60 + parsedMinute;
-}
-
-function jstTimeParts(date = new Date()) {
-  const parts = new Intl.DateTimeFormat("en-US", {
-    timeZone: "Asia/Tokyo",
-    weekday: "short",
-    hour: "2-digit",
-    minute: "2-digit",
-    hourCycle: "h23"
-  }).formatToParts(date);
-  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
-  const dayIndex = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(values.weekday);
-  const hour = Number(values.hour);
-  const minute = Number(values.minute);
-  return {
-    dayIndex,
-    minutes: hour * 60 + minute,
-    label: `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`
-  };
-}
-
-function storeScheduleForDay(dayIndex) {
-  if (dayIndex >= 1 && dayIndex <= 4) return { start: 13 * 60, end: 23 * 60 + 30 };
-  if (dayIndex === 5) return { start: 13 * 60, end: 29 * 60 };
-  if (dayIndex === 6) return { start: 11 * 60, end: 29 * 60 };
-  return { start: 11 * 60, end: 23 * 60 + 30 };
-}
-
-function currentStoreState(date = new Date()) {
-  const parts = jstTimeParts(date);
-  const todaySchedule = storeScheduleForDay(parts.dayIndex);
-  const previousSchedule = storeScheduleForDay((parts.dayIndex + 6) % 7);
-
-  if (parts.minutes >= todaySchedule.start && parts.minutes < todaySchedule.end) {
-    return { isOpen: true, sheetMinutes: parts.minutes, currentTime: parts.label };
-  }
-
-  if (previousSchedule.end > 24 * 60 && parts.minutes + 24 * 60 < previousSchedule.end) {
-    return { isOpen: true, sheetMinutes: parts.minutes + 24 * 60, currentTime: parts.label };
-  }
-
-  return { isOpen: false, sheetMinutes: parts.minutes, currentTime: parts.label };
-}
-
-function loadGoogleSheetJsonp(url) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    const previousGoogle = window.google;
-    let timeoutId;
-
-    const cleanup = () => {
-      window.clearTimeout(timeoutId);
-      script.remove();
-      if (previousGoogle === undefined) {
-        delete window.google;
-      } else {
-        window.google = previousGoogle;
-      }
-    };
-
-    window.google = window.google || {};
-    window.google.visualization = window.google.visualization || {};
-    window.google.visualization.Query = window.google.visualization.Query || {};
-    window.google.visualization.Query.setResponse = (data) => {
-      cleanup();
-      resolve(data);
-    };
-
-    timeoutId = window.setTimeout(() => {
-      cleanup();
-      reject(new Error("Google Sheets JSONP timed out"));
-    }, 8000);
-
-    script.async = true;
-    script.onerror = () => {
-      cleanup();
-      reject(new Error("Google Sheets JSONP failed"));
-    };
-    script.src = `${url}&_=${Date.now()}`;
-    document.head.appendChild(script);
-  });
-}
-
-function groupedCashGames(active) {
-  return cashGameBlinds.map((blind) => ({
-    blind,
-    tableCount: [...active.values()].filter((activeBlind) => activeBlind === blind).length
-  }));
-}
-
-function parseRingGameTimeline(data) {
-  const rows = data?.table?.rows || [];
-  const active = new Map();
-  const timeline = [];
-
-  rows.slice(3).forEach((row) => {
-    const cells = row.c || [];
-    const rawTime = cellValue(cells, 4);
-    if (!rawTime) return;
-    const time = formatSheetTime(rawTime);
-    if (!/^\d{1,2}:\d{2}$/.test(time)) return;
-
-    Object.entries(cashGameTableGroups).forEach(([table, [start, end]]) => {
-      const name = cellValue(cells, start);
-      const players = cellValue(cells, end - 1);
-      const game = cellValue(cells, end);
-
-      if (cashGameBlinds.includes(game)) {
-        active.set(table, game);
-      } else if (game) {
-        active.delete(table);
-      }
-
-      if (name === "〆" || players === "〆" || game === "〆" || players === "0") {
-        active.delete(table);
-      }
-    });
-
-    const games = groupedCashGames(active);
-    timeline.push({ time, games });
-  });
-
-  return timeline;
-}
-
-function emptyCashGameSnapshot(time = "") {
-  return {
-    time,
-    games: cashGameBlinds.map((blind) => ({ blind, tableCount: 0 }))
-  };
-}
-
-function currentRingGameSnapshot(timeline, sheetMinutes) {
-  if (!timeline?.length) return emptyCashGameSnapshot(formatMinutesAsTime(sheetMinutes));
-  const candidates = timeline.filter((entry) => timeToMinutes(entry.time) <= sheetMinutes);
-  return candidates.length ? candidates[candidates.length - 1] : emptyCashGameSnapshot(formatMinutesAsTime(sheetMinutes));
-}
-
-function buildRingGamesFromSheet(data) {
-  const timeline = parseRingGameTimeline(data);
-  const storeState = currentStoreState();
-  return {
-    source: "Google Sheets",
-    targetBlinds: cashGameBlinds,
-    isOpen: storeState.isOpen,
-    currentTime: storeState.currentTime,
-    current: currentRingGameSnapshot(timeline, storeState.sheetMinutes),
-    timeline
-  };
-}
-
-function refreshRingGameCurrent() {
-  if (!ringGames) return;
-  const storeState = currentStoreState();
-  ringGames = {
-    ...ringGames,
-    isOpen: storeState.isOpen,
-    currentTime: storeState.currentTime,
-    current: currentRingGameSnapshot(ringGames.timeline || [], storeState.sheetMinutes)
-  };
-
-  if (currentFilter === "ring") {
-    renderEvents();
-  }
-}
-
-function cashGameCountLabel(count) {
-  if (count === 0) return t("cashGameClosed");
-  if (["ja", "zh", "zhTW", "zhHK", "ko"].includes(currentLang)) {
-    return `${count}${t("cashGameTablePlural")}`;
-  }
-  return `${count} ${count === 1 ? t("cashGameTableSingular") : t("cashGameTablePlural")}`;
-}
-
-function tableCountForGame(game) {
-  if (typeof game?.tableCount === "number") return game.tableCount;
-  if (Array.isArray(game?.tables)) return game.tables.length;
-  return 0;
 }
 
 function cashGamePeriodData(event) {
@@ -2201,37 +1972,6 @@ function renderCashGameRates(rates) {
   `;
 }
 
-function renderCashGameStatus() {
-  const current = ringGames?.current;
-  if (!current) {
-    return `<div class="cash-game-status"><p>${t("cashGameNoData")}</p></div>`;
-  }
-
-  const isOpen = Boolean(ringGames?.isOpen);
-  const gameMap = new Map(current.games.map((game) => [game.blind, tableCountForGame(game)]));
-  const blinds = ringGames.targetBlinds || cashGameBlinds;
-  const rows = blinds.map((blind) => {
-    const count = isOpen ? gameMap.get(blind) || 0 : 0;
-    return `
-      <div class="cash-game-row">
-        <strong>${escapeHtml(blind)}</strong>
-        <div><span class="${count ? "" : "cash-game-closed"}">${cashGameCountLabel(count)}</span></div>
-      </div>
-    `;
-  }).join("");
-
-  return `
-    <section class="cash-game-status ${isOpen ? "" : "is-closed"}" aria-label="${t("cashGameStatusTitle")}">
-      <div class="cash-game-status-head">
-        <strong>${t("cashGameStatusTitle")}</strong>
-        <span>${t("cashGameStatusTime")} ${escapeHtml(ringGames.currentTime || current.time || ringGames.asOf || "")}</span>
-      </div>
-      <div class="cash-game-grid">${rows}</div>
-      ${isOpen ? "" : `<div class="cash-game-veil"><strong>${t("cashGameClosedOverlay")}</strong></div>`}
-    </section>
-  `;
-}
-
 function renderEvents() {
   const list = document.querySelector("#event-list");
   const filteredByCategory = events.filter((event) => currentFilter === "all" || event.category === currentFilter);
@@ -2310,7 +2050,7 @@ function renderEvents() {
             ${isCashGame ? renderCashGameRates(cashGameData.rates) : ""}
             ${isCashGame ? renderCashGameChipInfo(cashGameData) : ""}
             ${isCashGame ? renderCashGamePeriodNotice(cashGameData.notice) : ""}
-            ${isCashGame ? (currentCashGamePeriod === "night" ? renderLateNightAvailability() : renderCashGameStatus()) : ""}
+            ${isCashGame && currentCashGamePeriod === "night" ? renderLateNightAvailability() : ""}
             ${metaItems ? `<dl class="event-meta">${metaItems}</dl>` : ""}
           </div>
           ${isCashGame ? "" : `<a class="event-action" href="${event.link}" target="_blank" rel="noopener">${t("eventApply")}</a>`}
@@ -2334,28 +2074,6 @@ async function loadEvents() {
   } catch (error) {
     events = fallbackEvents;
   }
-  renderEvents();
-}
-
-async function loadRingGames() {
-  try {
-    const sheetData = await loadGoogleSheetJsonp(currentRingSheetUrl());
-    ringGames = buildRingGamesFromSheet(sheetData);
-  } catch (sheetError) {
-    try {
-      const response = await fetch("ring-games.json", { cache: "no-store" });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      ringGames = await response.json();
-      refreshRingGameCurrent();
-    } catch (jsonError) {
-      ringGames = null;
-    }
-  }
-
-  if (!ringGameRefreshTimer) {
-    ringGameRefreshTimer = window.setInterval(refreshRingGameCurrent, 60000);
-  }
-
   renderEvents();
 }
 
@@ -2403,4 +2121,3 @@ document.addEventListener("click", (event) => {
 
 applyLanguage(currentLang);
 loadEvents();
-loadRingGames();

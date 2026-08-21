@@ -915,78 +915,6 @@ a {
   overflow-wrap: anywhere;
 }
 
-.cash-game-status {
-  position: relative;
-  overflow: hidden;
-  margin-top: 18px;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--control-soft);
-}
-
-.cash-game-status p {
-  margin: 0;
-}
-
-.cash-game-status-head {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 8px 14px;
-  align-items: baseline;
-  margin-bottom: 12px;
-}
-
-.cash-game-status-head strong {
-  font-size: 15px;
-}
-
-.cash-game-status-head span {
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.cash-game-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(120px, 1fr));
-  gap: 10px;
-}
-
-.cash-game-status.is-closed .cash-game-grid {
-  opacity: 0.45;
-}
-
-.cash-game-row {
-  display: grid;
-  gap: 8px;
-  min-height: 82px;
-  padding: 12px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--white);
-}
-
-.cash-game-row > strong {
-  font-size: 20px;
-  line-height: 1;
-}
-
-.cash-game-row div {
-  display: grid;
-  gap: 5px;
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.35;
-}
-
-.cash-game-closed {
-  color: var(--muted);
-  font-weight: 700;
-}
-
 .cash-game-rates {
   margin-top: 14px;
   padding: 12px;
@@ -1163,29 +1091,6 @@ a {
   font-size: 13px;
   font-weight: 800;
   line-height: 1.45;
-}
-
-.cash-game-veil {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.48);
-  color: var(--ink);
-  text-align: center;
-  backdrop-filter: blur(1px);
-}
-
-.cash-game-veil strong {
-  display: inline-block;
-  max-width: min(100%, 320px);
-  padding: 10px 14px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.76);
-  font-size: 15px;
-  line-height: 1.35;
 }
 
 .event-action {
@@ -1400,10 +1305,6 @@ a {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
 
-  .cash-game-grid {
-    grid-template-columns: repeat(2, minmax(120px, 1fr));
-  }
-
   .cash-game-rate-grid {
     grid-template-columns: repeat(2, minmax(130px, 1fr));
   }
@@ -1604,10 +1505,6 @@ a {
   }
 
   .event-meta {
-    grid-template-columns: 1fr;
-  }
-
-  .cash-game-grid {
     grid-template-columns: 1fr;
   }
 

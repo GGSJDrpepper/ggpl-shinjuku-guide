@@ -14,9 +14,8 @@ The site includes `noindex,nofollow` and `robots.txt` so search engines are aske
 
 - `outputs/site/index.html`: page structure and content
 - `outputs/site/styles.css`: visual design
-- `outputs/site/app.js`: language switching, tournament display, ring game display, Game ID guide
+- `outputs/site/app.js`: language switching, tournament display, amusement cash game price/rate display, Game ID guide
 - `outputs/site/events.json`: tournament fallback data
-- `outputs/site/ring-games.json`: amusement cash game fallback data
 - `outputs/site/tools/`: scripts for updating imported data
 - `docs/`: GitHub Pages publish copy
 
