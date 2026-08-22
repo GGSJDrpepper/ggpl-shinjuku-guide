@@ -1,155 +1,5 @@
 [
   {
-    "id": "daily-ring-game",
-    "category": "ring",
-    "date": "2026-08-22",
-    "start": "13:00",
-    "late": "",
-    "title": {
-      "en": "Ring Game Tables",
-      "ja": "リングゲーム",
-      "zh": "现金桌风格娱乐局",
-      "zhTW": "娛樂桌局",
-      "zhHK": "娛樂桌局",
-      "ko": "링 게임"
-    },
-    "description": {
-      "en": "Our ring game is certified by Global Point LLC.\nPlease ask staff how held chips are evaluated for Web Coin.",
-      "ja": "当店は、合同グローバルポイント社の認定リングゲームとなっております。\n預かりチップのウェブコインへの評価基準はスタッフにお尋ねください",
-      "zh": "本店的桌局为 Global Point LLC 认证的环桌游戏。\n关于寄存筹码如何评估为 Web Coin，请向工作人员咨询。",
-      "zhTW": "本店的桌局為 Global Point LLC 認證的環桌遊戲。\n關於寄存籌碼如何評估為 Web Coin，請向工作人員洽詢。",
-      "zhHK": "本店的桌局為 Global Point LLC 認證的環桌遊戲。\n關於寄存籌碼如何評估為 Web Coin，請向職員查詢。",
-      "ko": "본 매장의 링 게임은 Global Point LLC 인증 링 게임입니다.\n보관 칩이 Web Coin으로 평가되는 기준은 직원에게 문의해 주세요."
-    },
-    "rates": [
-      {
-        "game": "NLH",
-        "blind": "1-3",
-        "ante": "3",
-        "maximum": "600 chips"
-      },
-      {
-        "game": "NLH",
-        "blind": "2-5",
-        "ante": "5",
-        "maximum": "1,000 chips"
-      },
-      {
-        "game": "NLH",
-        "blind": "5-10",
-        "ante": "10",
-        "maximum": "2,000 chips"
-      },
-      {
-        "game": "NLH",
-        "blind": "5-10-20",
-        "ante": "",
-        "maximum": "4,000 chips"
-      }
-    ],
-    "chipPurchase": [
-      {
-        "chips": "250",
-        "price": "3,000"
-      },
-      {
-        "chips": "600",
-        "price": "5,000"
-      },
-      {
-        "chips": "1,300",
-        "price": "10,000"
-      }
-    ],
-    "chipWithdrawal": [
-      {
-        "chips": "600",
-        "price": "2,000",
-        "upTo": true
-      },
-      {
-        "chips": "1,000",
-        "price": "3,000",
-        "upTo": true
-      },
-      {
-        "chips": "2,000",
-        "price": "4,000",
-        "upTo": true
-      },
-      {
-        "chips": "unlimited",
-        "price": "5,000"
-      },
-      {
-        "chips": "300",
-        "price": "1,000",
-        "upTo": true,
-        "note": "rebuyOnly"
-      }
-    ],
-    "nightRates": [
-      {
-        "game": "NLH",
-        "blind": "2-5",
-        "ante": "5",
-        "maximum": "1,000 chips"
-      },
-      {
-        "game": "NLH",
-        "blind": "5-10",
-        "ante": "10",
-        "maximum": "2,000 chips"
-      },
-      {
-        "game": "NLH",
-        "blind": "5-10-20",
-        "ante": "",
-        "maximum": "4,000 chips"
-      }
-    ],
-    "nightChipPurchase": [
-      {
-        "chips": "600",
-        "price": "5,000"
-      },
-      {
-        "chips": "1,000",
-        "price": "8,000"
-      },
-      {
-        "chips": "1,300",
-        "price": "10,000"
-      }
-    ],
-    "nightChipWithdrawal": [
-      {
-        "chips": "1,000",
-        "price": "3,000",
-        "upTo": true
-      },
-      {
-        "chips": "2,000",
-        "price": "4,000",
-        "upTo": true
-      }
-    ],
-    "nightNotice": {
-      "en": "Late-night rates and chip prices will be shown here once confirmed.",
-      "ja": "深夜営業のレート・料金は確認後に掲載します。",
-      "zh": "深夜营业的级别和筹码价格确认后将在此显示。",
-      "zhTW": "深夜營業的級別和籌碼價格確認後將在此顯示。",
-      "zhHK": "深夜營業的級別和籌碼價格確認後將在此顯示。",
-      "ko": "심야 영업의 레이트와 칩 가격은 확인 후 여기에 표시됩니다."
-    },
-    "entry": "Ask staff",
-    "reEntry": "",
-    "addon": "",
-    "game": "No Limit Texas Hold'em",
-    "stack": "",
-    "link": "https://liff.line.me/1645278921-kWRPP32q/?accountId=805vfpmc"
-  },
-  {
     "id": "pokerguild-24636",
     "source": "PokerGuild",
     "sourceId": "24636",
@@ -385,6 +235,156 @@
     ],
     "end": "19:30",
     "link": "https://pokerguild.jp/tournament?ik=24636"
+  },
+  {
+    "id": "daily-ring-game",
+    "category": "ring",
+    "date": "2026-08-23",
+    "start": "13:00",
+    "late": "",
+    "title": {
+      "en": "Ring Game Tables",
+      "ja": "リングゲーム",
+      "zh": "现金桌风格娱乐局",
+      "zhTW": "娛樂桌局",
+      "zhHK": "娛樂桌局",
+      "ko": "링 게임"
+    },
+    "description": {
+      "en": "Our ring game is certified by Global Point LLC.\nPlease ask staff how held chips are evaluated for Web Coin.",
+      "ja": "当店は、合同グローバルポイント社の認定リングゲームとなっております。\n預かりチップのウェブコインへの評価基準はスタッフにお尋ねください",
+      "zh": "本店的桌局为 Global Point LLC 认证的环桌游戏。\n关于寄存筹码如何评估为 Web Coin，请向工作人员咨询。",
+      "zhTW": "本店的桌局為 Global Point LLC 認證的環桌遊戲。\n關於寄存籌碼如何評估為 Web Coin，請向工作人員洽詢。",
+      "zhHK": "本店的桌局為 Global Point LLC 認證的環桌遊戲。\n關於寄存籌碼如何評估為 Web Coin，請向職員查詢。",
+      "ko": "본 매장의 링 게임은 Global Point LLC 인증 링 게임입니다.\n보관 칩이 Web Coin으로 평가되는 기준은 직원에게 문의해 주세요."
+    },
+    "rates": [
+      {
+        "game": "NLH",
+        "blind": "1-3",
+        "ante": "3",
+        "maximum": "600 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "2-5",
+        "ante": "5",
+        "maximum": "1,000 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "5-10",
+        "ante": "10",
+        "maximum": "2,000 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "5-10-20",
+        "ante": "",
+        "maximum": "4,000 chips"
+      }
+    ],
+    "chipPurchase": [
+      {
+        "chips": "250",
+        "price": "3,000"
+      },
+      {
+        "chips": "600",
+        "price": "5,000"
+      },
+      {
+        "chips": "1,300",
+        "price": "10,000"
+      }
+    ],
+    "chipWithdrawal": [
+      {
+        "chips": "600",
+        "price": "2,000",
+        "upTo": true
+      },
+      {
+        "chips": "1,000",
+        "price": "3,000",
+        "upTo": true
+      },
+      {
+        "chips": "2,000",
+        "price": "4,000",
+        "upTo": true
+      },
+      {
+        "chips": "unlimited",
+        "price": "5,000"
+      },
+      {
+        "chips": "300",
+        "price": "1,000",
+        "upTo": true,
+        "note": "rebuyOnly"
+      }
+    ],
+    "nightRates": [
+      {
+        "game": "NLH",
+        "blind": "2-5",
+        "ante": "5",
+        "maximum": "1,000 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "5-10",
+        "ante": "10",
+        "maximum": "2,000 chips"
+      },
+      {
+        "game": "NLH",
+        "blind": "5-10-20",
+        "ante": "",
+        "maximum": "4,000 chips"
+      }
+    ],
+    "nightChipPurchase": [
+      {
+        "chips": "600",
+        "price": "5,000"
+      },
+      {
+        "chips": "1,000",
+        "price": "8,000"
+      },
+      {
+        "chips": "1,300",
+        "price": "10,000"
+      }
+    ],
+    "nightChipWithdrawal": [
+      {
+        "chips": "1,000",
+        "price": "3,000",
+        "upTo": true
+      },
+      {
+        "chips": "2,000",
+        "price": "4,000",
+        "upTo": true
+      }
+    ],
+    "nightNotice": {
+      "en": "Late-night rates and chip prices will be shown here once confirmed.",
+      "ja": "深夜営業のレート・料金は確認後に掲載します。",
+      "zh": "深夜营业的级别和筹码价格确认后将在此显示。",
+      "zhTW": "深夜營業的級別和籌碼價格確認後將在此顯示。",
+      "zhHK": "深夜營業的級別和籌碼價格確認後將在此顯示。",
+      "ko": "심야 영업의 레이트와 칩 가격은 확인 후 여기에 표시됩니다."
+    },
+    "entry": "Ask staff",
+    "reEntry": "",
+    "addon": "",
+    "game": "No Limit Texas Hold'em",
+    "stack": "",
+    "link": "https://liff.line.me/1645278921-kWRPP32q/?accountId=805vfpmc"
   },
   {
     "id": "pokerguild-24638",
@@ -2487,5 +2487,128 @@
     "prizeDetails": [],
     "end": "23:30",
     "link": "https://pokerguild.jp/tournament?ik=24128"
+  },
+  {
+    "id": "pokerguild-24734",
+    "source": "PokerGuild",
+    "sourceId": "24734",
+    "category": "tournament",
+    "date": "2026-08-29",
+    "start": "12:00",
+    "late": "16:30",
+    "title": {
+      "en": "GGPL SHINJUKU 2nd ANNIVERSARY #03 Monster Stack 10K",
+      "ja": "GGPL SHINJUKU 2nd ANNIVERSARY #03 Monster Stack 10K",
+      "zh": "GGPL SHINJUKU 2nd ANNIVERSARY #03 Monster Stack 10K",
+      "zhTW": "GGPL SHINJUKU 2nd ANNIVERSARY #03 Monster Stack 10K",
+      "zhHK": "GGPL SHINJUKU 2nd ANNIVERSARY #03 Monster Stack 10K",
+      "ko": "GGPL SHINJUKU 2nd ANNIVERSARY #03 Monster Stack 10K"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 19:30. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 19:30。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 19:30。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 19:30。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 19:30。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 19:30. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "10,000 JPY",
+    "reEntry": "10,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "50,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "prizeDetails": [],
+    "end": "19:30",
+    "link": "https://pokerguild.jp/tournament?ik=24734"
+  },
+  {
+    "id": "pokerguild-24736",
+    "source": "PokerGuild",
+    "sourceId": "24736",
+    "category": "tournament",
+    "date": "2026-08-29",
+    "start": "17:45",
+    "late": "20:55",
+    "title": {
+      "en": "GGPL SHINJUKU 2nd ANNIVERSARY #04 Super Stack 7K",
+      "ja": "GGPL SHINJUKU 2nd ANNIVERSARY #04 Super Stack 7K",
+      "zh": "GGPL SHINJUKU 2nd ANNIVERSARY #04 Super Stack 7K",
+      "zhTW": "GGPL SHINJUKU 2nd ANNIVERSARY #04 Super Stack 7K",
+      "zhHK": "GGPL SHINJUKU 2nd ANNIVERSARY #04 Super Stack 7K",
+      "ko": "GGPL SHINJUKU 2nd ANNIVERSARY #04 Super Stack 7K"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 22:50. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 22:50。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 22:50。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 22:50。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 22:50。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 22:50. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "7,000 JPY",
+    "reEntry": "7,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "40,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "prizeDetails": [],
+    "end": "22:50",
+    "link": "https://pokerguild.jp/tournament?ik=24736"
+  },
+  {
+    "id": "pokerguild-24735",
+    "source": "PokerGuild",
+    "sourceId": "24735",
+    "category": "tournament",
+    "date": "2026-08-29",
+    "start": "21:15",
+    "late": "22:30",
+    "title": {
+      "en": "GGPL SHINJUKU 2nd ANNIVERSARY #05 GG Turbo 3K",
+      "ja": "GGPL SHINJUKU 2nd ANNIVERSARY #05 GG Turbo 3K",
+      "zh": "GGPL SHINJUKU 2nd ANNIVERSARY #05 GG Turbo 3K",
+      "zhTW": "GGPL SHINJUKU 2nd ANNIVERSARY #05 GG Turbo 3K",
+      "zhHK": "GGPL SHINJUKU 2nd ANNIVERSARY #05 GG Turbo 3K",
+      "ko": "GGPL SHINJUKU 2nd ANNIVERSARY #05 GG Turbo 3K"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 23:30. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 23:30。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 23:30。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 23:30。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 23:30。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 23:30. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,000 JPY",
+    "reEntry": "3,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "15,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "prizeDetails": [],
+    "end": "23:30",
+    "link": "https://pokerguild.jp/tournament?ik=24735"
   }
 ]
