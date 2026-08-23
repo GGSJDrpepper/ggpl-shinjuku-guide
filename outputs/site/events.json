@@ -2,7 +2,7 @@
   {
     "id": "daily-ring-game",
     "category": "ring",
-    "date": "2026-08-23",
+    "date": "2026-08-24",
     "start": "13:00",
     "late": "",
     "title": {
@@ -2151,5 +2151,87 @@
     "prizeDetails": [],
     "end": "23:30",
     "link": "https://pokerguild.jp/tournament?ik=24735"
+  },
+  {
+    "id": "pokerguild-24028",
+    "source": "PokerGuild",
+    "sourceId": "24028",
+    "category": "tournament",
+    "date": "2026-08-30",
+    "start": "11:30",
+    "late": "16:50",
+    "title": {
+      "en": "GGPL SHINJUKU 2nd ANNIVERSARY #06 Main Event 15k",
+      "ja": "GGPL SHINJUKU 2nd ANNIVERSARY #06 Main Event 15k",
+      "zh": "GGPL SHINJUKU 2nd ANNIVERSARY #06 Main Event 15k",
+      "zhTW": "GGPL SHINJUKU 2nd ANNIVERSARY #06 Main Event 15k",
+      "zhHK": "GGPL SHINJUKU 2nd ANNIVERSARY #06 Main Event 15k",
+      "ko": "GGPL SHINJUKU 2nd ANNIVERSARY #06 Main Event 15k"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 22:30. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 22:30。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 22:30。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 22:30。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 22:30。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 22:30. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "15,000 JPY",
+    "reEntry": "15,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "50,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "prizeDetails": [],
+    "end": "22:30",
+    "link": "https://pokerguild.jp/tournament?ik=24028"
+  },
+  {
+    "id": "pokerguild-24737",
+    "source": "PokerGuild",
+    "sourceId": "24737",
+    "category": "tournament",
+    "date": "2026-08-30",
+    "start": "17:45",
+    "late": "20:55",
+    "title": {
+      "en": "GGPL SHINJUKU 2nd ANNIVERSARY #7 Closer 5K -Go To 3rd Year-",
+      "ja": "GGPL SHINJUKU 2nd ANNIVERSARY #7 Closer 5K -Go To 3rd Year-",
+      "zh": "GGPL SHINJUKU 2nd ANNIVERSARY #7 Closer 5K -Go To 3rd Year-",
+      "zhTW": "GGPL SHINJUKU 2nd ANNIVERSARY #7 Closer 5K -Go To 3rd Year-",
+      "zhHK": "GGPL SHINJUKU 2nd ANNIVERSARY #7 Closer 5K -Go To 3rd Year-",
+      "ko": "GGPL SHINJUKU 2nd ANNIVERSARY #7 Closer 5K -Go To 3rd Year-"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 22:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 22:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 22:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 22:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 22:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 22:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "prizeDetails": [],
+    "end": "22:00",
+    "link": "https://pokerguild.jp/tournament?ik=24737"
   }
 ]
