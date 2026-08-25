@@ -2,7 +2,7 @@
   {
     "id": "daily-ring-game",
     "category": "ring",
-    "date": "2026-08-25",
+    "date": "2026-08-26",
     "start": "13:00",
     "late": "",
     "title": {
@@ -1949,5 +1949,289 @@
     ],
     "end": "23:00",
     "link": "https://pokerguild.jp/tournament?ik=24642"
+  },
+  {
+    "id": "pokerguild-27466",
+    "source": "PokerGuild",
+    "sourceId": "27466",
+    "category": "tournament",
+    "date": "2026-09-01",
+    "start": "13:45",
+    "late": "16:45",
+    "title": {
+      "en": "Daily Deep Stack 3K [500 JPY off if seated by the end of Lv.3]",
+      "ja": "Daily Deep Stack 3K【Lv.3終了時までのご着席で500円引き】",
+      "zh": "Daily Deep Stack 3K【在Lv.3结束前入座可优惠500日元】",
+      "zhTW": "Daily Deep Stack 3K【在Lv.3結束前入座可享500日圓優惠】",
+      "zhHK": "Daily Deep Stack 3K【於Lv.3結束前入座可享500日圓優惠】",
+      "ko": "Daily Deep Stack 3K [Lv.3 종료 전 착석 시 500엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 19:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 19:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 19:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 19:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 19:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,000 JPY",
+    "reEntry": "3,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN",
+      "ja": "POKERWEB COIN",
+      "zh": "POKERWEB COIN",
+      "zhTW": "POKERWEB COIN",
+      "zhHK": "POKERWEB COIN",
+      "ko": "POKERWEB COIN"
+    },
+    "prizeDetails": [
+      {
+        "rank": "1st",
+        "items": {
+          "en": [
+            "20,000 Web Coin support"
+          ],
+          "ja": [
+            "20,000 活動支援"
+          ],
+          "zh": [
+            "20,000 Web Coin 支持"
+          ],
+          "zhTW": [
+            "20,000 Web Coin 支援"
+          ],
+          "zhHK": [
+            "20,000 Web Coin 支援"
+          ],
+          "ko": [
+            "20,000 Web Coin 지원"
+          ],
+          "th": [
+            "20,000 การสนับสนุน Web Coin"
+          ],
+          "vi": [
+            "20,000 hỗ trợ Web Coin"
+          ],
+          "id": [
+            "20,000 dukungan Web Coin"
+          ],
+          "tl": [
+            "20,000 Web Coin support"
+          ],
+          "es": [
+            "20,000 apoyo Web Coin"
+          ],
+          "fr": [
+            "20,000 soutien Web Coin"
+          ],
+          "de": [
+            "20,000 Web-Coin-Unterstützung"
+          ],
+          "it": [
+            "20,000 supporto Web Coin"
+          ],
+          "ptBR": [
+            "20,000 apoio em Web Coin"
+          ]
+        }
+      },
+      {
+        "rank": "2nd",
+        "items": {
+          "en": [
+            "10,000 Web Coin support"
+          ],
+          "ja": [
+            "10,000 活動支援"
+          ],
+          "zh": [
+            "10,000 Web Coin 支持"
+          ],
+          "zhTW": [
+            "10,000 Web Coin 支援"
+          ],
+          "zhHK": [
+            "10,000 Web Coin 支援"
+          ],
+          "ko": [
+            "10,000 Web Coin 지원"
+          ],
+          "th": [
+            "10,000 การสนับสนุน Web Coin"
+          ],
+          "vi": [
+            "10,000 hỗ trợ Web Coin"
+          ],
+          "id": [
+            "10,000 dukungan Web Coin"
+          ],
+          "tl": [
+            "10,000 Web Coin support"
+          ],
+          "es": [
+            "10,000 apoyo Web Coin"
+          ],
+          "fr": [
+            "10,000 soutien Web Coin"
+          ],
+          "de": [
+            "10,000 Web-Coin-Unterstützung"
+          ],
+          "it": [
+            "10,000 supporto Web Coin"
+          ],
+          "ptBR": [
+            "10,000 apoio em Web Coin"
+          ]
+        }
+      },
+      {
+        "rank": "3rd",
+        "items": {
+          "en": [
+            "5,000 Web Coin support"
+          ],
+          "ja": [
+            "5,000 活動支援"
+          ],
+          "zh": [
+            "5,000 Web Coin 支持"
+          ],
+          "zhTW": [
+            "5,000 Web Coin 支援"
+          ],
+          "zhHK": [
+            "5,000 Web Coin 支援"
+          ],
+          "ko": [
+            "5,000 Web Coin 지원"
+          ],
+          "th": [
+            "5,000 การสนับสนุน Web Coin"
+          ],
+          "vi": [
+            "5,000 hỗ trợ Web Coin"
+          ],
+          "id": [
+            "5,000 dukungan Web Coin"
+          ],
+          "tl": [
+            "5,000 Web Coin support"
+          ],
+          "es": [
+            "5,000 apoyo Web Coin"
+          ],
+          "fr": [
+            "5,000 soutien Web Coin"
+          ],
+          "de": [
+            "5,000 Web-Coin-Unterstützung"
+          ],
+          "it": [
+            "5,000 supporto Web Coin"
+          ],
+          "ptBR": [
+            "5,000 apoio em Web Coin"
+          ]
+        }
+      }
+    ],
+    "end": "19:00",
+    "link": "https://pokerguild.jp/tournament?ik=27466"
+  },
+  {
+    "id": "pokerguild-27461",
+    "source": "PokerGuild",
+    "sourceId": "27461",
+    "category": "tournament",
+    "date": "2026-09-01",
+    "start": "17:45",
+    "late": "20:55",
+    "title": {
+      "en": "[Top 5: 15 tickets total] JOPT Mega Satellite",
+      "ja": "【上位5名合計15チケット】JOPTメガサテライト",
+      "zh": "【前5名合计15张门票】JOPT大型卫星赛",
+      "zhTW": "【前5名合計15張門票】JOPT大型衛星賽",
+      "zhHK": "【前5名合共15張門票】JOPT大型衛星賽",
+      "ko": "[상위 5명: 총 15장 티켓] JOPT 메가 새틀라이트"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: JOPT ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: JOPT権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: JOPT参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: JOPT參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: JOPT參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: JOPT 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "15,000",
+    "prize": {
+      "en": "JOPT ticket",
+      "ja": "JOPT権利",
+      "zh": "JOPT参赛资格",
+      "zhTW": "JOPT參賽資格",
+      "zhHK": "JOPT參賽資格",
+      "ko": "JOPT 참가권"
+    },
+    "prizeDetails": [
+      {
+        "rank": "上位5名 選出",
+        "items": {
+          "en": [
+            "JOPT 3 TICKET"
+          ],
+          "ja": [
+            "JOPT 3 TICKET"
+          ],
+          "zh": [
+            "JOPT 3 TICKET"
+          ],
+          "zhTW": [
+            "JOPT 3 TICKET"
+          ],
+          "zhHK": [
+            "JOPT 3 TICKET"
+          ],
+          "ko": [
+            "JOPT 3 TICKET"
+          ],
+          "th": [
+            "JOPT 3 TICKET"
+          ],
+          "vi": [
+            "JOPT 3 TICKET"
+          ],
+          "id": [
+            "JOPT 3 TICKET"
+          ],
+          "tl": [
+            "JOPT 3 TICKET"
+          ],
+          "es": [
+            "JOPT 3 TICKET"
+          ],
+          "fr": [
+            "JOPT 3 TICKET"
+          ],
+          "de": [
+            "JOPT 3 TICKET"
+          ],
+          "it": [
+            "JOPT 3 TICKET"
+          ],
+          "ptBR": [
+            "JOPT 3 TICKET"
+          ]
+        }
+      }
+    ],
+    "end": "23:00",
+    "link": "https://pokerguild.jp/tournament?ik=27461"
   }
 ]
