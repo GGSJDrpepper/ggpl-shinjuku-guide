@@ -2,7 +2,7 @@
   {
     "id": "daily-ring-game",
     "category": "ring",
-    "date": "2026-08-30",
+    "date": "2026-08-31",
     "start": "13:00",
     "late": "",
     "title": {
@@ -2727,5 +2727,268 @@
     ],
     "end": "23:00",
     "link": "https://pokerguild.jp/tournament?ik=27936"
+  },
+  {
+    "id": "pokerguild-27503",
+    "source": "PokerGuild",
+    "sourceId": "27503",
+    "category": "tournament",
+    "date": "2026-09-06",
+    "start": "12:00",
+    "late": "17:20",
+    "title": {
+      "en": "戦国ポーカーツアー2026 -秋の陣- 関ヶ原の戦い –Main Event– Day1",
+      "ja": "戦国ポーカーツアー2026 -秋の陣- 関ヶ原の戦い –Main Event– Day1",
+      "zh": "戦国ポーカーツアー2026 -秋の陣- 関ヶ原の戦い –Main Event– Day1",
+      "zhTW": "戦国ポーカーツアー2026 -秋の陣- 関ヶ原の戦い –Main Event– Day1",
+      "zhHK": "戦国ポーカーツアー2026 -秋の陣- 関ヶ原の戦い –Main Event– Day1",
+      "ko": "戦国ポーカーツアー2026 -秋の陣- 関ヶ原の戦い –Main Event– Day1"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Expected end: 20:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。終了予定: 20:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。预计结束: 20:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。預計結束: 20:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。預計結束: 20:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다.  종료 예정: 20:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "50,000",
+    "prize": {
+      "en": "",
+      "ja": "",
+      "zh": "",
+      "zhTW": "",
+      "zhHK": "",
+      "ko": ""
+    },
+    "prizeDetails": [],
+    "end": "20:00",
+    "link": "https://pokerguild.jp/tournament?ik=27503"
+  },
+  {
+    "id": "pokerguild-27937",
+    "source": "PokerGuild",
+    "sourceId": "27937",
+    "category": "tournament",
+    "date": "2026-09-06",
+    "start": "17:00",
+    "late": "20:20",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Holiday NLH 3.5K [1,000 JPY off if seated by the end of Lv.2]",
+      "ja": "【上位2名SPADIE2枚】Holiday NLH 3.5K【Lv.2終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Holiday NLH 3.5K【在Lv.2结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Holiday NLH 3.5K【在Lv.2結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Holiday NLH 3.5K【於Lv.2結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Holiday NLH 3.5K [Lv.2 종료 전 착석 시 1,000엔 할인]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요."
+    },
+    "entry": "3,500 JPY",
+    "reEntry": "3,500 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "30,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권"
+    },
+    "prizeDetails": [
+      {
+        "rank": "1st",
+        "items": {
+          "en": [
+            "20,000 Web Coin support",
+            "2 SPADIE Season 43rd Main Tickets"
+          ],
+          "ja": [
+            "20,000 活動支援",
+            "SPADIE Season 43rd Main Ticket 2枚"
+          ],
+          "zh": [
+            "20,000 Web Coin 支持",
+            "SPADIE Season 43rd Main Ticket 2张"
+          ],
+          "zhTW": [
+            "20,000 Web Coin 支援",
+            "SPADIE Season 43rd Main Ticket 2張"
+          ],
+          "zhHK": [
+            "20,000 Web Coin 支援",
+            "SPADIE Season 43rd Main Ticket 2張"
+          ],
+          "ko": [
+            "20,000 Web Coin 지원",
+            "SPADIE Season 43rd Main Ticket 2장"
+          ],
+          "th": [
+            "20,000 การสนับสนุน Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 ใบ"
+          ],
+          "vi": [
+            "20,000 hỗ trợ Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 vé"
+          ],
+          "id": [
+            "20,000 dukungan Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tiket"
+          ],
+          "tl": [
+            "20,000 Web Coin support",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ],
+          "es": [
+            "20,000 apoyo Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 entradas"
+          ],
+          "fr": [
+            "20,000 soutien Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ],
+          "de": [
+            "20,000 Web-Coin-Unterstützung",
+            "SPADIE Season 43rd Main Ticket 2 Tickets"
+          ],
+          "it": [
+            "20,000 supporto Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 ticket"
+          ],
+          "ptBR": [
+            "20,000 apoio em Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ]
+        }
+      },
+      {
+        "rank": "2nd",
+        "items": {
+          "en": [
+            "12,000 Web Coin support",
+            "2 SPADIE Season 43rd Main Tickets"
+          ],
+          "ja": [
+            "12,000 活動支援",
+            "SPADIE Season 43rd Main Ticket 2枚"
+          ],
+          "zh": [
+            "12,000 Web Coin 支持",
+            "SPADIE Season 43rd Main Ticket 2张"
+          ],
+          "zhTW": [
+            "12,000 Web Coin 支援",
+            "SPADIE Season 43rd Main Ticket 2張"
+          ],
+          "zhHK": [
+            "12,000 Web Coin 支援",
+            "SPADIE Season 43rd Main Ticket 2張"
+          ],
+          "ko": [
+            "12,000 Web Coin 지원",
+            "SPADIE Season 43rd Main Ticket 2장"
+          ],
+          "th": [
+            "12,000 การสนับสนุน Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 ใบ"
+          ],
+          "vi": [
+            "12,000 hỗ trợ Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 vé"
+          ],
+          "id": [
+            "12,000 dukungan Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tiket"
+          ],
+          "tl": [
+            "12,000 Web Coin support",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ],
+          "es": [
+            "12,000 apoyo Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 entradas"
+          ],
+          "fr": [
+            "12,000 soutien Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ],
+          "de": [
+            "12,000 Web-Coin-Unterstützung",
+            "SPADIE Season 43rd Main Ticket 2 Tickets"
+          ],
+          "it": [
+            "12,000 supporto Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 ticket"
+          ],
+          "ptBR": [
+            "12,000 apoio em Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ]
+        }
+      },
+      {
+        "rank": "3rd",
+        "items": {
+          "en": [
+            "8,000 Web Coin support"
+          ],
+          "ja": [
+            "8,000 活動支援"
+          ],
+          "zh": [
+            "8,000 Web Coin 支持"
+          ],
+          "zhTW": [
+            "8,000 Web Coin 支援"
+          ],
+          "zhHK": [
+            "8,000 Web Coin 支援"
+          ],
+          "ko": [
+            "8,000 Web Coin 지원"
+          ],
+          "th": [
+            "8,000 การสนับสนุน Web Coin"
+          ],
+          "vi": [
+            "8,000 hỗ trợ Web Coin"
+          ],
+          "id": [
+            "8,000 dukungan Web Coin"
+          ],
+          "tl": [
+            "8,000 Web Coin support"
+          ],
+          "es": [
+            "8,000 apoyo Web Coin"
+          ],
+          "fr": [
+            "8,000 soutien Web Coin"
+          ],
+          "de": [
+            "8,000 Web-Coin-Unterstützung"
+          ],
+          "it": [
+            "8,000 supporto Web Coin"
+          ],
+          "ptBR": [
+            "8,000 apoio em Web Coin"
+          ]
+        }
+      }
+    ],
+    "end": "23:00",
+    "link": "https://pokerguild.jp/tournament?ik=27937"
   }
 ]
