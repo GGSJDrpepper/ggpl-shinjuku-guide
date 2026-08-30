@@ -207,12 +207,12 @@
       "ko": "#7 Closer 5K -Go To 3rd Year- GGPL SHINJUKU 2nd ANNIVERSARY"
     },
     "description": {
-      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 22:00. Check PokerGuild for full terms.",
-      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 22:00。詳細条件はPokerGuildで確認してください。",
-      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 22:00。完整条件请查看 PokerGuild。",
-      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 22:00。完整條件請查看 PokerGuild。",
-      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 22:00。完整條件請查看 PokerGuild。",
-      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 22:00. 자세한 조건은 PokerGuild에서 확인하세요."
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요."
     },
     "entry": "5,000 JPY",
     "reEntry": "5,000 JPY",
@@ -228,7 +228,7 @@
       "ko": "POKERWEB COIN"
     },
     "prizeDetails": [],
-    "end": "22:00",
+    "end": "23:00",
     "link": "https://pokerguild.jp/tournament?ik=24737"
   },
   {
