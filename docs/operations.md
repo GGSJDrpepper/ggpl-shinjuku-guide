@@ -11,7 +11,7 @@
 
 ## 2. 更新するファイル
 
-- `events.json`: イベント一覧。ここを変更するとページのイベントカードが変わります。現在はPokerGuild取り込みスクリプトで更新できます。
+- `events.json`: 曜日別のトーナメント一覧と、日中・深夜のアミューズメントキャッシュゲーム表。ここを変更するとページのゲーム欄が変わります。
 - `app.js`: 多言語テキスト。サイト全体の文言を増やす場合に編集します。
 - `assets/official-mainvisual.png`: ヒーロー背景と写真レーンで使う横長の店舗写真です。
 - `assets/official-mainvisual-sp.png`: スマホ向けヒーロー背景と写真レーンで使う店舗写真です。
@@ -24,7 +24,7 @@
 {
   "id": "unique-event-id",
   "category": "tournament",
-  "date": "2026-06-14",
+  "weekday": "monday",
   "start": "17:10",
   "late": "20:20",
   "title": { "en": "Event title", "ja": "イベント名" },
@@ -38,21 +38,15 @@
 }
 ```
 
-PokerGuildから本日のトーナメントを取り込む場合:
+PokerGuildの掲載内容を参考に手動更新する場合:
 
 ```sh
 python3 outputs/site/tools/update-pokerguild-events.py
 ```
 
-このスクリプトは `https://pokerguild.jp/room?ik=4&tb=1` を読み込み、GoodGame Poker Live SHINJUKUの今日以降のトーナメントを `events.json` に出力します。ページ本体はPokerGuildを直接読まず、軽い `events.json` だけを読むため表示速度を保ちやすいです。
+このスクリプトは `https://pokerguild.jp/room?ik=4&tb=1` を読み込み、GoodGame Poker Live SHINJUKUの今日以降のトーナメントを `events.json` に出力します。現在の公開ページは、受付用iPadで安定して使えるように、PokerGuildを毎回直接読まず、確認済みの曜日別固定データを表示する仕様です。
 
-標準では今日から14日先までの掲載分を取り込みます。期間を変える場合は `--days 7` のように指定します。
-
-現在はGitHub Actionsでも自動更新します。`.github/workflows/update-pokerguild-events.yml` が30分ごとにスクリプトを実行し、`outputs/site/events.json` と `docs/events.json` を更新します。変更がある場合だけ自動コミットされ、GitHub Pagesが再公開します。
-
-急ぎで更新したい場合は、GitHubの `Actions` → `Update PokerGuild events` → `Run workflow` から手動実行できます。
-
-自動コミットに失敗する場合は、GitHubの `Settings` → `Actions` → `General` → `Workflow permissions` を `Read and write permissions` に変更してください。
+スクリプトを実行した場合は、曜日別に整理し直してから公開してください。あわせて `app.js` 内の予備データも同じ内容にすると、HTMLを直接開いた場合も同じ表示になります。
 
 ## 3. 次の制作ステップ
 
@@ -66,7 +60,7 @@ python3 outputs/site/tools/update-pokerguild-events.py
    年齢確認、支払い方法、初心者講習の実施条件、言語対応、服装、飲食、キャンセル条件を確認します。
 
 4. イベント更新方式を決める  
-   月1回程度なら JSON 手更新で十分。週数回以上なら WordPress、microCMS、STUDIO、Webflow CMS などに移行します。
+   基本は曜日別の固定JSON更新で十分です。毎週内容が大きく変わる運用になった場合だけ、CMSや予約システム連携を検討します。
 
 5. URL 設計を決める  
    本番では `/en/` `/ja/` `/zh/` `/ko/` のような言語別 URL にすると検索と共有がしやすいです。

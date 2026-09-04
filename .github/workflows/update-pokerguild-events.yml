@@ -1,14 +1,6 @@
-name: Update PokerGuild events
+name: Manual PokerGuild event import
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/update-pokerguild-events.yml"
-      - "outputs/site/tools/update-pokerguild-events.py"
-  schedule:
-    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:

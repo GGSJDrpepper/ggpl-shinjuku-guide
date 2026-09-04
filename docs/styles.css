@@ -857,6 +857,33 @@ a {
   justify-content: center;
 }
 
+.event-weekday-nav {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(70px, 1fr));
+  gap: 8px;
+  align-items: stretch;
+}
+
+.event-weekday-nav button {
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.15;
+  cursor: pointer;
+}
+
+.event-weekday-nav button[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--white);
+}
+
 .cash-game-period-nav {
   display: inline-grid;
   grid-template-columns: repeat(2, minmax(128px, 1fr));
@@ -1583,6 +1610,10 @@ a {
     grid-template-columns: repeat(2, minmax(120px, 1fr));
   }
 
+  .event-weekday-nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .prize-rank-grid {
     grid-template-columns: 1fr;
   }
@@ -1789,6 +1820,17 @@ a {
 
   .cash-game-period-nav button {
     padding: 8px 10px;
+  }
+
+  .event-weekday-nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .event-weekday-nav button {
+    min-height: 40px;
+    padding: 7px 8px;
+    font-size: 12px;
   }
 
   .event-meta {
