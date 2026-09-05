@@ -1,45 +1,45 @@
 [
   {
-    "id": "pokerguild-27488",
+    "id": "pokerguild-27503",
     "source": "PokerGuild",
-    "sourceId": "27488",
+    "sourceId": "27503",
     "category": "tournament",
-    "date": "2026-09-05",
+    "date": "2026-09-06",
     "start": "12:00",
-    "late": "16:30",
+    "late": "17:20",
     "title": {
-      "en": "[Top 4: 2 SENGOKU tickets] Holiday Big 5K [1,000 JPY off if seated by the end of Lv.3]",
-      "ja": "【上位4名戦国2枚】Holiday Big 5K【Lv.3終了時までのご着席で1,000円引き】",
-      "zh": "【前4名：2张SENGOKU门票】Holiday Big 5K【在Lv.3结束前入座可优惠1,000日元】",
-      "zhTW": "【前4名：2張SENGOKU門票】Holiday Big 5K【在Lv.3結束前入座可享1,000日圓優惠】",
-      "zhHK": "【前4名：2張SENGOKU門票】Holiday Big 5K【於Lv.3結束前入座可享1,000日圓優惠】",
-      "ko": "[상위 4명: SENGOKU 티켓 2장] Holiday Big 5K [Lv.3 종료 전 착석 시 1,000엔 할인]",
-      "th": "[Top 4: ตั๋ว SENGOKU 2 ใบ] Holiday Big 5K [ลด 1,000 เยน หากนั่งก่อนจบ Lv.3]",
-      "vi": "[Top 4: 2 vé SENGOKU] Holiday Big 5K [giảm 1.000 yên nếu ngồi trước khi Lv.3 kết thúc]",
-      "id": "[Top 4: 2 tiket SENGOKU] Holiday Big 5K [diskon 1.000 yen jika duduk sebelum Lv.3 berakhir]",
-      "tl": "[Top 4: 2 SENGOKU tickets] Holiday Big 5K [1,000 yen discount if seated before Lv.3 ends]",
-      "es": "[Top 4: 2 entradas SENGOKU] Holiday Big 5K [1.000 yenes de descuento si te sientas antes de terminar Lv.3]",
-      "fr": "[Top 4 : 2 tickets SENGOKU] Holiday Big 5K [1 000 yens de réduction si assis avant la fin du Lv.3]",
-      "de": "[Top 4: 2 SENGOKU-Tickets] Holiday Big 5K [1.000 Yen Rabatt bei Sitzplatz bis Ende Lv.3]",
-      "it": "[Top 4: 2 ticket SENGOKU] Holiday Big 5K [sconto di 1.000 yen se ti siedi entro la fine del Lv.3]",
-      "ptBR": "[Top 4: 2 tickets SENGOKU] Holiday Big 5K [desconto de 1.000 ienes se sentado antes do fim do Lv.3]"
+      "en": "SENGOKU Poker Tour 2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "ja": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "zh": "战国扑克巡回赛2026 -秋之阵- 关原之战 –Main Event– Day1",
+      "zhTW": "戰國撲克巡迴賽2026 -秋之陣- 關原之戰 –Main Event– Day1",
+      "zhHK": "戰國撲克巡迴賽2026 -秋之陣- 關原之戰 –Main Event– Day1",
+      "ko": "센고쿠 포커 투어2026 -가을의 진- 세키가하라 전투 –Main Event– Day1",
+      "th": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "vi": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "id": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "tl": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "es": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "fr": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "de": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "it": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
+      "ptBR": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1"
     },
     "description": {
-      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SENGOKU ticket. Expected end: 19:30. Check PokerGuild for full terms.",
-      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・戦国権利。終了予定: 19:30。詳細条件はPokerGuildで確認してください。",
-      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SENGOKU参赛资格。预计结束: 19:30。完整条件请查看 PokerGuild。",
-      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SENGOKU參賽資格。預計結束: 19:30。完整條件請查看 PokerGuild。",
-      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SENGOKU參賽資格。預計結束: 19:30。完整條件請查看 PokerGuild。",
-      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SENGOKU 참가권. 종료 예정: 19:30. 자세한 조건은 PokerGuild에서 확인하세요.",
-      "th": "ข้อมูลนี้นำเข้าจาก PokerGuild สำหรับ GoodGame Poker Live Shinjuku. รางวัล: POKERWEB COIN・SENGOKU ticket. เวลาจบโดยประมาณ: 19:30. โปรดตรวจสอบเงื่อนไขทั้งหมดใน PokerGuild.",
-      "vi": "Thông tin được nhập từ PokerGuild cho GoodGame Poker Live Shinjuku. Giải thưởng: POKERWEB COIN・vé SENGOKU. Dự kiến kết thúc: 19:30. Vui lòng kiểm tra điều kiện đầy đủ trên PokerGuild.",
-      "id": "Informasi ini diimpor dari PokerGuild untuk GoodGame Poker Live Shinjuku. Hadiah: POKERWEB COIN・tiket SENGOKU. Perkiraan selesai: 19:30. Periksa PokerGuild untuk syarat lengkap.",
-      "tl": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN・SENGOKU ticket. Expected end: 19:30. Check PokerGuild for full terms.",
-      "es": "Importado desde PokerGuild para GoodGame Poker Live Shinjuku. Premio: POKERWEB COIN・entrada SENGOKU. Final estimado: 19:30. Consulta PokerGuild para ver todos los términos.",
-      "fr": "Importé depuis PokerGuild pour GoodGame Poker Live Shinjuku. Prix : POKERWEB COIN・ticket SENGOKU. Fin estimée : 19:30. Consultez PokerGuild pour les conditions complètes.",
-      "de": "Von PokerGuild für GoodGame Poker Live Shinjuku importiert. Preis: POKERWEB COIN・SENGOKU-Ticket. Voraussichtliches Ende: 19:30. Vollständige Bedingungen auf PokerGuild prüfen.",
-      "it": "Importato da PokerGuild per GoodGame Poker Live Shinjuku. Premio: POKERWEB COIN・ticket SENGOKU. Fine prevista: 19:30. Controlla PokerGuild per i termini completi.",
-      "ptBR": "Importado do PokerGuild para GoodGame Poker Live Shinjuku. Prêmio: POKERWEB COIN・ticket SENGOKU. Término previsto: 19:30. Confira os termos completos no PokerGuild."
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Expected end: 20:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。終了予定: 20:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。预计结束: 20:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。預計結束: 20:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。預計結束: 20:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 종료 예정: 20:00. 자세한 조건은 PokerGuild에서 확인하세요.",
+      "th": "ข้อมูลนี้นำเข้าจาก PokerGuild สำหรับ GoodGame Poker Live Shinjuku. เวลาจบโดยประมาณ: 20:00. โปรดตรวจสอบเงื่อนไขทั้งหมดใน PokerGuild.",
+      "vi": "Thông tin được nhập từ PokerGuild cho GoodGame Poker Live Shinjuku. Dự kiến kết thúc: 20:00. Vui lòng kiểm tra điều kiện đầy đủ trên PokerGuild.",
+      "id": "Informasi ini diimpor dari PokerGuild untuk GoodGame Poker Live Shinjuku. Perkiraan selesai: 20:00. Periksa PokerGuild untuk syarat lengkap.",
+      "tl": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Expected end: 20:00. Check PokerGuild for full terms.",
+      "es": "Importado desde PokerGuild para GoodGame Poker Live Shinjuku. Final estimado: 20:00. Consulta PokerGuild para ver todos los términos.",
+      "fr": "Importé depuis PokerGuild pour GoodGame Poker Live Shinjuku. Fin estimée : 20:00. Consultez PokerGuild pour les conditions complètes.",
+      "de": "Von PokerGuild für GoodGame Poker Live Shinjuku importiert. Voraussichtliches Ende: 20:00. Vollständige Bedingungen auf PokerGuild prüfen.",
+      "it": "Importato da PokerGuild per GoodGame Poker Live Shinjuku. Fine prevista: 20:00. Controlla PokerGuild per i termini completi.",
+      "ptBR": "Importado do PokerGuild para GoodGame Poker Live Shinjuku. Término previsto: 20:00. Confira os termos completos no PokerGuild."
     },
     "entry": "5,000 JPY",
     "reEntry": "5,000 JPY",
@@ -47,271 +47,25 @@
     "game": "NLH",
     "stack": "50,000",
     "prize": {
-      "en": "POKERWEB COIN / SENGOKU ticket",
-      "ja": "POKERWEB COIN・戦国権利",
-      "zh": "POKERWEB COIN、SENGOKU参赛资格",
-      "zhTW": "POKERWEB COIN、SENGOKU參賽資格",
-      "zhHK": "POKERWEB COIN、SENGOKU參賽資格",
-      "ko": "POKERWEB COIN / SENGOKU 참가권",
-      "th": "POKERWEB COIN・SENGOKU ticket",
-      "vi": "POKERWEB COIN・vé SENGOKU",
-      "id": "POKERWEB COIN・tiket SENGOKU",
-      "tl": "POKERWEB COIN・SENGOKU ticket",
-      "es": "POKERWEB COIN・entrada SENGOKU",
-      "fr": "POKERWEB COIN・ticket SENGOKU",
-      "de": "POKERWEB COIN・SENGOKU-Ticket",
-      "it": "POKERWEB COIN・ticket SENGOKU",
-      "ptBR": "POKERWEB COIN・ticket SENGOKU"
+      "en": "",
+      "ja": "",
+      "zh": "",
+      "zhTW": "",
+      "zhHK": "",
+      "ko": "",
+      "th": "",
+      "vi": "",
+      "id": "",
+      "tl": "",
+      "es": "",
+      "fr": "",
+      "de": "",
+      "it": "",
+      "ptBR": ""
     },
-    "prizeDetails": [
-      {
-        "rank": "1st",
-        "items": {
-          "en": [
-            "30,000 Web Coin support",
-            "2 SENGOKU Poker 2026 -Autumn- Main Tickets"
-          ],
-          "ja": [
-            "30,000 活動支援",
-            "戦国ポーカー 2026 -秋の陣- Main Ticket 2枚"
-          ],
-          "zh": [
-            "30,000 Web Coin 支持",
-            "战国扑克 2026 -秋之阵- Main Ticket 2张"
-          ],
-          "zhTW": [
-            "30,000 Web Coin 支援",
-            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
-          ],
-          "zhHK": [
-            "30,000 Web Coin 支援",
-            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
-          ],
-          "ko": [
-            "30,000 Web Coin 지원",
-            "센고쿠 포커 2026 -가을의 진- Main Ticket 2장"
-          ],
-          "th": [
-            "30,000 การสนับสนุน Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ใบ"
-          ],
-          "vi": [
-            "30,000 hỗ trợ Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 vé"
-          ],
-          "id": [
-            "30,000 dukungan Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tiket"
-          ],
-          "tl": [
-            "30,000 Web Coin support",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ],
-          "es": [
-            "30,000 apoyo Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 entradas"
-          ],
-          "fr": [
-            "30,000 soutien Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ],
-          "de": [
-            "30,000 Web-Coin-Unterstützung",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 Tickets"
-          ],
-          "it": [
-            "30,000 supporto Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ticket"
-          ],
-          "ptBR": [
-            "30,000 apoio em Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ]
-        }
-      },
-      {
-        "rank": "2nd",
-        "items": {
-          "en": [
-            "20,000 Web Coin support",
-            "2 SENGOKU Poker 2026 -Autumn- Main Tickets"
-          ],
-          "ja": [
-            "20,000 活動支援",
-            "戦国ポーカー 2026 -秋の陣- Main Ticket 2枚"
-          ],
-          "zh": [
-            "20,000 Web Coin 支持",
-            "战国扑克 2026 -秋之阵- Main Ticket 2张"
-          ],
-          "zhTW": [
-            "20,000 Web Coin 支援",
-            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
-          ],
-          "zhHK": [
-            "20,000 Web Coin 支援",
-            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
-          ],
-          "ko": [
-            "20,000 Web Coin 지원",
-            "센고쿠 포커 2026 -가을의 진- Main Ticket 2장"
-          ],
-          "th": [
-            "20,000 การสนับสนุน Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ใบ"
-          ],
-          "vi": [
-            "20,000 hỗ trợ Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 vé"
-          ],
-          "id": [
-            "20,000 dukungan Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tiket"
-          ],
-          "tl": [
-            "20,000 Web Coin support",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ],
-          "es": [
-            "20,000 apoyo Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 entradas"
-          ],
-          "fr": [
-            "20,000 soutien Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ],
-          "de": [
-            "20,000 Web-Coin-Unterstützung",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 Tickets"
-          ],
-          "it": [
-            "20,000 supporto Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ticket"
-          ],
-          "ptBR": [
-            "20,000 apoio em Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ]
-        }
-      },
-      {
-        "rank": "3rd",
-        "items": {
-          "en": [
-            "10,000 Web Coin support",
-            "2 SENGOKU Poker 2026 -Autumn- Main Tickets"
-          ],
-          "ja": [
-            "10,000 活動支援",
-            "戦国ポーカー 2026 -秋の陣- Main Ticket 2枚"
-          ],
-          "zh": [
-            "10,000 Web Coin 支持",
-            "战国扑克 2026 -秋之阵- Main Ticket 2张"
-          ],
-          "zhTW": [
-            "10,000 Web Coin 支援",
-            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
-          ],
-          "zhHK": [
-            "10,000 Web Coin 支援",
-            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
-          ],
-          "ko": [
-            "10,000 Web Coin 지원",
-            "센고쿠 포커 2026 -가을의 진- Main Ticket 2장"
-          ],
-          "th": [
-            "10,000 การสนับสนุน Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ใบ"
-          ],
-          "vi": [
-            "10,000 hỗ trợ Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 vé"
-          ],
-          "id": [
-            "10,000 dukungan Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tiket"
-          ],
-          "tl": [
-            "10,000 Web Coin support",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ],
-          "es": [
-            "10,000 apoyo Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 entradas"
-          ],
-          "fr": [
-            "10,000 soutien Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ],
-          "de": [
-            "10,000 Web-Coin-Unterstützung",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 Tickets"
-          ],
-          "it": [
-            "10,000 supporto Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ticket"
-          ],
-          "ptBR": [
-            "10,000 apoio em Web Coin",
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ]
-        }
-      },
-      {
-        "rank": "4th",
-        "items": {
-          "en": [
-            "2 SENGOKU Poker 2026 -Autumn- Main Tickets"
-          ],
-          "ja": [
-            "戦国ポーカー 2026 -秋の陣- Main Ticket 2枚"
-          ],
-          "zh": [
-            "战国扑克 2026 -秋之阵- Main Ticket 2张"
-          ],
-          "zhTW": [
-            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
-          ],
-          "zhHK": [
-            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
-          ],
-          "ko": [
-            "센고쿠 포커 2026 -가을의 진- Main Ticket 2장"
-          ],
-          "th": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ใบ"
-          ],
-          "vi": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 vé"
-          ],
-          "id": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tiket"
-          ],
-          "tl": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ],
-          "es": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 entradas"
-          ],
-          "fr": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ],
-          "de": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 Tickets"
-          ],
-          "it": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ticket"
-          ],
-          "ptBR": [
-            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
-          ]
-        }
-      }
-    ],
-    "end": "19:30",
-    "link": "https://pokerguild.jp/tournament?ik=27488"
+    "prizeDetails": [],
+    "end": "20:00",
+    "link": "https://pokerguild.jp/tournament?ik=27503"
   },
   {
     "id": "daily-ring-game",
@@ -482,324 +236,7 @@
     "weekday": "daily",
     "source": "Store rules",
     "recurring": true,
-    "date": "2026-09-05"
-  },
-  {
-    "id": "pokerguild-27936",
-    "source": "PokerGuild",
-    "sourceId": "27936",
-    "category": "tournament",
-    "date": "2026-09-05",
-    "start": "17:00",
-    "late": "20:20",
-    "title": {
-      "en": "[Top 2: 2 SPADIE tickets] Holiday Monster Stack 5K [1,000 JPY off if seated by the end of Lv.2]",
-      "ja": "【上位2名SPADIE2枚】Holiday Monster Stack 5K【Lv.2終了時までのご着席で1,000円引き】",
-      "zh": "【前2名：2张SPADIE门票】Holiday Monster Stack 5K【在Lv.2结束前入座可优惠1,000日元】",
-      "zhTW": "【前2名：2張SPADIE門票】Holiday Monster Stack 5K【在Lv.2結束前入座可享1,000日圓優惠】",
-      "zhHK": "【前2名：2張SPADIE門票】Holiday Monster Stack 5K【於Lv.2結束前入座可享1,000日圓優惠】",
-      "ko": "[상위 2명: SPADIE 티켓 2장] Holiday Monster Stack 5K [Lv.2 종료 전 착석 시 1,000엔 할인]",
-      "th": "[อันดับ 1-2: ตั๋ว SPADIE 2 ใบ] Holiday Monster Stack 5K [ลด 1,000 เยน หากนั่งก่อนจบ Lv.2]",
-      "vi": "[Top 2: 2 vé SPADIE] Holiday Monster Stack 5K [giảm 1.000 yên nếu ngồi trước khi Lv.2 kết thúc]",
-      "id": "[Top 2: 2 tiket SPADIE] Holiday Monster Stack 5K [diskon 1.000 yen jika duduk sebelum Lv.2 berakhir]",
-      "tl": "[Top 2: 2 SPADIE tickets] Holiday Monster Stack 5K [1,000 yen discount if seated before Lv.2 ends]",
-      "es": "[Top 2: 2 entradas SPADIE] Holiday Monster Stack 5K [1.000 yenes de descuento si te sientas antes de terminar Lv.2]",
-      "fr": "[Top 2 : 2 tickets SPADIE] Holiday Monster Stack 5K [1 000 yens de réduction si assis avant la fin du Lv.2]",
-      "de": "[Top 2: 2 SPADIE-Tickets] Holiday Monster Stack 5K [1.000 Yen Rabatt bei Sitzplatz bis Ende Lv.2]",
-      "it": "[Top 2: 2 ticket SPADIE] Holiday Monster Stack 5K [sconto di 1.000 yen se ti siedi entro la fine del Lv.2]",
-      "ptBR": "[Top 2: 2 tickets SPADIE] Holiday Monster Stack 5K [desconto de 1.000 ienes se sentado antes do fim do Lv.2]"
-    },
-    "description": {
-      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
-      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
-      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
-      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
-      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
-      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요.",
-      "th": "ข้อมูลนี้นำเข้าจาก PokerGuild สำหรับ GoodGame Poker Live Shinjuku. รางวัล: POKERWEB COIN・SPADIE ticket. เวลาจบโดยประมาณ: 23:00. โปรดตรวจสอบเงื่อนไขทั้งหมดใน PokerGuild.",
-      "vi": "Thông tin được nhập từ PokerGuild cho GoodGame Poker Live Shinjuku. Giải thưởng: POKERWEB COIN・vé SPADIE. Dự kiến kết thúc: 23:00. Vui lòng kiểm tra điều kiện đầy đủ trên PokerGuild.",
-      "id": "Informasi ini diimpor dari PokerGuild untuk GoodGame Poker Live Shinjuku. Hadiah: POKERWEB COIN・tiket SPADIE. Perkiraan selesai: 23:00. Periksa PokerGuild untuk syarat lengkap.",
-      "tl": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN・SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
-      "es": "Importado desde PokerGuild para GoodGame Poker Live Shinjuku. Premio: POKERWEB COIN・entrada SPADIE. Final estimado: 23:00. Consulta PokerGuild para ver todos los términos.",
-      "fr": "Importé depuis PokerGuild pour GoodGame Poker Live Shinjuku. Prix : POKERWEB COIN・ticket SPADIE. Fin estimée : 23:00. Consultez PokerGuild pour les conditions complètes.",
-      "de": "Von PokerGuild für GoodGame Poker Live Shinjuku importiert. Preis: POKERWEB COIN・SPADIE-Ticket. Voraussichtliches Ende: 23:00. Vollständige Bedingungen auf PokerGuild prüfen.",
-      "it": "Importato da PokerGuild per GoodGame Poker Live Shinjuku. Premio: POKERWEB COIN・ticket SPADIE. Fine prevista: 23:00. Controlla PokerGuild per i termini completi.",
-      "ptBR": "Importado do PokerGuild para GoodGame Poker Live Shinjuku. Prêmio: POKERWEB COIN・ticket SPADIE. Término previsto: 23:00. Confira os termos completos no PokerGuild."
-    },
-    "entry": "5,000 JPY",
-    "reEntry": "5,000 JPY",
-    "addon": "",
-    "game": "NLH",
-    "stack": "50,000",
-    "prize": {
-      "en": "POKERWEB COIN / SPADIE ticket",
-      "ja": "POKERWEB COIN・SPADIE権利",
-      "zh": "POKERWEB COIN、SPADIE参赛资格",
-      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
-      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
-      "ko": "POKERWEB COIN / SPADIE 참가권",
-      "th": "POKERWEB COIN・SPADIE ticket",
-      "vi": "POKERWEB COIN・vé SPADIE",
-      "id": "POKERWEB COIN・tiket SPADIE",
-      "tl": "POKERWEB COIN・SPADIE ticket",
-      "es": "POKERWEB COIN・entrada SPADIE",
-      "fr": "POKERWEB COIN・ticket SPADIE",
-      "de": "POKERWEB COIN・SPADIE-Ticket",
-      "it": "POKERWEB COIN・ticket SPADIE",
-      "ptBR": "POKERWEB COIN・ticket SPADIE"
-    },
-    "prizeDetails": [
-      {
-        "rank": "1st",
-        "items": {
-          "en": [
-            "30,000 Web Coin support",
-            "2 SPADIE Season 43rd Main Tickets"
-          ],
-          "ja": [
-            "30,000 活動支援",
-            "SPADIE Season 43rd Main Ticket 2枚"
-          ],
-          "zh": [
-            "30,000 Web Coin 支持",
-            "SPADIE Season 43rd Main Ticket 2张"
-          ],
-          "zhTW": [
-            "30,000 Web Coin 支援",
-            "SPADIE Season 43rd Main Ticket 2張"
-          ],
-          "zhHK": [
-            "30,000 Web Coin 支援",
-            "SPADIE Season 43rd Main Ticket 2張"
-          ],
-          "ko": [
-            "30,000 Web Coin 지원",
-            "SPADIE Season 43rd Main Ticket 2장"
-          ],
-          "th": [
-            "30,000 การสนับสนุน Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 ใบ"
-          ],
-          "vi": [
-            "30,000 hỗ trợ Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 vé"
-          ],
-          "id": [
-            "30,000 dukungan Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 tiket"
-          ],
-          "tl": [
-            "30,000 Web Coin support",
-            "SPADIE Season 43rd Main Ticket 2 tickets"
-          ],
-          "es": [
-            "30,000 apoyo Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 entradas"
-          ],
-          "fr": [
-            "30,000 soutien Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 tickets"
-          ],
-          "de": [
-            "30,000 Web-Coin-Unterstützung",
-            "SPADIE Season 43rd Main Ticket 2 Tickets"
-          ],
-          "it": [
-            "30,000 supporto Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 ticket"
-          ],
-          "ptBR": [
-            "30,000 apoio em Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 tickets"
-          ]
-        }
-      },
-      {
-        "rank": "2nd",
-        "items": {
-          "en": [
-            "20,000 Web Coin support",
-            "2 SPADIE Season 43rd Main Tickets"
-          ],
-          "ja": [
-            "20,000 活動支援",
-            "SPADIE Season 43rd Main Ticket 2枚"
-          ],
-          "zh": [
-            "20,000 Web Coin 支持",
-            "SPADIE Season 43rd Main Ticket 2张"
-          ],
-          "zhTW": [
-            "20,000 Web Coin 支援",
-            "SPADIE Season 43rd Main Ticket 2張"
-          ],
-          "zhHK": [
-            "20,000 Web Coin 支援",
-            "SPADIE Season 43rd Main Ticket 2張"
-          ],
-          "ko": [
-            "20,000 Web Coin 지원",
-            "SPADIE Season 43rd Main Ticket 2장"
-          ],
-          "th": [
-            "20,000 การสนับสนุน Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 ใบ"
-          ],
-          "vi": [
-            "20,000 hỗ trợ Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 vé"
-          ],
-          "id": [
-            "20,000 dukungan Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 tiket"
-          ],
-          "tl": [
-            "20,000 Web Coin support",
-            "SPADIE Season 43rd Main Ticket 2 tickets"
-          ],
-          "es": [
-            "20,000 apoyo Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 entradas"
-          ],
-          "fr": [
-            "20,000 soutien Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 tickets"
-          ],
-          "de": [
-            "20,000 Web-Coin-Unterstützung",
-            "SPADIE Season 43rd Main Ticket 2 Tickets"
-          ],
-          "it": [
-            "20,000 supporto Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 ticket"
-          ],
-          "ptBR": [
-            "20,000 apoio em Web Coin",
-            "SPADIE Season 43rd Main Ticket 2 tickets"
-          ]
-        }
-      },
-      {
-        "rank": "3rd",
-        "items": {
-          "en": [
-            "10,000 Web Coin support"
-          ],
-          "ja": [
-            "10,000 活動支援"
-          ],
-          "zh": [
-            "10,000 Web Coin 支持"
-          ],
-          "zhTW": [
-            "10,000 Web Coin 支援"
-          ],
-          "zhHK": [
-            "10,000 Web Coin 支援"
-          ],
-          "ko": [
-            "10,000 Web Coin 지원"
-          ],
-          "th": [
-            "10,000 การสนับสนุน Web Coin"
-          ],
-          "vi": [
-            "10,000 hỗ trợ Web Coin"
-          ],
-          "id": [
-            "10,000 dukungan Web Coin"
-          ],
-          "tl": [
-            "10,000 Web Coin support"
-          ],
-          "es": [
-            "10,000 apoyo Web Coin"
-          ],
-          "fr": [
-            "10,000 soutien Web Coin"
-          ],
-          "de": [
-            "10,000 Web-Coin-Unterstützung"
-          ],
-          "it": [
-            "10,000 supporto Web Coin"
-          ],
-          "ptBR": [
-            "10,000 apoio em Web Coin"
-          ]
-        }
-      }
-    ],
-    "end": "23:00",
-    "link": "https://pokerguild.jp/tournament?ik=27936"
-  },
-  {
-    "id": "pokerguild-27503",
-    "source": "PokerGuild",
-    "sourceId": "27503",
-    "category": "tournament",
-    "date": "2026-09-06",
-    "start": "12:00",
-    "late": "17:20",
-    "title": {
-      "en": "SENGOKU Poker Tour 2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "ja": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "zh": "战国扑克巡回赛2026 -秋之阵- 关原之战 –Main Event– Day1",
-      "zhTW": "戰國撲克巡迴賽2026 -秋之陣- 關原之戰 –Main Event– Day1",
-      "zhHK": "戰國撲克巡迴賽2026 -秋之陣- 關原之戰 –Main Event– Day1",
-      "ko": "센고쿠 포커 투어2026 -가을의 진- 세키가하라 전투 –Main Event– Day1",
-      "th": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "vi": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "id": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "tl": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "es": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "fr": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "de": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "it": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1",
-      "ptBR": "SENGOKU Poker Tour2026 -Autumn- Battle of Sekigahara –Main Event– Day1"
-    },
-    "description": {
-      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Expected end: 20:00. Check PokerGuild for full terms.",
-      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。終了予定: 20:00。詳細条件はPokerGuildで確認してください。",
-      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。预计结束: 20:00。完整条件请查看 PokerGuild。",
-      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。預計結束: 20:00。完整條件請查看 PokerGuild。",
-      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。預計結束: 20:00。完整條件請查看 PokerGuild。",
-      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 종료 예정: 20:00. 자세한 조건은 PokerGuild에서 확인하세요.",
-      "th": "ข้อมูลนี้นำเข้าจาก PokerGuild สำหรับ GoodGame Poker Live Shinjuku. เวลาจบโดยประมาณ: 20:00. โปรดตรวจสอบเงื่อนไขทั้งหมดใน PokerGuild.",
-      "vi": "Thông tin được nhập từ PokerGuild cho GoodGame Poker Live Shinjuku. Dự kiến kết thúc: 20:00. Vui lòng kiểm tra điều kiện đầy đủ trên PokerGuild.",
-      "id": "Informasi ini diimpor dari PokerGuild untuk GoodGame Poker Live Shinjuku. Perkiraan selesai: 20:00. Periksa PokerGuild untuk syarat lengkap.",
-      "tl": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Expected end: 20:00. Check PokerGuild for full terms.",
-      "es": "Importado desde PokerGuild para GoodGame Poker Live Shinjuku. Final estimado: 20:00. Consulta PokerGuild para ver todos los términos.",
-      "fr": "Importé depuis PokerGuild pour GoodGame Poker Live Shinjuku. Fin estimée : 20:00. Consultez PokerGuild pour les conditions complètes.",
-      "de": "Von PokerGuild für GoodGame Poker Live Shinjuku importiert. Voraussichtliches Ende: 20:00. Vollständige Bedingungen auf PokerGuild prüfen.",
-      "it": "Importato da PokerGuild per GoodGame Poker Live Shinjuku. Fine prevista: 20:00. Controlla PokerGuild per i termini completi.",
-      "ptBR": "Importado do PokerGuild para GoodGame Poker Live Shinjuku. Término previsto: 20:00. Confira os termos completos no PokerGuild."
-    },
-    "entry": "5,000 JPY",
-    "reEntry": "5,000 JPY",
-    "addon": "",
-    "game": "NLH",
-    "stack": "50,000",
-    "prize": {
-      "en": "",
-      "ja": "",
-      "zh": "",
-      "zhTW": "",
-      "zhHK": "",
-      "ko": "",
-      "th": "",
-      "vi": "",
-      "id": "",
-      "tl": "",
-      "es": "",
-      "fr": "",
-      "de": "",
-      "it": "",
-      "ptBR": ""
-    },
-    "prizeDetails": [],
-    "end": "20:00",
-    "link": "https://pokerguild.jp/tournament?ik=27503"
+    "date": "2026-09-06"
   },
   {
     "id": "pokerguild-27937",
@@ -3258,5 +2695,568 @@
     "prizeDetails": [],
     "end": "23:15",
     "link": "https://pokerguild.jp/tournament?ik=27491"
+  },
+  {
+    "id": "pokerguild-27489",
+    "source": "PokerGuild",
+    "sourceId": "27489",
+    "category": "tournament",
+    "date": "2026-09-12",
+    "start": "12:00",
+    "late": "16:30",
+    "title": {
+      "en": "[Top 4: 2 SENGOKU tickets] Holiday Big 5K [1,000 JPY off if seated by the end of Lv.3]",
+      "ja": "【上位4名戦国2枚】Holiday Big 5K【Lv.3終了時までのご着席で1,000円引き】",
+      "zh": "【前4名：2张SENGOKU门票】Holiday Big 5K【在Lv.3结束前入座可优惠1,000日元】",
+      "zhTW": "【前4名：2張SENGOKU門票】Holiday Big 5K【在Lv.3結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前4名：2張SENGOKU門票】Holiday Big 5K【於Lv.3結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 4명: SENGOKU 티켓 2장] Holiday Big 5K [Lv.3 종료 전 착석 시 1,000엔 할인]",
+      "th": "[Top 4: ตั๋ว SENGOKU 2 ใบ] Holiday Big 5K [ลด 1,000 เยน หากนั่งก่อนจบ Lv.3]",
+      "vi": "[Top 4: 2 vé SENGOKU] Holiday Big 5K [giảm 1.000 yên nếu ngồi trước khi Lv.3 kết thúc]",
+      "id": "[Top 4: 2 tiket SENGOKU] Holiday Big 5K [diskon 1.000 yen jika duduk sebelum Lv.3 berakhir]",
+      "tl": "[Top 4: 2 SENGOKU tickets] Holiday Big 5K [1,000 yen discount if seated before Lv.3 ends]",
+      "es": "[Top 4: 2 entradas SENGOKU] Holiday Big 5K [1.000 yenes de descuento si te sientas antes de terminar Lv.3]",
+      "fr": "[Top 4 : 2 tickets SENGOKU] Holiday Big 5K [1 000 yens de réduction si assis avant la fin du Lv.3]",
+      "de": "[Top 4: 2 SENGOKU-Tickets] Holiday Big 5K [1.000 Yen Rabatt bei Sitzplatz bis Ende Lv.3]",
+      "it": "[Top 4: 2 ticket SENGOKU] Holiday Big 5K [sconto di 1.000 yen se ti siedi entro la fine del Lv.3]",
+      "ptBR": "[Top 4: 2 tickets SENGOKU] Holiday Big 5K [desconto de 1.000 ienes se sentado antes do fim do Lv.3]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SENGOKU ticket. Expected end: 19:30. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・戦国権利。終了予定: 19:30。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SENGOKU参赛资格。预计结束: 19:30。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SENGOKU參賽資格。預計結束: 19:30。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SENGOKU參賽資格。預計結束: 19:30。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SENGOKU 참가권. 종료 예정: 19:30. 자세한 조건은 PokerGuild에서 확인하세요.",
+      "th": "ข้อมูลนี้นำเข้าจาก PokerGuild สำหรับ GoodGame Poker Live Shinjuku. รางวัล: POKERWEB COIN・SENGOKU ticket. เวลาจบโดยประมาณ: 19:30. โปรดตรวจสอบเงื่อนไขทั้งหมดใน PokerGuild.",
+      "vi": "Thông tin được nhập từ PokerGuild cho GoodGame Poker Live Shinjuku. Giải thưởng: POKERWEB COIN・vé SENGOKU. Dự kiến kết thúc: 19:30. Vui lòng kiểm tra điều kiện đầy đủ trên PokerGuild.",
+      "id": "Informasi ini diimpor dari PokerGuild untuk GoodGame Poker Live Shinjuku. Hadiah: POKERWEB COIN・tiket SENGOKU. Perkiraan selesai: 19:30. Periksa PokerGuild untuk syarat lengkap.",
+      "tl": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN・SENGOKU ticket. Expected end: 19:30. Check PokerGuild for full terms.",
+      "es": "Importado desde PokerGuild para GoodGame Poker Live Shinjuku. Premio: POKERWEB COIN・entrada SENGOKU. Final estimado: 19:30. Consulta PokerGuild para ver todos los términos.",
+      "fr": "Importé depuis PokerGuild pour GoodGame Poker Live Shinjuku. Prix : POKERWEB COIN・ticket SENGOKU. Fin estimée : 19:30. Consultez PokerGuild pour les conditions complètes.",
+      "de": "Von PokerGuild für GoodGame Poker Live Shinjuku importiert. Preis: POKERWEB COIN・SENGOKU-Ticket. Voraussichtliches Ende: 19:30. Vollständige Bedingungen auf PokerGuild prüfen.",
+      "it": "Importato da PokerGuild per GoodGame Poker Live Shinjuku. Premio: POKERWEB COIN・ticket SENGOKU. Fine prevista: 19:30. Controlla PokerGuild per i termini completi.",
+      "ptBR": "Importado do PokerGuild para GoodGame Poker Live Shinjuku. Prêmio: POKERWEB COIN・ticket SENGOKU. Término previsto: 19:30. Confira os termos completos no PokerGuild."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "50,000",
+    "prize": {
+      "en": "POKERWEB COIN / SENGOKU ticket",
+      "ja": "POKERWEB COIN・戦国権利",
+      "zh": "POKERWEB COIN、SENGOKU参赛资格",
+      "zhTW": "POKERWEB COIN、SENGOKU參賽資格",
+      "zhHK": "POKERWEB COIN、SENGOKU參賽資格",
+      "ko": "POKERWEB COIN / SENGOKU 참가권",
+      "th": "POKERWEB COIN・SENGOKU ticket",
+      "vi": "POKERWEB COIN・vé SENGOKU",
+      "id": "POKERWEB COIN・tiket SENGOKU",
+      "tl": "POKERWEB COIN・SENGOKU ticket",
+      "es": "POKERWEB COIN・entrada SENGOKU",
+      "fr": "POKERWEB COIN・ticket SENGOKU",
+      "de": "POKERWEB COIN・SENGOKU-Ticket",
+      "it": "POKERWEB COIN・ticket SENGOKU",
+      "ptBR": "POKERWEB COIN・ticket SENGOKU"
+    },
+    "prizeDetails": [
+      {
+        "rank": "1st",
+        "items": {
+          "en": [
+            "30,000 Web Coin support",
+            "2 SENGOKU Poker 2026 -Autumn- Main Tickets"
+          ],
+          "ja": [
+            "30,000 活動支援",
+            "戦国ポーカー 2026 -秋の陣- Main Ticket 2枚"
+          ],
+          "zh": [
+            "30,000 Web Coin 支持",
+            "战国扑克 2026 -秋之阵- Main Ticket 2张"
+          ],
+          "zhTW": [
+            "30,000 Web Coin 支援",
+            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
+          ],
+          "zhHK": [
+            "30,000 Web Coin 支援",
+            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
+          ],
+          "ko": [
+            "30,000 Web Coin 지원",
+            "센고쿠 포커 2026 -가을의 진- Main Ticket 2장"
+          ],
+          "th": [
+            "30,000 การสนับสนุน Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ใบ"
+          ],
+          "vi": [
+            "30,000 hỗ trợ Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 vé"
+          ],
+          "id": [
+            "30,000 dukungan Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tiket"
+          ],
+          "tl": [
+            "30,000 Web Coin support",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ],
+          "es": [
+            "30,000 apoyo Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 entradas"
+          ],
+          "fr": [
+            "30,000 soutien Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ],
+          "de": [
+            "30,000 Web-Coin-Unterstützung",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 Tickets"
+          ],
+          "it": [
+            "30,000 supporto Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ticket"
+          ],
+          "ptBR": [
+            "30,000 apoio em Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ]
+        }
+      },
+      {
+        "rank": "2nd",
+        "items": {
+          "en": [
+            "20,000 Web Coin support",
+            "2 SENGOKU Poker 2026 -Autumn- Main Tickets"
+          ],
+          "ja": [
+            "20,000 活動支援",
+            "戦国ポーカー 2026 -秋の陣- Main Ticket 2枚"
+          ],
+          "zh": [
+            "20,000 Web Coin 支持",
+            "战国扑克 2026 -秋之阵- Main Ticket 2张"
+          ],
+          "zhTW": [
+            "20,000 Web Coin 支援",
+            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
+          ],
+          "zhHK": [
+            "20,000 Web Coin 支援",
+            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
+          ],
+          "ko": [
+            "20,000 Web Coin 지원",
+            "센고쿠 포커 2026 -가을의 진- Main Ticket 2장"
+          ],
+          "th": [
+            "20,000 การสนับสนุน Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ใบ"
+          ],
+          "vi": [
+            "20,000 hỗ trợ Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 vé"
+          ],
+          "id": [
+            "20,000 dukungan Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tiket"
+          ],
+          "tl": [
+            "20,000 Web Coin support",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ],
+          "es": [
+            "20,000 apoyo Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 entradas"
+          ],
+          "fr": [
+            "20,000 soutien Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ],
+          "de": [
+            "20,000 Web-Coin-Unterstützung",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 Tickets"
+          ],
+          "it": [
+            "20,000 supporto Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ticket"
+          ],
+          "ptBR": [
+            "20,000 apoio em Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ]
+        }
+      },
+      {
+        "rank": "3rd",
+        "items": {
+          "en": [
+            "10,000 Web Coin support",
+            "2 SENGOKU Poker 2026 -Autumn- Main Tickets"
+          ],
+          "ja": [
+            "10,000 活動支援",
+            "戦国ポーカー 2026 -秋の陣- Main Ticket 2枚"
+          ],
+          "zh": [
+            "10,000 Web Coin 支持",
+            "战国扑克 2026 -秋之阵- Main Ticket 2张"
+          ],
+          "zhTW": [
+            "10,000 Web Coin 支援",
+            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
+          ],
+          "zhHK": [
+            "10,000 Web Coin 支援",
+            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
+          ],
+          "ko": [
+            "10,000 Web Coin 지원",
+            "센고쿠 포커 2026 -가을의 진- Main Ticket 2장"
+          ],
+          "th": [
+            "10,000 การสนับสนุน Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ใบ"
+          ],
+          "vi": [
+            "10,000 hỗ trợ Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 vé"
+          ],
+          "id": [
+            "10,000 dukungan Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tiket"
+          ],
+          "tl": [
+            "10,000 Web Coin support",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ],
+          "es": [
+            "10,000 apoyo Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 entradas"
+          ],
+          "fr": [
+            "10,000 soutien Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ],
+          "de": [
+            "10,000 Web-Coin-Unterstützung",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 Tickets"
+          ],
+          "it": [
+            "10,000 supporto Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ticket"
+          ],
+          "ptBR": [
+            "10,000 apoio em Web Coin",
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ]
+        }
+      },
+      {
+        "rank": "4th",
+        "items": {
+          "en": [
+            "2 SENGOKU Poker 2026 -Autumn- Main Tickets"
+          ],
+          "ja": [
+            "戦国ポーカー 2026 -秋の陣- Main Ticket 2枚"
+          ],
+          "zh": [
+            "战国扑克 2026 -秋之阵- Main Ticket 2张"
+          ],
+          "zhTW": [
+            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
+          ],
+          "zhHK": [
+            "戰國撲克 2026 -秋之陣- Main Ticket 2張"
+          ],
+          "ko": [
+            "센고쿠 포커 2026 -가을의 진- Main Ticket 2장"
+          ],
+          "th": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ใบ"
+          ],
+          "vi": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 vé"
+          ],
+          "id": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tiket"
+          ],
+          "tl": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ],
+          "es": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 entradas"
+          ],
+          "fr": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ],
+          "de": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 Tickets"
+          ],
+          "it": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 ticket"
+          ],
+          "ptBR": [
+            "SENGOKU Poker 2026 -Autumn- Main Ticket 2 tickets"
+          ]
+        }
+      }
+    ],
+    "end": "19:30",
+    "link": "https://pokerguild.jp/tournament?ik=27489"
+  },
+  {
+    "id": "pokerguild-27511",
+    "source": "PokerGuild",
+    "sourceId": "27511",
+    "category": "tournament",
+    "date": "2026-09-12",
+    "start": "17:00",
+    "late": "20:20",
+    "title": {
+      "en": "[Top 2: 2 SPADIE tickets] Holiday Monster Stack 5K [1,000 JPY off if seated by the end of Lv.2]",
+      "ja": "【上位2名SPADIE2枚】Holiday Monster Stack 5K【Lv.2終了時までのご着席で1,000円引き】",
+      "zh": "【前2名：2张SPADIE门票】Holiday Monster Stack 5K【在Lv.2结束前入座可优惠1,000日元】",
+      "zhTW": "【前2名：2張SPADIE門票】Holiday Monster Stack 5K【在Lv.2結束前入座可享1,000日圓優惠】",
+      "zhHK": "【前2名：2張SPADIE門票】Holiday Monster Stack 5K【於Lv.2結束前入座可享1,000日圓優惠】",
+      "ko": "[상위 2명: SPADIE 티켓 2장] Holiday Monster Stack 5K [Lv.2 종료 전 착석 시 1,000엔 할인]",
+      "th": "[อันดับ 1-2: ตั๋ว SPADIE 2 ใบ] Holiday Monster Stack 5K [ลด 1,000 เยน หากนั่งก่อนจบ Lv.2]",
+      "vi": "[Top 2: 2 vé SPADIE] Holiday Monster Stack 5K [giảm 1.000 yên nếu ngồi trước khi Lv.2 kết thúc]",
+      "id": "[Top 2: 2 tiket SPADIE] Holiday Monster Stack 5K [diskon 1.000 yen jika duduk sebelum Lv.2 berakhir]",
+      "tl": "[Top 2: 2 SPADIE tickets] Holiday Monster Stack 5K [1,000 yen discount if seated before Lv.2 ends]",
+      "es": "[Top 2: 2 entradas SPADIE] Holiday Monster Stack 5K [1.000 yenes de descuento si te sientas antes de terminar Lv.2]",
+      "fr": "[Top 2 : 2 tickets SPADIE] Holiday Monster Stack 5K [1 000 yens de réduction si assis avant la fin du Lv.2]",
+      "de": "[Top 2: 2 SPADIE-Tickets] Holiday Monster Stack 5K [1.000 Yen Rabatt bei Sitzplatz bis Ende Lv.2]",
+      "it": "[Top 2: 2 ticket SPADIE] Holiday Monster Stack 5K [sconto di 1.000 yen se ti siedi entro la fine del Lv.2]",
+      "ptBR": "[Top 2: 2 tickets SPADIE] Holiday Monster Stack 5K [desconto de 1.000 ienes se sentado antes do fim do Lv.2]"
+    },
+    "description": {
+      "en": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN / SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "ja": "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。プライズ: POKERWEB COIN・SPADIE権利。終了予定: 23:00。詳細条件はPokerGuildで確認してください。",
+      "zh": "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。奖励: POKERWEB COIN、SPADIE参赛资格。预计结束: 23:00。完整条件请查看 PokerGuild。",
+      "zhTW": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎勵: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "zhHK": "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。獎賞: POKERWEB COIN、SPADIE參賽資格。預計結束: 23:00。完整條件請查看 PokerGuild。",
+      "ko": "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. 프라이즈: POKERWEB COIN / SPADIE 참가권. 종료 예정: 23:00. 자세한 조건은 PokerGuild에서 확인하세요.",
+      "th": "ข้อมูลนี้นำเข้าจาก PokerGuild สำหรับ GoodGame Poker Live Shinjuku. รางวัล: POKERWEB COIN・SPADIE ticket. เวลาจบโดยประมาณ: 23:00. โปรดตรวจสอบเงื่อนไขทั้งหมดใน PokerGuild.",
+      "vi": "Thông tin được nhập từ PokerGuild cho GoodGame Poker Live Shinjuku. Giải thưởng: POKERWEB COIN・vé SPADIE. Dự kiến kết thúc: 23:00. Vui lòng kiểm tra điều kiện đầy đủ trên PokerGuild.",
+      "id": "Informasi ini diimpor dari PokerGuild untuk GoodGame Poker Live Shinjuku. Hadiah: POKERWEB COIN・tiket SPADIE. Perkiraan selesai: 23:00. Periksa PokerGuild untuk syarat lengkap.",
+      "tl": "Imported from PokerGuild for GoodGame Poker Live Shinjuku. Prize: POKERWEB COIN・SPADIE ticket. Expected end: 23:00. Check PokerGuild for full terms.",
+      "es": "Importado desde PokerGuild para GoodGame Poker Live Shinjuku. Premio: POKERWEB COIN・entrada SPADIE. Final estimado: 23:00. Consulta PokerGuild para ver todos los términos.",
+      "fr": "Importé depuis PokerGuild pour GoodGame Poker Live Shinjuku. Prix : POKERWEB COIN・ticket SPADIE. Fin estimée : 23:00. Consultez PokerGuild pour les conditions complètes.",
+      "de": "Von PokerGuild für GoodGame Poker Live Shinjuku importiert. Preis: POKERWEB COIN・SPADIE-Ticket. Voraussichtliches Ende: 23:00. Vollständige Bedingungen auf PokerGuild prüfen.",
+      "it": "Importato da PokerGuild per GoodGame Poker Live Shinjuku. Premio: POKERWEB COIN・ticket SPADIE. Fine prevista: 23:00. Controlla PokerGuild per i termini completi.",
+      "ptBR": "Importado do PokerGuild para GoodGame Poker Live Shinjuku. Prêmio: POKERWEB COIN・ticket SPADIE. Término previsto: 23:00. Confira os termos completos no PokerGuild."
+    },
+    "entry": "5,000 JPY",
+    "reEntry": "5,000 JPY",
+    "addon": "",
+    "game": "NLH",
+    "stack": "50,000",
+    "prize": {
+      "en": "POKERWEB COIN / SPADIE ticket",
+      "ja": "POKERWEB COIN・SPADIE権利",
+      "zh": "POKERWEB COIN、SPADIE参赛资格",
+      "zhTW": "POKERWEB COIN、SPADIE參賽資格",
+      "zhHK": "POKERWEB COIN、SPADIE參賽資格",
+      "ko": "POKERWEB COIN / SPADIE 참가권",
+      "th": "POKERWEB COIN・SPADIE ticket",
+      "vi": "POKERWEB COIN・vé SPADIE",
+      "id": "POKERWEB COIN・tiket SPADIE",
+      "tl": "POKERWEB COIN・SPADIE ticket",
+      "es": "POKERWEB COIN・entrada SPADIE",
+      "fr": "POKERWEB COIN・ticket SPADIE",
+      "de": "POKERWEB COIN・SPADIE-Ticket",
+      "it": "POKERWEB COIN・ticket SPADIE",
+      "ptBR": "POKERWEB COIN・ticket SPADIE"
+    },
+    "prizeDetails": [
+      {
+        "rank": "1st",
+        "items": {
+          "en": [
+            "30,000 Web Coin support",
+            "2 SPADIE Season 43rd Main Tickets"
+          ],
+          "ja": [
+            "30,000 活動支援",
+            "SPADIE Season 43rd Main Ticket 2枚"
+          ],
+          "zh": [
+            "30,000 Web Coin 支持",
+            "SPADIE Season 43rd Main Ticket 2张"
+          ],
+          "zhTW": [
+            "30,000 Web Coin 支援",
+            "SPADIE Season 43rd Main Ticket 2張"
+          ],
+          "zhHK": [
+            "30,000 Web Coin 支援",
+            "SPADIE Season 43rd Main Ticket 2張"
+          ],
+          "ko": [
+            "30,000 Web Coin 지원",
+            "SPADIE Season 43rd Main Ticket 2장"
+          ],
+          "th": [
+            "30,000 การสนับสนุน Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 ใบ"
+          ],
+          "vi": [
+            "30,000 hỗ trợ Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 vé"
+          ],
+          "id": [
+            "30,000 dukungan Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tiket"
+          ],
+          "tl": [
+            "30,000 Web Coin support",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ],
+          "es": [
+            "30,000 apoyo Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 entradas"
+          ],
+          "fr": [
+            "30,000 soutien Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ],
+          "de": [
+            "30,000 Web-Coin-Unterstützung",
+            "SPADIE Season 43rd Main Ticket 2 Tickets"
+          ],
+          "it": [
+            "30,000 supporto Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 ticket"
+          ],
+          "ptBR": [
+            "30,000 apoio em Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ]
+        }
+      },
+      {
+        "rank": "2nd",
+        "items": {
+          "en": [
+            "20,000 Web Coin support",
+            "2 SPADIE Season 43rd Main Tickets"
+          ],
+          "ja": [
+            "20,000 活動支援",
+            "SPADIE Season 43rd Main Ticket 2枚"
+          ],
+          "zh": [
+            "20,000 Web Coin 支持",
+            "SPADIE Season 43rd Main Ticket 2张"
+          ],
+          "zhTW": [
+            "20,000 Web Coin 支援",
+            "SPADIE Season 43rd Main Ticket 2張"
+          ],
+          "zhHK": [
+            "20,000 Web Coin 支援",
+            "SPADIE Season 43rd Main Ticket 2張"
+          ],
+          "ko": [
+            "20,000 Web Coin 지원",
+            "SPADIE Season 43rd Main Ticket 2장"
+          ],
+          "th": [
+            "20,000 การสนับสนุน Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 ใบ"
+          ],
+          "vi": [
+            "20,000 hỗ trợ Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 vé"
+          ],
+          "id": [
+            "20,000 dukungan Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tiket"
+          ],
+          "tl": [
+            "20,000 Web Coin support",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ],
+          "es": [
+            "20,000 apoyo Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 entradas"
+          ],
+          "fr": [
+            "20,000 soutien Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ],
+          "de": [
+            "20,000 Web-Coin-Unterstützung",
+            "SPADIE Season 43rd Main Ticket 2 Tickets"
+          ],
+          "it": [
+            "20,000 supporto Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 ticket"
+          ],
+          "ptBR": [
+            "20,000 apoio em Web Coin",
+            "SPADIE Season 43rd Main Ticket 2 tickets"
+          ]
+        }
+      },
+      {
+        "rank": "3rd",
+        "items": {
+          "en": [
+            "10,000 Web Coin support"
+          ],
+          "ja": [
+            "10,000 活動支援"
+          ],
+          "zh": [
+            "10,000 Web Coin 支持"
+          ],
+          "zhTW": [
+            "10,000 Web Coin 支援"
+          ],
+          "zhHK": [
+            "10,000 Web Coin 支援"
+          ],
+          "ko": [
+            "10,000 Web Coin 지원"
+          ],
+          "th": [
+            "10,000 การสนับสนุน Web Coin"
+          ],
+          "vi": [
+            "10,000 hỗ trợ Web Coin"
+          ],
+          "id": [
+            "10,000 dukungan Web Coin"
+          ],
+          "tl": [
+            "10,000 Web Coin support"
+          ],
+          "es": [
+            "10,000 apoyo Web Coin"
+          ],
+          "fr": [
+            "10,000 soutien Web Coin"
+          ],
+          "de": [
+            "10,000 Web-Coin-Unterstützung"
+          ],
+          "it": [
+            "10,000 supporto Web Coin"
+          ],
+          "ptBR": [
+            "10,000 apoio em Web Coin"
+          ]
+        }
+      }
+    ],
+    "end": "23:00",
+    "link": "https://pokerguild.jp/tournament?ik=27511"
   }
 ]
