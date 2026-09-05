@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import today's GoodGame Poker Live Shinjuku tournaments from PokerGuild.
+"""Import upcoming GoodGame Poker Live Shinjuku tournaments from PokerGuild.
 
 The public site stays fast because it only reads events.json. This script is
 meant to run on a schedule, during deployment, or manually before publishing.
@@ -125,115 +125,6 @@ def date_from_label(label: str, today: dt.date) -> dt.date | None:
     return candidate
 
 
-TITLE_TRANSLATIONS = [
-    (
-        "【Lv.3終了時までのご着席で500円引き】",
-        {
-            "en": " [500 JPY off if seated by the end of Lv.3]",
-            "zh": "【在Lv.3结束前入座可优惠500日元】",
-            "zhTW": "【在Lv.3結束前入座可享500日圓優惠】",
-            "zhHK": "【於Lv.3結束前入座可享500日圓優惠】",
-            "ko": " [Lv.3 종료 전 착석 시 500엔 할인]",
-        },
-    ),
-    (
-        "【Lv.3終了時までのご着席で1,000円引き】",
-        {
-            "en": " [1,000 JPY off if seated by the end of Lv.3]",
-            "zh": "【在Lv.3结束前入座可优惠1,000日元】",
-            "zhTW": "【在Lv.3結束前入座可享1,000日圓優惠】",
-            "zhHK": "【於Lv.3結束前入座可享1,000日圓優惠】",
-            "ko": " [Lv.3 종료 전 착석 시 1,000엔 할인]",
-        },
-    ),
-    (
-        "【Lv.2終了時までのご着席で1,000円引き】",
-        {
-            "en": " [1,000 JPY off if seated by the end of Lv.2]",
-            "zh": "【在Lv.2结束前入座可优惠1,000日元】",
-            "zhTW": "【在Lv.2結束前入座可享1,000日圓優惠】",
-            "zhHK": "【於Lv.2結束前入座可享1,000日圓優惠】",
-            "ko": " [Lv.2 종료 전 착석 시 1,000엔 할인]",
-        },
-    ),
-    (
-        "【上位2名SPADIE2枚】",
-        {
-            "en": "[Top 2: 2 SPADIE tickets] ",
-            "zh": "【前2名：2张SPADIE门票】",
-            "zhTW": "【前2名：2張SPADIE門票】",
-            "zhHK": "【前2名：2張SPADIE門票】",
-            "ko": "[상위 2명: SPADIE 티켓 2장] ",
-        },
-    ),
-    (
-        "【上位5名合計15チケット】",
-        {
-            "en": "[Top 5: 15 tickets total] ",
-            "zh": "【前5名合计15张门票】",
-            "zhTW": "【前5名合計15張門票】",
-            "zhHK": "【前5名合共15張門票】",
-            "ko": "[상위 5명: 총 15장 티켓] ",
-        },
-    ),
-    (
-        "【上位3名戦国2枚】",
-        {
-            "en": "[Top 3: 2 SENGOKU tickets] ",
-            "zh": "【前3名：2张SENGOKU门票】",
-            "zhTW": "【前3名：2張SENGOKU門票】",
-            "zhHK": "【前3名：2張SENGOKU門票】",
-            "ko": "[상위 3명: SENGOKU 티켓 2장] ",
-        },
-    ),
-    (
-        "JOPTメガサテライト",
-        {
-            "en": "JOPT Mega Satellite",
-            "zh": "JOPT大型卫星赛",
-            "zhTW": "JOPT大型衛星賽",
-            "zhHK": "JOPT大型衛星賽",
-            "ko": "JOPT 메가 새틀라이트",
-        },
-    ),
-]
-
-PRIZE_TRANSLATIONS = [
-    (
-        "SPADIE権利",
-        {
-            "en": "SPADIE ticket",
-            "ja": "SPADIE権利",
-            "zh": "SPADIE参赛资格",
-            "zhTW": "SPADIE參賽資格",
-            "zhHK": "SPADIE參賽資格",
-            "ko": "SPADIE 참가권",
-        },
-    ),
-    (
-        "JOPT権利",
-        {
-            "en": "JOPT ticket",
-            "ja": "JOPT権利",
-            "zh": "JOPT参赛资格",
-            "zhTW": "JOPT參賽資格",
-            "zhHK": "JOPT參賽資格",
-            "ko": "JOPT 참가권",
-        },
-    ),
-    (
-        "戦国権利",
-        {
-            "en": "SENGOKU ticket",
-            "ja": "戦国権利",
-            "zh": "SENGOKU参赛资格",
-            "zhTW": "SENGOKU參賽資格",
-            "zhHK": "SENGOKU參賽資格",
-            "ko": "SENGOKU 참가권",
-        },
-    ),
-]
-
 DETAIL_LANGS = (
     "en",
     "ja",
@@ -251,6 +142,206 @@ DETAIL_LANGS = (
     "it",
     "ptBR",
 )
+
+
+TITLE_TRANSLATIONS = [
+    (
+        "【Lv.3終了時までのご着席で500円引き】",
+        {
+            "en": " [500 JPY off if seated by the end of Lv.3]",
+            "zh": "【在Lv.3结束前入座可优惠500日元】",
+            "zhTW": "【在Lv.3結束前入座可享500日圓優惠】",
+            "zhHK": "【於Lv.3結束前入座可享500日圓優惠】",
+            "ko": " [Lv.3 종료 전 착석 시 500엔 할인]",
+            "th": " [ลด 500 เยน หากนั่งก่อนจบ Lv.3]",
+            "vi": " [giảm 500 yên nếu ngồi trước khi Lv.3 kết thúc]",
+            "id": " [diskon 500 yen jika duduk sebelum Lv.3 berakhir]",
+            "tl": " [500 yen discount if seated before Lv.3 ends]",
+            "es": " [500 yenes de descuento si te sientas antes de terminar Lv.3]",
+            "fr": " [500 yens de réduction si assis avant la fin du Lv.3]",
+            "de": " [500 Yen Rabatt bei Sitzplatz bis Ende Lv.3]",
+            "it": " [sconto di 500 yen se ti siedi entro la fine del Lv.3]",
+            "ptBR": " [desconto de 500 ienes se sentado antes do fim do Lv.3]",
+        },
+    ),
+    (
+        "【Lv.3終了時までのご着席で1,000円引き】",
+        {
+            "en": " [1,000 JPY off if seated by the end of Lv.3]",
+            "zh": "【在Lv.3结束前入座可优惠1,000日元】",
+            "zhTW": "【在Lv.3結束前入座可享1,000日圓優惠】",
+            "zhHK": "【於Lv.3結束前入座可享1,000日圓優惠】",
+            "ko": " [Lv.3 종료 전 착석 시 1,000엔 할인]",
+            "th": " [ลด 1,000 เยน หากนั่งก่อนจบ Lv.3]",
+            "vi": " [giảm 1.000 yên nếu ngồi trước khi Lv.3 kết thúc]",
+            "id": " [diskon 1.000 yen jika duduk sebelum Lv.3 berakhir]",
+            "tl": " [1,000 yen discount if seated before Lv.3 ends]",
+            "es": " [1.000 yenes de descuento si te sientas antes de terminar Lv.3]",
+            "fr": " [1 000 yens de réduction si assis avant la fin du Lv.3]",
+            "de": " [1.000 Yen Rabatt bei Sitzplatz bis Ende Lv.3]",
+            "it": " [sconto di 1.000 yen se ti siedi entro la fine del Lv.3]",
+            "ptBR": " [desconto de 1.000 ienes se sentado antes do fim do Lv.3]",
+        },
+    ),
+    (
+        "【Lv.2終了時までのご着席で1,000円引き】",
+        {
+            "en": " [1,000 JPY off if seated by the end of Lv.2]",
+            "zh": "【在Lv.2结束前入座可优惠1,000日元】",
+            "zhTW": "【在Lv.2結束前入座可享1,000日圓優惠】",
+            "zhHK": "【於Lv.2結束前入座可享1,000日圓優惠】",
+            "ko": " [Lv.2 종료 전 착석 시 1,000엔 할인]",
+            "th": " [ลด 1,000 เยน หากนั่งก่อนจบ Lv.2]",
+            "vi": " [giảm 1.000 yên nếu ngồi trước khi Lv.2 kết thúc]",
+            "id": " [diskon 1.000 yen jika duduk sebelum Lv.2 berakhir]",
+            "tl": " [1,000 yen discount if seated before Lv.2 ends]",
+            "es": " [1.000 yenes de descuento si te sientas antes de terminar Lv.2]",
+            "fr": " [1 000 yens de réduction si assis avant la fin du Lv.2]",
+            "de": " [1.000 Yen Rabatt bei Sitzplatz bis Ende Lv.2]",
+            "it": " [sconto di 1.000 yen se ti siedi entro la fine del Lv.2]",
+            "ptBR": " [desconto de 1.000 ienes se sentado antes do fim do Lv.2]",
+        },
+    ),
+    (
+        "【上位2名SPADIE2枚】",
+        {
+            "en": "[Top 2: 2 SPADIE tickets] ",
+            "zh": "【前2名：2张SPADIE门票】",
+            "zhTW": "【前2名：2張SPADIE門票】",
+            "zhHK": "【前2名：2張SPADIE門票】",
+            "ko": "[상위 2명: SPADIE 티켓 2장] ",
+            "th": "[อันดับ 1-2: ตั๋ว SPADIE 2 ใบ] ",
+            "vi": "[Top 2: 2 vé SPADIE] ",
+            "id": "[Top 2: 2 tiket SPADIE] ",
+            "tl": "[Top 2: 2 SPADIE tickets] ",
+            "es": "[Top 2: 2 entradas SPADIE] ",
+            "fr": "[Top 2 : 2 tickets SPADIE] ",
+            "de": "[Top 2: 2 SPADIE-Tickets] ",
+            "it": "[Top 2: 2 ticket SPADIE] ",
+            "ptBR": "[Top 2: 2 tickets SPADIE] ",
+        },
+    ),
+    (
+        "【上位5名合計15チケット】",
+        {
+            "en": "[Top 5: 15 tickets total] ",
+            "zh": "【前5名合计15张门票】",
+            "zhTW": "【前5名合計15張門票】",
+            "zhHK": "【前5名合共15張門票】",
+            "ko": "[상위 5명: 총 15장 티켓] ",
+            "th": "[Top 5: รวมตั๋ว 15 ใบ] ",
+            "vi": "[Top 5: tổng cộng 15 vé] ",
+            "id": "[Top 5: total 15 tiket] ",
+            "tl": "[Top 5: 15 tickets total] ",
+            "es": "[Top 5: 15 entradas en total] ",
+            "fr": "[Top 5 : 15 tickets au total] ",
+            "de": "[Top 5: insgesamt 15 Tickets] ",
+            "it": "[Top 5: 15 ticket totali] ",
+            "ptBR": "[Top 5: 15 tickets no total] ",
+        },
+    ),
+    (
+        "【上位3名戦国2枚】",
+        {
+            "en": "[Top 3: 2 SENGOKU tickets] ",
+            "zh": "【前3名：2张SENGOKU门票】",
+            "zhTW": "【前3名：2張SENGOKU門票】",
+            "zhHK": "【前3名：2張SENGOKU門票】",
+            "ko": "[상위 3명: SENGOKU 티켓 2장] ",
+            "th": "[อันดับ 1-3: ตั๋ว SENGOKU 2 ใบ] ",
+            "vi": "[Top 3: 2 vé SENGOKU] ",
+            "id": "[Top 3: 2 tiket SENGOKU] ",
+            "tl": "[Top 3: 2 SENGOKU tickets] ",
+            "es": "[Top 3: 2 entradas SENGOKU] ",
+            "fr": "[Top 3 : 2 tickets SENGOKU] ",
+            "de": "[Top 3: 2 SENGOKU-Tickets] ",
+            "it": "[Top 3: 2 ticket SENGOKU] ",
+            "ptBR": "[Top 3: 2 tickets SENGOKU] ",
+        },
+    ),
+    (
+        "JOPTメガサテライト",
+        {
+            "en": "JOPT Mega Satellite",
+            "zh": "JOPT大型卫星赛",
+            "zhTW": "JOPT大型衛星賽",
+            "zhHK": "JOPT大型衛星賽",
+            "ko": "JOPT 메가 새틀라이트",
+            "th": "JOPT Mega Satellite",
+            "vi": "JOPT Mega Satellite",
+            "id": "JOPT Mega Satellite",
+            "tl": "JOPT Mega Satellite",
+            "es": "JOPT Mega Satellite",
+            "fr": "JOPT Mega Satellite",
+            "de": "JOPT Mega Satellite",
+            "it": "JOPT Mega Satellite",
+            "ptBR": "JOPT Mega Satellite",
+        },
+    ),
+]
+
+PRIZE_TRANSLATIONS = [
+    (
+        "SPADIE権利",
+        {
+            "en": "SPADIE ticket",
+            "ja": "SPADIE権利",
+            "zh": "SPADIE参赛资格",
+            "zhTW": "SPADIE參賽資格",
+            "zhHK": "SPADIE參賽資格",
+            "ko": "SPADIE 참가권",
+            "th": "SPADIE ticket",
+            "vi": "vé SPADIE",
+            "id": "tiket SPADIE",
+            "tl": "SPADIE ticket",
+            "es": "entrada SPADIE",
+            "fr": "ticket SPADIE",
+            "de": "SPADIE-Ticket",
+            "it": "ticket SPADIE",
+            "ptBR": "ticket SPADIE",
+        },
+    ),
+    (
+        "JOPT権利",
+        {
+            "en": "JOPT ticket",
+            "ja": "JOPT権利",
+            "zh": "JOPT参赛资格",
+            "zhTW": "JOPT參賽資格",
+            "zhHK": "JOPT參賽資格",
+            "ko": "JOPT 참가권",
+            "th": "JOPT ticket",
+            "vi": "vé JOPT",
+            "id": "tiket JOPT",
+            "tl": "JOPT ticket",
+            "es": "entrada JOPT",
+            "fr": "ticket JOPT",
+            "de": "JOPT-Ticket",
+            "it": "ticket JOPT",
+            "ptBR": "ticket JOPT",
+        },
+    ),
+    (
+        "戦国権利",
+        {
+            "en": "SENGOKU ticket",
+            "ja": "戦国権利",
+            "zh": "SENGOKU参赛资格",
+            "zhTW": "SENGOKU參賽資格",
+            "zhHK": "SENGOKU參賽資格",
+            "ko": "SENGOKU 참가권",
+            "th": "SENGOKU ticket",
+            "vi": "vé SENGOKU",
+            "id": "tiket SENGOKU",
+            "tl": "SENGOKU ticket",
+            "es": "entrada SENGOKU",
+            "fr": "ticket SENGOKU",
+            "de": "SENGOKU-Ticket",
+            "it": "ticket SENGOKU",
+            "ptBR": "ticket SENGOKU",
+        },
+    ),
+]
 
 PRIZE_DETAIL_REPLACEMENTS = {
     "en": {
@@ -342,22 +433,117 @@ TICKET_COUNTERS = {
 }
 
 
+TITLE_TERM_REPLACEMENTS = {
+    "en": {
+        "戦国ポーカーツアー": "SENGOKU Poker Tour",
+        "戦国 ポーカーメガサテライト": "SENGOKU Poker Mega Satellite",
+        "戦国ポーカーメガサテライト": "SENGOKU Poker Mega Satellite",
+        "戦国ポーカー": "SENGOKU Poker",
+        "秋の陣": "Autumn",
+        "関ヶ原の戦い": "Battle of Sekigahara",
+    },
+    "zh": {
+        "戦国ポーカーツアー": "战国扑克巡回赛",
+        "戦国 ポーカーメガサテライト": "战国扑克大型卫星赛",
+        "戦国ポーカーメガサテライト": "战国扑克大型卫星赛",
+        "戦国ポーカー": "战国扑克",
+        "秋の陣": "秋之阵",
+        "関ヶ原の戦い": "关原之战",
+    },
+    "zhTW": {
+        "戦国ポーカーツアー": "戰國撲克巡迴賽",
+        "戦国 ポーカーメガサテライト": "戰國撲克大型衛星賽",
+        "戦国ポーカーメガサテライト": "戰國撲克大型衛星賽",
+        "戦国ポーカー": "戰國撲克",
+        "秋の陣": "秋之陣",
+        "関ヶ原の戦い": "關原之戰",
+    },
+    "zhHK": {
+        "戦国ポーカーツアー": "戰國撲克巡迴賽",
+        "戦国 ポーカーメガサテライト": "戰國撲克大型衛星賽",
+        "戦国ポーカーメガサテライト": "戰國撲克大型衛星賽",
+        "戦国ポーカー": "戰國撲克",
+        "秋の陣": "秋之陣",
+        "関ヶ原の戦い": "關原之戰",
+    },
+    "ko": {
+        "戦国ポーカーツアー": "센고쿠 포커 투어",
+        "戦国 ポーカーメガサテライト": "센고쿠 포커 메가 새틀라이트",
+        "戦国ポーカーメガサテライト": "센고쿠 포커 메가 새틀라이트",
+        "戦国ポーカー": "센고쿠 포커",
+        "秋の陣": "가을의 진",
+        "関ヶ原の戦い": "세키가하라 전투",
+    },
+}
+
+
+def generic_title_phrase(match: re.Match[str], lang: str) -> str:
+    capped = bool(match.group(1))
+    place_count = match.group(2)
+    ticket_name = match.group(3).upper()
+    ticket_count = match.group(4)
+    ticket_name = "SENGOKU" if "戦国" in match.group(3) else ticket_name
+
+    if lang == "ja":
+        return match.group(0)
+
+    if lang == "en":
+        prefix = "Up to top" if capped else "Top"
+        return f"[{prefix} {place_count}: {ticket_count} {ticket_name} tickets] "
+    if lang == "zh":
+        prefix = "最多前" if capped else "前"
+        return f"【{prefix}{place_count}名：{ticket_count}张{ticket_name}门票】"
+    if lang in {"zhTW", "zhHK"}:
+        prefix = "最多前" if capped else "前"
+        return f"【{prefix}{place_count}名：{ticket_count}張{ticket_name}門票】"
+    if lang == "ko":
+        prefix = "최대 상위" if capped else "상위"
+        return f"[{prefix} {place_count}명: {ticket_name} 티켓 {ticket_count}장] "
+    if lang == "th":
+        prefix = "สูงสุด Top" if capped else "Top"
+        return f"[{prefix} {place_count}: ตั๋ว {ticket_name} {ticket_count} ใบ] "
+    if lang == "vi":
+        prefix = "Tối đa top" if capped else "Top"
+        return f"[{prefix} {place_count}: {ticket_count} vé {ticket_name}] "
+    if lang == "id":
+        prefix = "Maks. top" if capped else "Top"
+        return f"[{prefix} {place_count}: {ticket_count} tiket {ticket_name}] "
+    if lang == "es":
+        prefix = "Hasta top" if capped else "Top"
+        return f"[{prefix} {place_count}: {ticket_count} entradas {ticket_name}] "
+    if lang == "fr":
+        prefix = "Jusqu'au top" if capped else "Top"
+        return f"[{prefix} {place_count} : {ticket_count} tickets {ticket_name}] "
+    if lang == "de":
+        prefix = "Bis Top" if capped else "Top"
+        return f"[{prefix} {place_count}: {ticket_count} {ticket_name}-Tickets] "
+    if lang == "it":
+        prefix = "Fino alla top" if capped else "Top"
+        return f"[{prefix} {place_count}: {ticket_count} ticket {ticket_name}] "
+    if lang == "ptBR":
+        prefix = "Até top" if capped else "Top"
+        return f"[{prefix} {place_count}: {ticket_count} tickets {ticket_name}] "
+    return f"[Top {place_count}: {ticket_count} {ticket_name} tickets] "
+
+
 def translate_title(title: str, lang: str) -> str:
     translated = title
     for source, replacements in TITLE_TRANSLATIONS:
         translated = translated.replace(source, replacements.get(lang, source))
+    translated = re.sub(
+        r"【(最大)?上位(\d+)名(SPADIE|戦国)(\d+)枚】",
+        lambda match: generic_title_phrase(match, lang),
+        translated,
+    )
+    for source, replacement in TITLE_TERM_REPLACEMENTS.get(lang, TITLE_TERM_REPLACEMENTS["en"]).items():
+        translated = translated.replace(source, replacement)
+    if lang == "en":
+        translated = re.sub(r"(Tour)(\d{4})", r"\1 \2", translated)
     return " ".join(translated.split())
 
 
 def localized_title(title: str) -> dict[str, str]:
-    return {
-        "en": translate_title(title, "en"),
-        "ja": title,
-        "zh": translate_title(title, "zh"),
-        "zhTW": translate_title(title, "zhTW"),
-        "zhHK": translate_title(title, "zhHK"),
-        "ko": translate_title(title, "ko"),
-    }
+    return {lang: translate_title(title, lang) for lang in DETAIL_LANGS}
 
 
 def translate_prize(prize: str, lang: str) -> str:
@@ -375,14 +561,7 @@ def translate_prize(prize: str, lang: str) -> str:
 
 
 def localized_prize(prize: str) -> dict[str, str]:
-    return {
-        "en": translate_prize(prize, "en"),
-        "ja": prize,
-        "zh": translate_prize(prize, "zh"),
-        "zhTW": translate_prize(prize, "zhTW"),
-        "zhHK": translate_prize(prize, "zhHK"),
-        "ko": translate_prize(prize, "ko"),
-    }
+    return {lang: translate_prize(prize, lang) for lang in DETAIL_LANGS}
 
 
 def translate_prize_detail_line(line: str, lang: str) -> str:
@@ -446,26 +625,110 @@ def parse_prize_details(detail_html: str) -> list[dict[str, Any]]:
 
 
 def localized_description(prize: dict[str, str], end_time: str = "") -> dict[str, str]:
-    en_prize = f" Prize: {prize['en']}." if prize.get("en") else ""
-    ja_prize = f"プライズ: {prize['ja']}。" if prize.get("ja") else ""
-    zh_prize = f"奖励: {prize['zh']}。" if prize.get("zh") else ""
-    zh_tw_prize = f"獎勵: {prize['zhTW']}。" if prize.get("zhTW") else ""
-    zh_hk_prize = f"獎賞: {prize['zhHK']}。" if prize.get("zhHK") else ""
-    ko_prize = f"프라이즈: {prize['ko']}." if prize.get("ko") else ""
-    end_text = f" Expected end: {end_time}." if end_time else ""
-    ja_end = f"終了予定: {end_time}。" if end_time else ""
-    zh_end = f"预计结束: {end_time}。" if end_time else ""
-    zh_tw_end = f"預計結束: {end_time}。" if end_time else ""
-    zh_hk_end = f"預計結束: {end_time}。" if end_time else ""
-    ko_end = f" 종료 예정: {end_time}." if end_time else ""
-    return {
-        "en": f"Imported from PokerGuild for GoodGame Poker Live Shinjuku.{en_prize}{end_text} Check PokerGuild for full terms.",
-        "ja": f"PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。{ja_prize}{ja_end}詳細条件はPokerGuildで確認してください。",
-        "zh": f"此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。{zh_prize}{zh_end}完整条件请查看 PokerGuild。",
-        "zhTW": f"此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。{zh_tw_prize}{zh_tw_end}完整條件請查看 PokerGuild。",
-        "zhHK": f"此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。{zh_hk_prize}{zh_hk_end}完整條件請查看 PokerGuild。",
-        "ko": f"PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다. {ko_prize}{ko_end} 자세한 조건은 PokerGuild에서 확인하세요.",
+    templates = {
+        "en": (
+            "Imported from PokerGuild for GoodGame Poker Live Shinjuku.",
+            " Prize: {prize}.",
+            " Expected end: {end}.",
+            " Check PokerGuild for full terms.",
+        ),
+        "ja": (
+            "PokerGuildに掲載されたGoodGame Poker Live SHINJUKUのトーナメント情報です。",
+            "プライズ: {prize}。",
+            "終了予定: {end}。",
+            "詳細条件はPokerGuildで確認してください。",
+        ),
+        "zh": (
+            "此信息来自 PokerGuild 的 GoodGame Poker Live Shinjuku 赛程。",
+            "奖励: {prize}。",
+            "预计结束: {end}。",
+            "完整条件请查看 PokerGuild。",
+        ),
+        "zhTW": (
+            "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。",
+            "獎勵: {prize}。",
+            "預計結束: {end}。",
+            "完整條件請查看 PokerGuild。",
+        ),
+        "zhHK": (
+            "此資訊來自 PokerGuild 的 GoodGame Poker Live Shinjuku 賽程。",
+            "獎賞: {prize}。",
+            "預計結束: {end}。",
+            "完整條件請查看 PokerGuild。",
+        ),
+        "ko": (
+            "PokerGuild의 GoodGame Poker Live Shinjuku 토너먼트 정보입니다.",
+            " 프라이즈: {prize}.",
+            " 종료 예정: {end}.",
+            " 자세한 조건은 PokerGuild에서 확인하세요.",
+        ),
+        "th": (
+            "ข้อมูลนี้นำเข้าจาก PokerGuild สำหรับ GoodGame Poker Live Shinjuku.",
+            " รางวัล: {prize}.",
+            " เวลาจบโดยประมาณ: {end}.",
+            " โปรดตรวจสอบเงื่อนไขทั้งหมดใน PokerGuild.",
+        ),
+        "vi": (
+            "Thông tin được nhập từ PokerGuild cho GoodGame Poker Live Shinjuku.",
+            " Giải thưởng: {prize}.",
+            " Dự kiến kết thúc: {end}.",
+            " Vui lòng kiểm tra điều kiện đầy đủ trên PokerGuild.",
+        ),
+        "id": (
+            "Informasi ini diimpor dari PokerGuild untuk GoodGame Poker Live Shinjuku.",
+            " Hadiah: {prize}.",
+            " Perkiraan selesai: {end}.",
+            " Periksa PokerGuild untuk syarat lengkap.",
+        ),
+        "tl": (
+            "Imported from PokerGuild for GoodGame Poker Live Shinjuku.",
+            " Prize: {prize}.",
+            " Expected end: {end}.",
+            " Check PokerGuild for full terms.",
+        ),
+        "es": (
+            "Importado desde PokerGuild para GoodGame Poker Live Shinjuku.",
+            " Premio: {prize}.",
+            " Final estimado: {end}.",
+            " Consulta PokerGuild para ver todos los términos.",
+        ),
+        "fr": (
+            "Importé depuis PokerGuild pour GoodGame Poker Live Shinjuku.",
+            " Prix : {prize}.",
+            " Fin estimée : {end}.",
+            " Consultez PokerGuild pour les conditions complètes.",
+        ),
+        "de": (
+            "Von PokerGuild für GoodGame Poker Live Shinjuku importiert.",
+            " Preis: {prize}.",
+            " Voraussichtliches Ende: {end}.",
+            " Vollständige Bedingungen auf PokerGuild prüfen.",
+        ),
+        "it": (
+            "Importato da PokerGuild per GoodGame Poker Live Shinjuku.",
+            " Premio: {prize}.",
+            " Fine prevista: {end}.",
+            " Controlla PokerGuild per i termini completi.",
+        ),
+        "ptBR": (
+            "Importado do PokerGuild para GoodGame Poker Live Shinjuku.",
+            " Prêmio: {prize}.",
+            " Término previsto: {end}.",
+            " Confira os termos completos no PokerGuild.",
+        ),
     }
+
+    descriptions: dict[str, str] = {}
+    for lang in DETAIL_LANGS:
+        intro, prize_text, end_text, footer = templates[lang]
+        description = intro
+        if prize.get(lang):
+            description += prize_text.format(prize=prize[lang])
+        if end_time:
+            description += end_text.format(end=end_time)
+        description += footer
+        descriptions[lang] = description
+    return descriptions
 
 
 def row_map_from_detail(detail_html: str) -> dict[str, str]:

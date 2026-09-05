@@ -11,12 +11,10 @@
 
 ## 2. 更新するファイル
 
-- `events.json`: 曜日別のトーナメント一覧と、日中・深夜のアミューズメントキャッシュゲーム表。ここを変更するとページのゲーム欄が変わります。
+- `events.json`: PokerGuildから取得した直近トーナメント一覧と、日中・深夜のアミューズメントキャッシュゲーム表。ここを変更するとページのゲーム欄が変わります。
 - `app.js`: 多言語テキスト。サイト全体の文言を増やす場合に編集します。
 - `assets/official-mainvisual.png`: ヒーロー背景と写真レーンで使う横長の店舗写真です。
 - `assets/official-mainvisual-sp.png`: スマホ向けヒーロー背景と写真レーンで使う店舗写真です。
-- `assets/hero-poker-room.png`: 写真レーンで使う店舗写真です。
-- `assets/store-wide-hero.jpeg`: 写真レーンで使う店舗写真です。
 
 イベント1件の基本項目:
 
@@ -24,7 +22,7 @@
 {
   "id": "unique-event-id",
   "category": "tournament",
-  "weekday": "monday",
+  "date": "2026-09-05",
   "start": "17:10",
   "late": "20:20",
   "title": { "en": "Event title", "ja": "イベント名" },
@@ -38,17 +36,35 @@
 }
 ```
 
-PokerGuildの掲載内容を参考に手動更新する場合:
+## 3. トーナメントの自動更新
+
+公開ページのトーナメント情報は、GitHub ActionsがPokerGuildから自動取得します。
+
+- 自動更新: 日本時間の 00:00 / 06:00 / 12:00 / 18:00
+- 取得範囲: 実行日から直近14日分
+- 取得元: `https://pokerguild.jp/room?ik=4&tb=1`
+- 取得内容: 開始時間、レイトレジスト、参加費、リエントリー、ゲーム種目、スタック、プライズ、順位別プライズ詳細
+- 反映先: `outputs/site/events.json` と `docs/events.json`
+- リングゲーム: 現在稼働卓は取得せず、日中・深夜の固定システムだけ表示
+
+急ぎで更新する場合:
+
+1. GitHubのリポジトリを開く
+2. `Actions` を開く
+3. `Update PokerGuild tournament data` を選ぶ
+4. `Run workflow` を押す
+
+GitHub Pagesへの反映は、通常は数十秒から数分程度かかります。
+
+ローカルで確認する場合:
 
 ```sh
-python3 outputs/site/tools/update-pokerguild-events.py
+python3 outputs/site/tools/update-pokerguild-events.py --out outputs/site/events.json --days 14
 ```
 
-このスクリプトは `https://pokerguild.jp/room?ik=4&tb=1` を読み込み、GoodGame Poker Live SHINJUKUの今日以降のトーナメントを `events.json` に出力します。現在の公開ページは、受付用iPadで安定して使えるように、PokerGuildを毎回直接読まず、確認済みの曜日別固定データを表示する仕様です。
+その後、`outputs/site/events.json` を `docs/events.json` に反映して公開します。
 
-スクリプトを実行した場合は、曜日別に整理し直してから公開してください。あわせて `app.js` 内の予備データも同じ内容にすると、HTMLを直接開いた場合も同じ表示になります。
-
-## 3. 次の制作ステップ
+## 4. 次の制作ステップ
 
 1. 実リンクを確定する  
    LINE、申請フォーム、公式スケジュール、SNS、Google Maps のリンクを最終版にします。
@@ -60,7 +76,7 @@ python3 outputs/site/tools/update-pokerguild-events.py
    年齢確認、支払い方法、初心者講習の実施条件、言語対応、服装、飲食、キャンセル条件を確認します。
 
 4. イベント更新方式を決める  
-   基本は曜日別の固定JSON更新で十分です。毎週内容が大きく変わる運用になった場合だけ、CMSや予約システム連携を検討します。
+   現在はPokerGuild自動取得です。取得が不安定になった場合は、Googleスプレッドシート管理やCMS化を検討します。
 
 5. URL 設計を決める  
    本番では `/en/` `/ja/` `/zh/` `/ko/` のような言語別 URL にすると検索と共有がしやすいです。
@@ -68,7 +84,7 @@ python3 outputs/site/tools/update-pokerguild-events.py
 6. 多言語レビューを入れる  
    自動翻訳で初稿を作り、料金・規約・注意事項だけ人間が確認する流れが安全です。
 
-## 4. CMS 化するなら
+## 5. CMS 化するなら
 
 おすすめは `microCMS + Next.js` か `WordPress` です。
 

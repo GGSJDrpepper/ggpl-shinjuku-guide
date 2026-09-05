@@ -1515,100 +1515,100 @@ Object.entries(prizeDialogTranslations).forEach(([lang, values]) => {
   translations[lang] = { ...translations[lang], ...values };
 });
 
-const weeklyScheduleTranslations = {
+const autoScheduleTranslations = {
   en: {
-    eventsTitle: "Weekly schedule",
-    eventsSource: "Tournament details are based on the current PokerGuild listings and organized by weekday. Please confirm final terms with staff or PokerGuild.",
-    eventWeekdaySelect: "Select tournament weekday",
-    eventEmpty: "No tournaments are listed for this weekday."
+    eventsTitle: "Upcoming schedule",
+    eventsSource: "Tournament data is refreshed automatically from PokerGuild several times per day. Please confirm final terms with staff or PokerGuild.",
+    eventDateSelect: "Select tournament date",
+    eventEmpty: "No tournaments are listed for this date."
   },
   ja: {
-    eventsTitle: "曜日別スケジュール",
-    eventsSource: "トーナメント情報は現在のPokerGuild掲載内容をもとに、曜日別に固定表示しています。最終条件はスタッフまたはPokerGuildで確認してください。",
-    eventWeekdaySelect: "トーナメントの曜日を選択",
-    eventEmpty: "この曜日に表示できるトーナメントはありません。"
+    eventsTitle: "近日のスケジュール",
+    eventsSource: "トーナメント情報はPokerGuildから1日4回自動更新しています。最終条件はスタッフまたはPokerGuildで確認してください。",
+    eventDateSelect: "トーナメントの日付を選択",
+    eventEmpty: "この日に表示できるトーナメントはありません。"
   },
   zh: {
-    eventsTitle: "每周赛程",
-    eventsSource: "锦标赛信息基于当前 PokerGuild 刊载内容，并按星期固定显示。最终条件请向工作人员或 PokerGuild 确认。",
-    eventWeekdaySelect: "选择锦标赛星期",
-    eventEmpty: "该星期没有可显示的锦标赛。"
+    eventsTitle: "近期赛程",
+    eventsSource: "锦标赛信息每天从 PokerGuild 自动更新四次。最终条件请向工作人员或 PokerGuild 确认。",
+    eventDateSelect: "选择锦标赛日期",
+    eventEmpty: "该日期没有可显示的锦标赛。"
   },
   zhTW: {
-    eventsTitle: "每週賽程",
-    eventsSource: "錦標賽資訊以目前 PokerGuild 刊載內容為基礎，並按星期固定顯示。最終條件請向工作人員或 PokerGuild 確認。",
-    eventWeekdaySelect: "選擇錦標賽星期",
-    eventEmpty: "該星期沒有可顯示的錦標賽。"
+    eventsTitle: "近期賽程",
+    eventsSource: "錦標賽資訊每天會從 PokerGuild 自動更新四次。最終條件請向工作人員或 PokerGuild 確認。",
+    eventDateSelect: "選擇錦標賽日期",
+    eventEmpty: "該日期沒有可顯示的錦標賽。"
   },
   zhHK: {
-    eventsTitle: "每週賽程",
-    eventsSource: "錦標賽資訊以目前 PokerGuild 刊載內容為基礎，並按星期固定顯示。最終條件請向職員或 PokerGuild 確認。",
-    eventWeekdaySelect: "選擇錦標賽星期",
-    eventEmpty: "該星期沒有可顯示的錦標賽。"
+    eventsTitle: "近期賽程",
+    eventsSource: "錦標賽資訊每天會從 PokerGuild 自動更新四次。最終條件請向職員或 PokerGuild 確認。",
+    eventDateSelect: "選擇錦標賽日期",
+    eventEmpty: "該日期沒有可顯示的錦標賽。"
   },
   ko: {
-    eventsTitle: "요일별 일정",
-    eventsSource: "토너먼트 정보는 현재 PokerGuild 게시 내용을 기준으로 요일별 고정 표시됩니다. 최종 조건은 직원 또는 PokerGuild에서 확인해 주세요.",
-    eventWeekdaySelect: "토너먼트 요일 선택",
-    eventEmpty: "이 요일에 표시할 토너먼트가 없습니다."
+    eventsTitle: "다가오는 일정",
+    eventsSource: "토너먼트 정보는 PokerGuild에서 하루 4회 자동 갱신됩니다. 최종 조건은 직원 또는 PokerGuild에서 확인해 주세요.",
+    eventDateSelect: "토너먼트 날짜 선택",
+    eventEmpty: "이 날짜에 표시할 토너먼트가 없습니다."
   },
   th: {
-    eventsTitle: "ตารางรายสัปดาห์",
-    eventsSource: "ข้อมูลทัวร์นาเมนต์อ้างอิงจากรายการปัจจุบันใน PokerGuild และแสดงแบบคงที่ตามวัน โปรดยืนยันเงื่อนไขสุดท้ายกับพนักงานหรือ PokerGuild",
-    eventWeekdaySelect: "เลือกวันของทัวร์นาเมนต์",
-    eventEmpty: "ไม่มีทัวร์นาเมนต์สำหรับวันนี้ของสัปดาห์"
+    eventsTitle: "ตารางที่กำลังจะมาถึง",
+    eventsSource: "ข้อมูลทัวร์นาเมนต์จะอัปเดตอัตโนมัติจาก PokerGuild วันละ 4 ครั้ง โปรดยืนยันเงื่อนไขสุดท้ายกับพนักงานหรือ PokerGuild",
+    eventDateSelect: "เลือกวันที่ของทัวร์นาเมนต์",
+    eventEmpty: "ไม่มีทัวร์นาเมนต์สำหรับวันนี้"
   },
   vi: {
-    eventsTitle: "Lịch theo tuần",
-    eventsSource: "Thông tin giải đấu dựa trên danh sách PokerGuild hiện tại và được hiển thị cố định theo thứ. Vui lòng xác nhận điều kiện cuối cùng với nhân viên hoặc PokerGuild.",
-    eventWeekdaySelect: "Chọn thứ của giải đấu",
-    eventEmpty: "Không có giải đấu nào được hiển thị cho thứ này."
+    eventsTitle: "Lịch sắp tới",
+    eventsSource: "Thông tin giải đấu được tự động cập nhật từ PokerGuild 4 lần mỗi ngày. Vui lòng xác nhận điều kiện cuối cùng với nhân viên hoặc PokerGuild.",
+    eventDateSelect: "Chọn ngày giải đấu",
+    eventEmpty: "Không có giải đấu nào được hiển thị cho ngày này."
   },
   id: {
-    eventsTitle: "Jadwal mingguan",
-    eventsSource: "Detail turnamen berdasarkan daftar PokerGuild saat ini dan ditampilkan tetap per hari. Konfirmasi syarat final kepada staf atau PokerGuild.",
-    eventWeekdaySelect: "Pilih hari turnamen",
-    eventEmpty: "Tidak ada turnamen untuk hari ini."
+    eventsTitle: "Jadwal mendatang",
+    eventsSource: "Data turnamen diperbarui otomatis dari PokerGuild empat kali sehari. Konfirmasi syarat final kepada staf atau PokerGuild.",
+    eventDateSelect: "Pilih tanggal turnamen",
+    eventEmpty: "Tidak ada turnamen untuk tanggal ini."
   },
   tl: {
-    eventsTitle: "Lingguhang schedule",
-    eventsSource: "Ang tournament details ay batay sa kasalukuyang PokerGuild listings at nakaayos ayon sa araw. Kumpirmahin ang final terms sa staff o PokerGuild.",
-    eventWeekdaySelect: "Pumili ng araw ng tournament",
-    eventEmpty: "Walang tournament na nakalista para sa araw na ito."
+    eventsTitle: "Upcoming schedule",
+    eventsSource: "Tournament data is refreshed automatically from PokerGuild four times per day. Please confirm final terms with staff or PokerGuild.",
+    eventDateSelect: "Select tournament date",
+    eventEmpty: "No tournaments are listed for this date."
   },
   es: {
-    eventsTitle: "Horario semanal",
-    eventsSource: "Los detalles de los torneos se basan en los listados actuales de PokerGuild y se muestran por día de la semana. Confirma las condiciones finales con el personal o en PokerGuild.",
-    eventWeekdaySelect: "Selecciona el día del torneo",
-    eventEmpty: "No hay torneos para este día."
+    eventsTitle: "Próximos eventos",
+    eventsSource: "Los datos de los torneos se actualizan automáticamente desde PokerGuild cuatro veces al día. Confirma las condiciones finales con el personal o en PokerGuild.",
+    eventDateSelect: "Selecciona la fecha del torneo",
+    eventEmpty: "No hay torneos para esta fecha."
   },
   fr: {
-    eventsTitle: "Programme hebdomadaire",
-    eventsSource: "Les détails des tournois sont basés sur les annonces actuelles de PokerGuild et affichés par jour de la semaine. Confirmez les conditions finales auprès du personnel ou de PokerGuild.",
-    eventWeekdaySelect: "Choisir le jour du tournoi",
-    eventEmpty: "Aucun tournoi n'est listé pour ce jour."
+    eventsTitle: "Programme à venir",
+    eventsSource: "Les données des tournois sont actualisées automatiquement depuis PokerGuild quatre fois par jour. Confirmez les conditions finales auprès du personnel ou de PokerGuild.",
+    eventDateSelect: "Choisir la date du tournoi",
+    eventEmpty: "Aucun tournoi n'est listé pour cette date."
   },
   de: {
-    eventsTitle: "Wochenplan",
-    eventsSource: "Die Turnierdetails basieren auf den aktuellen PokerGuild-Einträgen und werden nach Wochentag angezeigt. Bitte bestätigen Sie die endgültigen Bedingungen beim Personal oder auf PokerGuild.",
-    eventWeekdaySelect: "Turniertag auswählen",
-    eventEmpty: "Für diesen Wochentag sind keine Turniere eingetragen."
+    eventsTitle: "Kommender Zeitplan",
+    eventsSource: "Turnierdaten werden viermal täglich automatisch von PokerGuild aktualisiert. Bitte bestätigen Sie die endgültigen Bedingungen beim Personal oder auf PokerGuild.",
+    eventDateSelect: "Turnierdatum auswählen",
+    eventEmpty: "Für dieses Datum sind keine Turniere eingetragen."
   },
   it: {
-    eventsTitle: "Programma settimanale",
-    eventsSource: "I dettagli dei tornei si basano sugli annunci attuali di PokerGuild e sono mostrati per giorno della settimana. Conferma le condizioni finali con lo staff o su PokerGuild.",
-    eventWeekdaySelect: "Seleziona il giorno del torneo",
-    eventEmpty: "Nessun torneo indicato per questo giorno."
+    eventsTitle: "Programma in arrivo",
+    eventsSource: "I dati dei tornei vengono aggiornati automaticamente da PokerGuild quattro volte al giorno. Conferma le condizioni finali con lo staff o su PokerGuild.",
+    eventDateSelect: "Seleziona la data del torneo",
+    eventEmpty: "Nessun torneo indicato per questa data."
   },
   ptBR: {
-    eventsTitle: "Agenda semanal",
-    eventsSource: "Os detalhes dos torneios são baseados nas listas atuais do PokerGuild e exibidos por dia da semana. Confirme as condições finais com a equipe ou no PokerGuild.",
-    eventWeekdaySelect: "Selecione o dia do torneio",
-    eventEmpty: "Não há torneios listados para este dia."
+    eventsTitle: "Agenda de próximos eventos",
+    eventsSource: "Os dados dos torneios são atualizados automaticamente a partir do PokerGuild quatro vezes por dia. Confirme as condições finais com a equipe ou no PokerGuild.",
+    eventDateSelect: "Selecione a data do torneio",
+    eventEmpty: "Não há torneios listados para esta data."
   }
 };
 
-Object.entries(weeklyScheduleTranslations).forEach(([lang, values]) => {
+Object.entries(autoScheduleTranslations).forEach(([lang, values]) => {
   translations[lang] = { ...translations[lang], ...values };
 });
 
@@ -4976,8 +4976,9 @@ const locales = {
 let currentLang = "en";
 let currentFilter = "tournament";
 let currentCashGamePeriod = "day";
-let selectedWeekday = "";
-let events = fallbackEvents;
+let selectedDate = "";
+const fallbackRingEvents = fallbackEvents.filter((event) => event.category === "ring");
+let events = fallbackRingEvents;
 let openPrizeEventId = "";
 let lastPrizeTrigger = null;
 
@@ -5145,26 +5146,6 @@ function formatDate(dateValue) {
   }).format(date);
 }
 
-const weekdayOrder = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
-const weekdayIndex = {
-  sunday: 0,
-  monday: 1,
-  tuesday: 2,
-  wednesday: 3,
-  thursday: 4,
-  friday: 5,
-  saturday: 6
-};
-const weekdayLabelDates = {
-  monday: "2026-09-07",
-  tuesday: "2026-09-08",
-  wednesday: "2026-09-09",
-  thursday: "2026-09-10",
-  friday: "2026-09-11",
-  saturday: "2026-09-12",
-  sunday: "2026-09-13"
-};
-
 function todayInJst() {
   const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: "Asia/Tokyo",
@@ -5176,53 +5157,23 @@ function todayInJst() {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
-function currentWeekdayInJst() {
-  return new Intl.DateTimeFormat("en-US", {
-    timeZone: "Asia/Tokyo",
-    weekday: "long"
-  }).format(new Date()).toLowerCase();
-}
-
-function weekdayFromDate(dateValue) {
-  if (!dateValue) return "";
-  const date = new Date(`${dateValue}T00:00:00+09:00`);
-  if (Number.isNaN(date.getTime())) return "";
-  return Object.entries(weekdayIndex).find(([, index]) => index === date.getDay())?.[0] || "";
-}
-
-function eventWeekday(event) {
-  if (weekdayOrder.includes(event?.weekday)) return event.weekday;
-  return weekdayFromDate(event?.date);
-}
-
 function sortedEvents(eventList) {
   return eventList
     .slice()
     .sort((a, b) => {
-      const aDay = weekdayOrder.indexOf(eventWeekday(a));
-      const bDay = weekdayOrder.indexOf(eventWeekday(b));
-      const aKey = `${String(aDay < 0 ? 99 : aDay).padStart(2, "0")} ${a.start || ""}`;
-      const bKey = `${String(bDay < 0 ? 99 : bDay).padStart(2, "0")} ${b.start || ""}`;
+      const aKey = `${a.date || ""} ${a.start || ""}`;
+      const bKey = `${b.date || ""} ${b.start || ""}`;
       return aKey.localeCompare(bKey);
     });
 }
 
-function availableWeekdays(eventList) {
-  const days = new Set(eventList.map(eventWeekday).filter(Boolean));
-  return weekdayOrder.filter((day) => days.has(day));
+function availableDates(eventList) {
+  return Array.from(new Set(eventList.map((event) => event.date).filter(Boolean))).sort();
 }
 
-function preferredEventWeekday(weekdays) {
-  const today = currentWeekdayInJst();
-  return weekdays.includes(today) ? today : weekdays[0] || "";
-}
-
-function formatWeekday(weekday) {
-  const dateValue = weekdayLabelDates[weekday];
-  if (!dateValue) return weekday;
-  return new Intl.DateTimeFormat(locales[currentLang], {
-    weekday: "short"
-  }).format(new Date(`${dateValue}T00:00:00+09:00`));
+function preferredEventDate(dates) {
+  const today = todayInJst();
+  return dates.find((date) => date >= today) || dates[0] || "";
 }
 
 function eventMeta(label, value) {
@@ -5291,18 +5242,28 @@ function renderCashGamePeriodNav() {
   `;
 }
 
-function renderTournamentWeekdayNav(weekdays) {
-  const buttons = weekdays.map((weekday) => `
-    <button
-      type="button"
-      data-weekday="${weekday}"
-      aria-pressed="${selectedWeekday === weekday}"
-    >${formatWeekday(weekday)}</button>
-  `).join("");
+function renderTournamentDateNav(dates) {
+  const currentIndex = Math.max(0, dates.indexOf(selectedDate));
+  const hasPrevious = currentIndex > 0;
+  const hasNext = currentIndex < dates.length - 1;
 
   return `
-    <div class="event-weekday-nav" aria-label="${t("eventWeekdaySelect")}">
-      ${buttons}
+    <div class="event-date-nav" aria-label="${t("eventDateSelect")}">
+      <button
+        class="date-arrow"
+        type="button"
+        data-date-step="-1"
+        aria-label="${t("eventPrevDay")}"
+        ${hasPrevious ? "" : "disabled"}
+      >‹</button>
+      <h3 class="event-day-heading">${formatDate(selectedDate)}</h3>
+      <button
+        class="date-arrow"
+        type="button"
+        data-date-step="1"
+        aria-label="${t("eventNextDay")}"
+        ${hasNext ? "" : "disabled"}
+      >›</button>
     </div>
   `;
 }
@@ -5502,24 +5463,24 @@ function renderEvents() {
   const list = document.querySelector("#event-list");
   const filteredByCategory = events.filter((event) => currentFilter === "all" || event.category === currentFilter);
   const isFixedCashGame = currentFilter === "ring";
-  const weekdays = isFixedCashGame ? [] : availableWeekdays(filteredByCategory);
+  const dates = isFixedCashGame ? [] : availableDates(filteredByCategory);
 
-  if (!filteredByCategory.length || (!isFixedCashGame && !weekdays.length)) {
+  if (!filteredByCategory.length || (!isFixedCashGame && !dates.length)) {
     list.innerHTML = `<p class="empty-state">${t("eventEmpty")}</p>`;
     return;
   }
 
-  if (!isFixedCashGame && !weekdays.includes(selectedWeekday)) {
-    selectedWeekday = preferredEventWeekday(weekdays);
+  if (!isFixedCashGame && !dates.includes(selectedDate)) {
+    selectedDate = preferredEventDate(dates);
   }
 
   const currentDateEvents = isFixedCashGame
     ? sortedEvents(filteredByCategory)
-    : sortedEvents(filteredByCategory.filter((event) => eventWeekday(event) === selectedWeekday));
+    : sortedEvents(filteredByCategory.filter((event) => event.date === selectedDate));
 
   const scheduleNav = isFixedCashGame
     ? renderCashGamePeriodNav()
-    : renderTournamentWeekdayNav(weekdays);
+    : renderTournamentDateNav(dates);
 
   const cards = currentDateEvents
     .map((event, index) => {
@@ -5528,7 +5489,7 @@ function renderEvents() {
       const label = isTournament ? event.game || "Tournament" : "";
       const description = textFor(event.description);
       const cashGameData = isCashGame ? cashGamePeriodData(event) : null;
-      const eventActionId = event.id || `${event.category}-${eventWeekday(event)}-${event.start}-${index}`;
+      const eventActionId = event.id || `${event.category}-${event.date || "fixed"}-${event.start}-${index}`;
       const hasPrizeDetails = Array.isArray(event.prizeDetails) && event.prizeDetails.length > 0;
       const metaItems = isTournament
         ? `
@@ -5579,7 +5540,7 @@ function renderEvents() {
 
 async function loadEvents() {
   if (typeof window !== "undefined" && window.location?.protocol === "file:") {
-    events = fallbackEvents;
+    events = fallbackRingEvents;
     renderEvents();
     return;
   }
@@ -5589,7 +5550,7 @@ async function loadEvents() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     events = await response.json();
   } catch (error) {
-    events = fallbackEvents;
+    events = fallbackRingEvents;
   }
   renderEvents();
 }
@@ -5634,9 +5595,15 @@ document.addEventListener("click", (event) => {
     return;
   }
 
-  const weekdayButton = event.target.closest("[data-weekday]");
-  if (weekdayButton) {
-    selectedWeekday = weekdayButton.dataset.weekday;
+  const dateStepButton = event.target.closest("[data-date-step]");
+  if (dateStepButton) {
+    const tournamentEvents = events.filter((eventItem) => eventItem.category === "tournament");
+    const dates = availableDates(tournamentEvents);
+    const currentIndex = dates.indexOf(selectedDate);
+    const nextIndex = currentIndex + Number(dateStepButton.dataset.dateStep || 0);
+    if (dates[nextIndex]) {
+      selectedDate = dates[nextIndex];
+    }
     renderEvents();
   }
 });

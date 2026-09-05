@@ -15,19 +15,21 @@ The site includes `noindex,nofollow` and `robots.txt` so search engines are aske
 - `outputs/site/index.html`: page structure and content
 - `outputs/site/styles.css`: visual design
 - `outputs/site/app.js`: language switching, tournament display, amusement cash game price/rate display, Game ID guide
-- `outputs/site/events.json`: fixed weekly tournament and amusement cash game data
+- `outputs/site/events.json`: PokerGuild tournament data and fixed amusement cash game data
 - `outputs/site/tools/`: optional scripts for rebuilding imported data before manual review
-- `.github/workflows/update-pokerguild-events.yml`: manual-only PokerGuild import helper
+- `.github/workflows/update-pokerguild-events.yml`: scheduled and manual PokerGuild tournament updater
 - `docs/`: GitHub Pages publish copy
 
 When updating the site, copy `outputs/site` into `docs` before pushing to GitHub.
 
 ## Tournament Updates
 
-The public guide now uses a fixed weekly tournament schedule. Visitors choose a weekday, and the site shows the tournaments assigned to that weekday.
+The public guide reads the latest published `docs/events.json` file. GitHub Actions refreshes the tournament data from PokerGuild four times per day: 00:00, 06:00, 12:00, and 18:00 in Japan time.
 
-The weekly schedule data was built from the current PokerGuild listings for GoodGame Poker Live Shinjuku. It is not refreshed automatically, because live PokerGuild and ring game reflections were unreliable for the reception/iPad use case.
+The update script imports the upcoming GoodGame Poker Live Shinjuku tournaments from PokerGuild, including start time, late registration, entry, re-entry, starting stack, prize label, and ranked prize details when PokerGuild exposes them in the event detail page.
 
-To change the weekly schedule, edit `outputs/site/events.json`, copy it to `docs/events.json`, and push the change. The site also embeds the same fallback data in `app.js` so it works when `index.html` is opened directly from a computer.
+The amusement cash game section is fixed store-rule data. It is not updated from the live ring-game table sheet.
 
-The GitHub Action is manual-only now: `Actions` → `Manual PokerGuild event import` → `Run workflow`. Treat the result as a draft and review it before publishing.
+For urgent updates, run the workflow manually: `Actions` → `Update PokerGuild tournament data` → `Run workflow`. GitHub Pages usually reflects the new JSON within a few minutes.
+
+Directly opening `index.html` from a computer does not run the automatic update. Use the GitHub Pages URL for the live version.
