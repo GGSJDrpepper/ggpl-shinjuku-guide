@@ -959,9 +959,38 @@ a {
   grid-template-columns: 1fr auto;
   gap: 24px;
   align-items: stretch;
+  position: relative;
+  overflow: hidden;
   padding: 18px;
   background: var(--white);
   border: 1px solid var(--line);
+}
+
+.event-card:not(.event-card-fixed) {
+  border-color: rgba(26, 23, 20, 0.16);
+  background: linear-gradient(180deg, rgba(255, 249, 237, 0.72), var(--white) 118px);
+}
+
+.event-card:not(.event-card-fixed)::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: var(--accent-gold);
+}
+
+.event-card:not(.event-card-fixed) .event-content {
+  min-width: 0;
+}
+
+.event-card:not(.event-card-fixed) .event-title-row {
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(26, 23, 20, 0.1);
+}
+
+.event-card:not(.event-card-fixed) .event-title-copy h3 {
+  margin-top: 0;
 }
 
 .event-card-fixed {
@@ -1074,6 +1103,13 @@ a {
 }
 
 .event-drink-note {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 3px 8px;
+  border: 1px solid rgba(169, 130, 42, 0.24);
+  border-radius: 6px;
+  background: rgba(255, 249, 237, 0.8);
   font-size: 12px;
   font-weight: 850;
 }
@@ -1091,6 +1127,14 @@ a {
   font-weight: 900;
 }
 
+.event-card:not(.event-card-fixed) .category-pill {
+  min-height: 32px;
+  padding: 0 12px;
+  background: var(--ink);
+  color: var(--white);
+  box-shadow: inset 0 -3px 0 var(--accent-gold);
+}
+
 .event-meta {
   display: grid;
   grid-template-columns: repeat(4, minmax(120px, 1fr));
@@ -1099,10 +1143,22 @@ a {
 }
 
 .event-meta-item {
+  position: relative;
+  overflow: hidden;
   min-height: 66px;
-  padding: 10px;
-  border: 1px solid var(--line);
+  padding: 14px 12px 11px;
+  border: 1px solid rgba(26, 23, 20, 0.13);
   border-radius: 6px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 8px 18px rgba(46, 38, 30, 0.05);
+}
+
+.event-card:not(.event-card-fixed) .event-meta-item::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--accent-gold-soft);
 }
 
 .event-meta dt {
@@ -1112,9 +1168,15 @@ a {
 }
 
 .event-meta dd {
-  margin: 4px 0 0;
+  margin: 6px 0 0;
   font-weight: 800;
   overflow-wrap: anywhere;
+}
+
+.event-card:not(.event-card-fixed) .event-meta dd {
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.2;
 }
 
 .cash-game-rates {
@@ -1355,6 +1417,18 @@ a {
   font-weight: 900;
   text-align: center;
   text-decoration: none;
+}
+
+.event-card:not(.event-card-fixed) .event-action {
+  min-height: 56px;
+  border-color: rgba(26, 23, 20, 0.2);
+  background: linear-gradient(180deg, var(--white), var(--accent-gold-wash));
+  box-shadow: 0 10px 20px rgba(46, 38, 30, 0.08);
+}
+
+.event-card:not(.event-card-fixed) .event-action:hover {
+  border-color: var(--accent-gold);
+  background: var(--accent-gold-wash);
 }
 
 .event-action:hover,
