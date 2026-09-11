@@ -5504,9 +5504,19 @@ function renderEvents() {
     .map((event, index) => {
       const isTournament = event.category === "tournament";
       const isCashGame = event.category === "ring";
+
+      if (isCashGame) {
+        return `
+          <article class="event-card event-card-fixed event-card-cash-guide-only">
+            <div class="event-content">
+              ${renderCashGameGuideImage()}
+            </div>
+          </article>
+        `;
+      }
+
       const label = isTournament ? event.game || "Tournament" : "";
       const description = textFor(event.description);
-      const cashGameData = isCashGame ? cashGamePeriodData(event) : null;
       const eventActionId = event.id || `${event.category}-${event.date || "fixed"}-${event.start}-${index}`;
       const hasPrizeDetails = Array.isArray(event.prizeDetails) && event.prizeDetails.length > 0;
       const metaItems = isTournament
@@ -5533,18 +5543,12 @@ function renderEvents() {
               <div class="event-title-copy">
                 <h3>${textFor(event.title)}</h3>
                 ${isTournament ? `<small class="event-subtitle event-drink-note">${t("oneDrinkNote")}</small>` : ""}
-                ${isCashGame ? `<small class="event-subtitle">（Amusement Cash Game）</small>` : ""}
               </div>
             </div>
             ${!isTournament && description ? `<p>${description}</p>` : ""}
-            ${isCashGame ? renderCashGameRates(cashGameData.rates) : ""}
-            ${isCashGame ? renderCashGameChipInfo(cashGameData) : ""}
-            ${isCashGame ? renderCashGamePeriodNotice(cashGameData.notice) : ""}
-            ${isCashGame && currentCashGamePeriod === "night" ? renderLateNightAvailability() : ""}
-            ${isCashGame ? renderCashGameGuideImage() : ""}
             ${metaItems ? `<dl class="event-meta">${metaItems}</dl>` : ""}
           </div>
-          ${isCashGame || !hasPrizeDetails ? "" : `<button class="event-action" type="button" data-prize-event-id="${escapeHtml(eventActionId)}">${t("eventApply")}</button>`}
+          ${!hasPrizeDetails ? "" : `<button class="event-action" type="button" data-prize-event-id="${escapeHtml(eventActionId)}">${t("eventApply")}</button>`}
         </article>
       `;
     })

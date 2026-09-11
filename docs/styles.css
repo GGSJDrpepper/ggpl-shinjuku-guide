@@ -1049,6 +1049,19 @@ a {
   line-height: 1.75;
 }
 
+.event-card-cash-guide-only .event-content {
+  padding: 22px;
+  background: linear-gradient(180deg, rgba(255, 249, 237, 0.86), rgba(255, 255, 255, 0.98));
+}
+
+.event-card-cash-guide-only .cash-game-guide-image {
+  margin-top: 0;
+}
+
+.event-card-cash-guide-only .cash-game-guide-link {
+  width: min(100%, 680px);
+}
+
 .event-date {
   display: grid;
   place-items: center;
