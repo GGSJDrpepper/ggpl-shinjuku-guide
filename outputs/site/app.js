@@ -5273,6 +5273,24 @@ function renderCashGamePeriodNotice(notice) {
   return `<section class="cash-game-period-notice"><p>${escapeHtml(notice)}</p></section>`;
 }
 
+function renderCashGameGuideImage() {
+  const isNight = currentCashGamePeriod === "night";
+  const src = isNight
+    ? "assets/cash-game-late-night-guide.jpg"
+    : "assets/cash-game-daytime-guide.jpg";
+  const alt = isNight
+    ? "Amusement Cash Game Late Night guide"
+    : "Amusement Cash Game No Limit Hold'em guide";
+
+  return `
+    <section class="cash-game-guide-image ${isNight ? "is-night" : "is-day"}" aria-label="${escapeHtml(alt)}">
+      <a class="cash-game-guide-link" href="${src}" target="_blank" rel="noopener">
+        <img src="${src}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">
+      </a>
+    </section>
+  `;
+}
+
 function renderLateNightAvailability() {
   return `
     <section class="cash-game-late-status" aria-label="${t("cashGameLateNightHoursTitle")}">
@@ -5523,6 +5541,7 @@ function renderEvents() {
             ${isCashGame ? renderCashGameChipInfo(cashGameData) : ""}
             ${isCashGame ? renderCashGamePeriodNotice(cashGameData.notice) : ""}
             ${isCashGame && currentCashGamePeriod === "night" ? renderLateNightAvailability() : ""}
+            ${isCashGame ? renderCashGameGuideImage() : ""}
             ${metaItems ? `<dl class="event-meta">${metaItems}</dl>` : ""}
           </div>
           ${isCashGame || !hasPrizeDetails ? "" : `<button class="event-action" type="button" data-prize-event-id="${escapeHtml(eventActionId)}">${t("eventApply")}</button>`}
