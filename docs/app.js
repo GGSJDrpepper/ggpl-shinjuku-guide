@@ -705,32 +705,32 @@ const sharedTranslationNotice = {
   en: {
     translationNoticeKicker: "Translation notice",
     translationNoticeTitle: "About multilingual text",
-    translationNoticeCopy: "This guide uses AI translation to support visitors in many languages. We are sorry if any wording is incorrect or unclear; please ask staff if something differs from the official store rules."
+    translationNoticeCopy: "This guide uses AI translation to make the information easier for overseas visitors to understand. Some wording may be incorrect or unclear. If anything seems different from the official rules or in-store guidance, please ask staff."
   },
   ja: {
     translationNoticeKicker: "翻訳について",
     translationNoticeTitle: "多言語表示について",
-    translationNoticeCopy: "この案内は、海外からのお客様にも伝わりやすいようAI翻訳を使用しています。表現の誤りやわかりにくい部分がある可能性があり、申し訳ありません。公式ルールや店内案内と異なるように感じた場合は、スタッフにご確認ください。"
+    translationNoticeCopy: "この案内は、海外からのお客様にも伝わりやすいようAI翻訳を使用しています。 表現の誤りやわかりにくい部分がある可能性があります。公式ルールや店内案内と違うように感じた場合は、スタッフにご確認ください。"
   },
   zh: {
     translationNoticeKicker: "翻译说明",
     translationNoticeTitle: "关于多语言文本",
-    translationNoticeCopy: "本指南使用 AI 翻译，以便为多种语言的访客提供帮助。如有表述错误或不清楚之处，我们深表歉意；如与店铺官方规则不同，请向工作人员确认。"
+    translationNoticeCopy: "本指南使用 AI 翻译，旨在让海外访客更容易理解。部分表述可能有误或不够清楚。如您觉得内容与官方规则或店内说明不同，请向工作人员确认。"
   },
   zhTW: {
     translationNoticeKicker: "翻譯說明",
     translationNoticeTitle: "關於多語言文字",
-    translationNoticeCopy: "本指南使用 AI 翻譯，以便支援不同語言的訪客。若有表述錯誤或不清楚之處，我們深感抱歉；若與店鋪官方規則不同，請向工作人員確認。"
+    translationNoticeCopy: "本指南使用 AI 翻譯，旨在讓海外訪客更容易理解。部分表述可能有誤或不夠清楚。若您覺得內容與官方規則或店內說明不同，請向工作人員確認。"
   },
   zhHK: {
     translationNoticeKicker: "翻譯說明",
     translationNoticeTitle: "關於多語言文字",
-    translationNoticeCopy: "本指南使用 AI 翻譯，以便支援不同語言的訪客。如有表述錯誤或不清楚之處，我們深感抱歉；如與店舖官方規則不同，請向職員確認。"
+    translationNoticeCopy: "本指南使用 AI 翻譯，旨在讓海外訪客更容易理解。部分表述可能有誤或不夠清楚。如您覺得內容與官方規則或店內指引不同，請向職員確認。"
   },
   ko: {
     translationNoticeKicker: "번역 안내",
     translationNoticeTitle: "다국어 표시 안내",
-    translationNoticeCopy: "이 안내는 다양한 언어의 방문객을 돕기 위해 AI 번역을 사용합니다. 표현이 틀리거나 이해하기 어려운 부분이 있을 수 있어 양해 부탁드립니다. 공식 매장 규칙과 다르게 느껴지는 내용은 직원에게 확인해 주세요."
+    translationNoticeCopy: "이 안내는 해외 방문객이 더 쉽게 이해할 수 있도록 AI 번역을 사용합니다. 표현이 잘못되었거나 이해하기 어려운 부분이 있을 수 있습니다. 공식 규칙이나 매장 안내와 다르게 느껴지는 내용은 직원에게 확인해 주세요."
   }
 };
 
@@ -751,7 +751,7 @@ const supplementalTranslations = {
     ctaEvents: "ดูอีเวนต์",
     translationNoticeKicker: "หมายเหตุการแปล",
     translationNoticeTitle: "เกี่ยวกับข้อความหลายภาษา",
-    translationNoticeCopy: "คู่มือนี้ใช้ AI แปลภาษาเพื่อช่วยผู้มาเยือนหลายภาษา หากมีข้อความผิดหรือไม่ชัดเจน ต้องขออภัยด้วย กรุณาสอบถามพนักงานหากเนื้อหาแตกต่างจากกฎอย่างเป็นทางการของร้าน",
+    translationNoticeCopy: "คำแนะนำนี้ใช้การแปลด้วย AI เพื่อให้ลูกค้าจากต่างประเทศเข้าใจได้ง่ายขึ้น ข้อความบางส่วนอาจผิดพลาดหรือไม่ชัดเจน หากรู้สึกว่าเนื้อหาแตกต่างจากกฎอย่างเป็นทางการหรือคำแนะนำภายในร้าน กรุณาสอบถามพนักงาน",
     hoursKicker: "เวลาทำการ",
     hoursTitle: "เวลาทำการ",
     hoursMondayLabel: "วันจันทร์",
@@ -833,7 +833,7 @@ const supplementalTranslations = {
     ctaEvents: "Xem sự kiện",
     translationNoticeKicker: "Lưu ý dịch thuật",
     translationNoticeTitle: "Về nội dung đa ngôn ngữ",
-    translationNoticeCopy: "Hướng dẫn này dùng AI để dịch nhằm hỗ trợ khách ở nhiều ngôn ngữ. Chúng tôi xin lỗi nếu có câu chữ sai hoặc khó hiểu; vui lòng hỏi nhân viên nếu nội dung khác với quy định chính thức của cửa hàng.",
+    translationNoticeCopy: "Hướng dẫn này sử dụng bản dịch AI để khách nước ngoài dễ hiểu hơn. Một số cách diễn đạt có thể chưa chính xác hoặc chưa rõ ràng. Nếu bạn thấy nội dung khác với quy định chính thức hoặc hướng dẫn tại cửa hàng, vui lòng hỏi nhân viên.",
     hoursKicker: "Giờ mở cửa",
     hoursTitle: "Giờ mở cửa",
     hoursMondayLabel: "Thứ Hai",
@@ -911,7 +911,7 @@ const supplementalTranslations = {
     ctaEvents: "Lihat acara",
     translationNoticeKicker: "Catatan terjemahan",
     translationNoticeTitle: "Tentang teks multibahasa",
-    translationNoticeCopy: "Panduan ini menggunakan terjemahan AI untuk mendukung pengunjung dalam banyak bahasa. Kami mohon maaf jika ada kata yang salah atau kurang jelas; tanyakan kepada staf jika ada yang berbeda dari aturan resmi toko.",
+    translationNoticeCopy: "Panduan ini menggunakan terjemahan AI agar lebih mudah dipahami oleh tamu dari luar negeri. Beberapa kata mungkin kurang tepat atau kurang jelas. Jika ada hal yang terasa berbeda dari aturan resmi atau panduan di toko, silakan tanyakan kepada staf.",
     hoursKicker: "Jam buka",
     hoursTitle: "Jam buka",
     hoursMondayLabel: "Senin",
@@ -981,7 +981,7 @@ const supplementalTranslations = {
     ctaEvents: "Tingnan ang Events",
     translationNoticeKicker: "Translation notice",
     translationNoticeTitle: "Tungkol sa multilingual text",
-    translationNoticeCopy: "Gumagamit ang guide na ito ng AI translation para makatulong sa visitors sa maraming wika. Paumanhin kung may mali o hindi malinaw na salita; magtanong sa staff kung may naiiba sa official store rules.",
+    translationNoticeCopy: "Gumagamit ang guide na ito ng AI translation para mas madaling maintindihan ng mga bisitang mula sa ibang bansa. Maaaring may ilang salitang mali o hindi malinaw. Kung may mukhang iba sa official rules o sa in-store guidance, magtanong sa staff.",
     hoursKicker: "Opening hours",
     hoursTitle: "Opening hours",
     hoursMondayLabel: "Lunes",
@@ -1038,7 +1038,7 @@ const supplementalTranslations = {
     ctaEvents: "Ver eventos",
     translationNoticeKicker: "Aviso de traducción",
     translationNoticeTitle: "Sobre el texto multilingüe",
-    translationNoticeCopy: "Esta guía utiliza traducción con IA para ayudar a visitantes en varios idiomas. Sentimos si alguna frase es incorrecta o poco clara; consulta al personal si algo difiere de las reglas oficiales de la tienda.",
+    translationNoticeCopy: "Esta guía utiliza traducción con IA para que los visitantes extranjeros puedan entender la información con mayor facilidad. Algunas expresiones pueden ser incorrectas o poco claras. Si algo parece diferente de las reglas oficiales o de la información dentro del local, consulta al personal.",
     hoursKicker: "Horario",
     hoursTitle: "Horario de apertura",
     hoursMondayLabel: "Lunes",
@@ -1109,7 +1109,7 @@ const supplementalTranslations = {
     ctaEvents: "Voir les événements",
     translationNoticeKicker: "Avis de traduction",
     translationNoticeTitle: "À propos du texte multilingue",
-    translationNoticeCopy: "Ce guide utilise la traduction par IA pour aider les visiteurs dans plusieurs langues. Nous sommes désolés si certains mots sont incorrects ou peu clairs ; veuillez demander au personnel si quelque chose diffère des règles officielles du magasin.",
+    translationNoticeCopy: "Ce guide utilise la traduction par IA afin d'aider les visiteurs étrangers à mieux comprendre les informations. Certaines formulations peuvent être incorrectes ou peu claires. Si quelque chose vous semble différent des règles officielles ou des indications en magasin, veuillez demander au personnel.",
     hoursKicker: "Horaires",
     hoursTitle: "Horaires d'ouverture",
     hoursMondayLabel: "Lundi",
@@ -1171,7 +1171,7 @@ const supplementalTranslations = {
     ctaEvents: "Events ansehen",
     translationNoticeKicker: "Übersetzungshinweis",
     translationNoticeTitle: "Über den mehrsprachigen Text",
-    translationNoticeCopy: "Dieser Guide nutzt KI-Übersetzung, um Besucher in vielen Sprachen zu unterstützen. Entschuldigung, falls Formulierungen falsch oder unklar sind; bitte fragen Sie das Personal, wenn etwas von den offiziellen Regeln des Stores abweicht.",
+    translationNoticeCopy: "Dieser Guide nutzt KI-Übersetzung, damit Gäste aus dem Ausland die Informationen leichter verstehen können. Einige Formulierungen können falsch oder unklar sein. Wenn etwas von den offiziellen Regeln oder den Hinweisen im Store abzuweichen scheint, fragen Sie bitte das Personal.",
     hoursKicker: "Öffnungszeiten",
     hoursTitle: "Öffnungszeiten",
     hoursMondayLabel: "Montag",
@@ -1229,7 +1229,7 @@ const supplementalTranslations = {
     ctaEvents: "Vedi eventi",
     translationNoticeKicker: "Avviso traduzione",
     translationNoticeTitle: "Sul testo multilingue",
-    translationNoticeCopy: "Questa guida usa la traduzione AI per aiutare visitatori in molte lingue. Ci scusiamo se qualche frase è errata o poco chiara; chiedi allo staff se qualcosa sembra diverso dalle regole ufficiali del locale.",
+    translationNoticeCopy: "Questa guida usa la traduzione AI per aiutare i visitatori dall'estero a capire meglio le informazioni. Alcune frasi potrebbero essere errate o poco chiare. Se qualcosa sembra diverso dalle regole ufficiali o dalle indicazioni del locale, chiedi allo staff.",
     hoursKicker: "Orari",
     hoursTitle: "Orari di apertura",
     hoursMondayLabel: "Lunedì",
@@ -1287,7 +1287,7 @@ const supplementalTranslations = {
     ctaEvents: "Ver eventos",
     translationNoticeKicker: "Aviso de tradução",
     translationNoticeTitle: "Sobre o texto multilíngue",
-    translationNoticeCopy: "Este guia usa tradução por IA para apoiar visitantes em vários idiomas. Pedimos desculpas se alguma frase estiver incorreta ou pouco clara; pergunte à equipe se algo parecer diferente das regras oficiais da loja.",
+    translationNoticeCopy: "Este guia usa tradução por IA para que visitantes do exterior entendam as informações com mais facilidade. Algumas frases podem estar incorretas ou pouco claras. Se algo parecer diferente das regras oficiais ou das orientações da loja, pergunte à equipe.",
     hoursKicker: "Horário",
     hoursTitle: "Horário de funcionamento",
     hoursMondayLabel: "Segunda",
