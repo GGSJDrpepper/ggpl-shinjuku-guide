@@ -3,6 +3,11 @@
   --paper: #fbfaf8;
   --muted: #554f49;
   --line: rgba(26, 23, 20, 0.12);
+  --line-strong: rgba(26, 23, 20, 0.2);
+  --accent-gold: #a9822a;
+  --accent-gold-soft: #efe4c7;
+  --accent-gold-wash: #fff9ed;
+  --accent-blue-soft: #e8eef6;
   --night: #f3f0ec;
   --night-soft: #ebe6df;
   --control: #f2f0ec;
@@ -830,9 +835,10 @@ a {
 }
 
 .filter-tabs button[aria-pressed="true"] {
-  background: var(--control-strong);
+  background: var(--accent-gold-soft);
   color: var(--ink);
   font-weight: 800;
+  box-shadow: inset 0 -3px 0 var(--accent-gold);
 }
 
 .event-list {
@@ -889,9 +895,10 @@ a {
   grid-template-columns: repeat(2, minmax(128px, 1fr));
   justify-self: center;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   border-radius: 8px;
   background: var(--white);
+  box-shadow: 0 12px 24px rgba(46, 38, 30, 0.08);
 }
 
 .cash-game-period-nav button {
@@ -915,6 +922,7 @@ a {
 .cash-game-period-nav button[aria-pressed="true"] {
   background: var(--ink);
   color: var(--white);
+  box-shadow: inset 0 -4px 0 var(--accent-gold);
 }
 
 .date-arrow {
@@ -957,7 +965,59 @@ a {
 }
 
 .event-card-fixed {
+  position: relative;
   grid-template-columns: 1fr;
+  overflow: hidden;
+  padding: 0;
+  border-color: var(--line-strong);
+  background: var(--accent-gold-wash);
+}
+
+.event-card-fixed::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 6px;
+  background: var(--accent-gold);
+}
+
+.event-card-fixed .event-content {
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255, 249, 237, 0.86), rgba(255, 255, 255, 0.96) 240px);
+}
+
+.event-card-fixed .event-title-row {
+  align-items: center;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(26, 23, 20, 0.1);
+}
+
+.event-card-fixed .event-title-copy h3 {
+  margin-top: 0;
+  font-size: clamp(24px, 3vw, 30px);
+}
+
+.event-card-fixed .event-subtitle {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin-top: 8px;
+  padding: 4px 9px;
+  border: 1px solid rgba(169, 130, 42, 0.34);
+  border-radius: 6px;
+  background: rgba(239, 228, 199, 0.72);
+  color: var(--ink);
+}
+
+.event-card-fixed .event-content > p {
+  max-width: 980px;
+  margin: 0 0 22px;
+  padding-left: 16px;
+  border-left: 4px solid var(--accent-gold);
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 .event-date {
@@ -1058,17 +1118,25 @@ a {
 }
 
 .cash-game-rates {
-  margin-top: 14px;
-  padding: 12px;
-  border: 1px solid var(--line);
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid rgba(169, 130, 42, 0.24);
   border-radius: 8px;
-  background: var(--white);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.84);
 }
 
 .cash-game-rates > strong {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin-bottom: 10px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 13px;
+  line-height: 1.2;
 }
 
 .cash-game-rate-grid {
@@ -1078,13 +1146,24 @@ a {
 }
 
 .cash-game-rate-row {
+  position: relative;
   display: grid;
   gap: 5px;
-  min-height: 64px;
-  padding: 9px 10px;
-  border: 1px solid var(--line);
+  min-height: 76px;
+  padding: 15px 14px 12px;
+  overflow: hidden;
+  border: 1px solid rgba(26, 23, 20, 0.13);
   border-radius: 6px;
-  background: var(--control-soft);
+  background: var(--white);
+  box-shadow: 0 8px 18px rgba(46, 38, 30, 0.06);
+}
+
+.cash-game-rate-row::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: var(--accent-gold);
 }
 
 .cash-game-rate-main {
@@ -1095,14 +1174,14 @@ a {
 }
 
 .cash-game-rate-main strong {
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.1;
 }
 
 .cash-game-rate-main span,
 .cash-game-rate-max {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
   line-height: 1.25;
 }
@@ -1110,27 +1189,51 @@ a {
 .cash-game-chips {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
-  margin-top: 10px;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 .cash-game-chip-panel {
-  padding: 12px;
-  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  padding: 18px 20px;
+  border: 1px solid rgba(26, 23, 20, 0.14);
   border-radius: 8px;
   background: var(--white);
+  box-shadow: 0 12px 24px rgba(46, 38, 30, 0.07);
+}
+
+.cash-game-chip-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: var(--accent-gold-soft);
+}
+
+.cash-game-chip-panel:nth-child(2) {
+  border-color: rgba(63, 82, 114, 0.18);
+}
+
+.cash-game-chip-panel:nth-child(2)::before,
+.cash-game-chip-panel:nth-child(2) .cash-game-chip-note {
+  background: var(--accent-blue-soft);
 }
 
 .cash-game-chip-panel h4 {
-  margin: 0 0 8px;
-  font-size: 14px;
+  margin: 0 0 10px;
+  font-size: 17px;
   line-height: 1.2;
 }
 
 .cash-game-chip-note {
-  margin: -2px 0 8px;
+  display: inline-flex;
+  margin: -2px 0 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--control-soft);
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 850;
   line-height: 1.35;
 }
@@ -1145,8 +1248,8 @@ a {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 10px;
   align-items: baseline;
-  min-height: 32px;
-  padding: 7px 0;
+  min-height: 38px;
+  padding: 9px 0;
   border-top: 1px solid var(--line);
 }
 
@@ -1159,7 +1262,7 @@ a {
   flex-wrap: wrap;
   gap: 4px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
   line-height: 1.25;
 }
@@ -1176,17 +1279,17 @@ a {
   justify-content: flex-end;
   gap: 3px;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.25;
   text-align: right;
 }
 
 .cash-game-period-notice {
-  margin-top: 10px;
-  padding: 12px;
-  border: 1px solid var(--line);
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid rgba(169, 130, 42, 0.24);
   border-radius: 8px;
-  background: var(--white);
+  background: var(--accent-gold-wash);
 }
 
 .cash-game-period-notice p {
@@ -1201,10 +1304,11 @@ a {
   display: grid;
   gap: 10px;
   margin-top: 18px;
-  padding: 14px;
-  border: 1px solid var(--line);
+  padding: 16px;
+  border: 1px solid rgba(169, 130, 42, 0.24);
   border-radius: 8px;
-  background: var(--control-soft);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 10px 20px rgba(46, 38, 30, 0.06);
 }
 
 .cash-game-late-row {
@@ -1820,6 +1924,10 @@ a {
 
   .cash-game-period-nav button {
     padding: 8px 10px;
+  }
+
+  .event-card-fixed .event-content {
+    padding: 22px;
   }
 
   .event-weekday-nav {
