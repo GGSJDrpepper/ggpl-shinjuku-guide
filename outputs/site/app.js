@@ -5284,9 +5284,9 @@ function renderCashGameGuideImage() {
 
   return `
     <section class="cash-game-guide-image ${isNight ? "is-night" : "is-day"}" aria-label="${escapeHtml(alt)}">
-      <a class="cash-game-guide-link" href="${src}" target="_blank" rel="noopener">
+      <div class="cash-game-guide-frame">
         <img src="${src}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">
-      </a>
+      </div>
     </section>
   `;
 }

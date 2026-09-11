@@ -1058,7 +1058,7 @@ a {
   margin-top: 0;
 }
 
-.event-card-cash-guide-only .cash-game-guide-link {
+.event-card-cash-guide-only .cash-game-guide-frame {
   width: min(100%, 680px);
 }
 
@@ -1365,7 +1365,7 @@ a {
   margin-top: 18px;
 }
 
-.cash-game-guide-link {
+.cash-game-guide-frame {
   display: block;
   width: min(100%, 560px);
   padding: 10px;
@@ -1373,20 +1373,14 @@ a {
   border-radius: 8px;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(251, 245, 245, 0.9));
   box-shadow: 0 18px 38px rgba(46, 38, 30, 0.12);
-  transition: transform 160ms ease, box-shadow 160ms ease;
 }
 
-.cash-game-guide-image.is-night .cash-game-guide-link {
+.cash-game-guide-image.is-night .cash-game-guide-frame {
   border-color: rgba(60, 42, 116, 0.24);
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(247, 244, 255, 0.9));
 }
 
-.cash-game-guide-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 22px 44px rgba(46, 38, 30, 0.16);
-}
-
-.cash-game-guide-link img {
+.cash-game-guide-frame img {
   display: block;
   width: 100%;
   max-height: min(74vh, 780px);
